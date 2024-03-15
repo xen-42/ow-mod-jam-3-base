@@ -1,2 +1,2 @@
-# ow-mod-jam-3-base
-Setting up mod jam 3
+# Outer Wilds Mod Jam 3
+Stop reading this the jam hasn't started yet!
