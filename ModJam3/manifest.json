@@ -2,9 +2,9 @@
   "$schema": "https://raw.githubusercontent.com/ow-mods/owml/master/schemas/manifest_schema.json",
   "filename": "ModJam3.dll",
   "author": "xen-42",
-  "name": "ModJam3",
+  "name": "Mod Jam 3",
   "uniqueName": "xen.ModJam3",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "owmlVersion": "2.9.0",
   "dependencies": ["xen.NewHorizons"]
 }
