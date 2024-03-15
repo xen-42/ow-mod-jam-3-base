@@ -32,7 +32,8 @@ public static class ShipLogPacking
 			var yPositions = starSystem.entryPositions.Select(x => x.position.y);
 
 			// Add a slight margin
-			var margin = 10;
+			// Ship log cards are kinda big and the rects dont account for their actual sizes
+			var margin = 100;
 			var xMax = xPositions.Max() + margin;
 			var xMin = xPositions.Min() - margin;
 			var yMax = yPositions.Max() + margin;

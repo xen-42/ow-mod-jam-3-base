@@ -3,7 +3,7 @@
   "filename": "ModJam3.dll",
   "author": "xen-42",
   "name": "ModJam3",
-  "uniqueName": "xen-42.ModJam3",
+  "uniqueName": "xen.ModJam3",
   "version": "0.1.0",
   "owmlVersion": "2.9.0",
   "dependencies": ["xen.NewHorizons"]
