@@ -11,7 +11,7 @@ on:
           type: boolean
 
 env:
-    PROJ_USERNAME: xen-42
+    PROJ_USERNAME: xen
     PROJ_NAME: ModJam3
 
 jobs:
