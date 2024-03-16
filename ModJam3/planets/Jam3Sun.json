@@ -1,31 +1,54 @@
 {
-	"name": "Jam 3 Sun",
-	"$schema": "https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/body_schema.json",
-	"starSystem": "Jam3",
-	"Base": {
-		"surfaceSize": 1000,
-		"surfaceGravity": 20,
-		"centerOfSolarSystem": true
-	},
-	"Spawn": {
-		"playerSpawn": {
-			"startWithSuit": true,
-			"position": {
-				"x": 0,
-				"y": 5000,
-				"z": 0
-			}
-		},
-		"shipSpawn": {
-			"position": {
-				"x": 0,
-				"y": 5000,
-				"z": 0
-			}
-		}
-	},
-	"Star": {
-		"size": 2000,
-		"lifespan": 22
-	}
+  "name": "Jam 3 Sun",
+  "$schema": "https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/body_schema.json",
+  "starSystem": "Jam3",
+  "Base": {
+    "gravityFallOff": "inverseSquared",
+    "surfaceSize": 2000,
+    "surfaceGravity": 20,
+    "centerOfSolarSystem": true
+  },
+  "Spawn": {
+    "playerSpawn": {
+      "startWithSuit": true,
+      "position": {
+        "x": 0,
+        "y": 10000,
+        "z": 0
+      }
+    },
+    "shipSpawn": {
+      "position": {
+        "x": 0,
+        "y": 10000,
+        "z": 0
+      }
+    }
+  },
+  "Star": {
+    "stellarDeathType": "supernova",
+    "size": 2000,
+    "lifespan": 22,
+    "solarLuminosity": 1,
+    "curve": [
+      {
+        "time": 10,
+        "value": 1
+      },
+      {
+        "time": 20,
+        "value": 2
+      }
+    ],
+    "tint": {
+      "r": 120,
+      "g": 150,
+      "b": 250
+    },
+    "endTint": {
+      "r": 180,
+      "g": 0,
+      "b": 0
+    }
+  }
 }

@@ -7,8 +7,8 @@ namespace ModJam3;
 
 internal static class PlanetOrganizer
 {
-    public const float STARTING_ORBIT = 3000f;
-    public const float ORBIT_SPACING = 500f;
+    public const float STARTING_ORBIT = 5000f;
+    public const float ORBIT_SPACING = 1000f;
 
     public const float STATIC_BODY_RADIUS = 7000f;
 
@@ -16,6 +16,25 @@ internal static class PlanetOrganizer
 
     public static void Apply(IEnumerable<NewHorizonsBody> bodies)
     {
+        // Only allow one spawn point for now ig and let them override the sun one immediately
+        // Only include spawns that set both because idk why don't you want a ship bro?
+        var bodiesWithSpawns = bodies.Where(x => x.Config.Spawn?.playerSpawn != null && x.Config.Spawn?.shipSpawn != null);
+        if (bodiesWithSpawns.Count() > 1)
+        {
+            var foundSpawnFlag = false;
+            foreach (var body in bodiesWithSpawns)
+            {
+                var keepSpawn = !body.Config.Base.centerOfSolarSystem && !foundSpawnFlag;
+                if (keepSpawn)
+                {
+                    foundSpawnFlag = true;
+                }
+                else
+                {
+                    body.Config.Spawn = null;
+                }
+            }
+        }
 
         foreach (var body in bodies)
         {
