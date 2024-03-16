@@ -24,6 +24,7 @@ internal static class PlanetOrganizer
             var foundSpawnFlag = false;
             foreach (var body in bodiesWithSpawns)
             {
+                // Only take the first one we find that isnt the sun
                 var keepSpawn = !body.Config.Base.centerOfSolarSystem && !foundSpawnFlag;
                 if (keepSpawn)
                 {
