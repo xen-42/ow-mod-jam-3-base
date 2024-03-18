@@ -1,4 +1,7 @@
 ﻿using NewHorizons.External;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
@@ -8,7 +11,7 @@ namespace ModJam3;
 internal static class PlanetOrganizer
 {
     public const float STARTING_ORBIT = 5000f;
-    public const float ORBIT_SPACING = 1000f;
+    public const float ORBIT_SPACING = 1500f;
 
     public const float STATIC_BODY_RADIUS = 7000f;
 
@@ -57,13 +60,47 @@ internal static class PlanetOrganizer
         HandleRegularPlanets(regularPlanets);
     }
 
+    private static bool GetBool(string name, JObject extras)
+    {
+        return extras.GetValue(name)?.ToObject<bool>() is bool result && result;
+    }
+
+    private static int GetOrder(NewHorizonsBody body)
+    {
+        if (body.Config.extras is JObject extras)
+        {
+            ModJam3.Instance.ModHelper.Console.WriteLine($"{string.Join(", ", extras.Properties())}");
+            try
+            {
+                if (GetBool("farFromSun", extras))
+                {
+                    return 1;
+                }
+                if (GetBool("closeToSun", extras))
+                {
+                    return -1;
+                }
+            }
+            catch (Exception e)
+            {
+                ModJam3.Instance.ModHelper.Console.WriteLine($"FUC KYOU!@!!! {e}");
+
+            }
+        }
+        ModJam3.Instance.ModHelper.Console.WriteLine($"FUC KYOU!@!!! {body.Config.extras?.GetType()}");
+        return 0;
+    }
+
     private static void HandleRegularPlanets(IEnumerable<NewHorizonsBody> regularPlanets)
     {
         ModJam3.Instance.ModHelper.Console.WriteLine($"Handling {regularPlanets.Count()} regular planets");
 
         var lastSemiMajorAxis = STARTING_ORBIT;
 
-        foreach (var body in regularPlanets)
+        // Handle order
+        var orderedPlanets = regularPlanets.OrderBy(GetOrder);
+
+        foreach (var body in orderedPlanets)
         {
             // Space out the orbits to prevent overlap
             var orbit = body.Config.Orbit;
