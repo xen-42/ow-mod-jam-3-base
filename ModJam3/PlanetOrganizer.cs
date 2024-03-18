@@ -95,7 +95,8 @@ internal static class PlanetOrganizer
         foreach (var body in brambleDimensions)
         {
             // Take radius with padding
-            var radius = body.Config.Bramble.dimension.radius * 1.5f;
+            // Have to add a lot of padding to include the repel volume around the dimension (about 3.2x the radius)
+            var radius = body.Config.Bramble.dimension.radius * 4f;
             brambleDimensionRects.Add(new Rect(-radius, -radius, radius * 2f, radius * 2f));
         }
 
