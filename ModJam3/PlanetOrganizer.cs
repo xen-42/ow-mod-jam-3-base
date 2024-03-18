@@ -69,7 +69,6 @@ internal static class PlanetOrganizer
     {
         if (body.Config.extras is JObject extras)
         {
-            ModJam3.Instance.ModHelper.Console.WriteLine($"{string.Join(", ", extras.Properties())}");
             try
             {
                 if (GetBool("farFromSun", extras))
@@ -83,11 +82,9 @@ internal static class PlanetOrganizer
             }
             catch (Exception e)
             {
-                ModJam3.Instance.ModHelper.Console.WriteLine($"FUC KYOU!@!!! {e}");
-
+                ModJam3.Instance.ModHelper.Console.WriteLine($"Failed to evaluate planet order? {e}");
             }
         }
-        ModJam3.Instance.ModHelper.Console.WriteLine($"FUC KYOU!@!!! {body.Config.extras?.GetType()}");
         return 0;
     }
 
