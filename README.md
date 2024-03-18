@@ -10,4 +10,8 @@ For the third mod jam (theme COMMUNITY) all mods will take place in the same sta
 - It will reposition static bodies to be in a ring around the sun (45 degrees up from the plane of the solar system)
 - It will arrange Bramble dimensions in a plane underneath the sun (20km down)
 
+Some customization of automated planet placement can be had usings the `extras` module in your planet config:
+- `"closeToSun": true` will position the planet close to the sun
+- `"farFromSun": true` will do the opposite
+
 If your entry has needs that aren't met by this, hit me up on the Discord server
