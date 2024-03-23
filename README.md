@@ -1,5 +1,7 @@
 # Outer Wilds Mod Jam 3
 
+![image](https://github.com/xen-42/ow-mod-jam-3-base/assets/22628069/0e02d50e-1653-47eb-991c-85f4143d8d42)
+
 For the third mod jam (theme COMMUNITY) all mods will take place in the same star system.
 
 **This mod will be highly experimental during the jam as compatibility concerns are brought up!**
