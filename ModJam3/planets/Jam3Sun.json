@@ -30,6 +30,11 @@
     "size": 2000,
     "lifespan": 22,
     "solarLuminosity": 1,
+    "lightTint": {
+      "r": 255,
+      "g": 250,
+      "b": 240
+    },
     "curve": [
       {
         "time": 10,
@@ -49,6 +54,11 @@
       "r": 180,
       "g": 0,
       "b": 0
+    }
+  },
+  "ShipLog": {
+    "mapMode": {
+      "scale": 3
     }
   }
 }
