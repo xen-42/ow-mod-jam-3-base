@@ -50,5 +50,10 @@
       "g": 0,
       "b": 0
     }
+  },
+  "ShipLog": {
+    "mapMode": {
+      "scale": 3
+    }
   }
 }
