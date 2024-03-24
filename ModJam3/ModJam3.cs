@@ -3,6 +3,7 @@ using NewHorizons;
 using OWML.ModHelper;
 using System.Linq;
 using System.Reflection;
+using UnityEngine;
 
 namespace ModJam3;
 
@@ -51,11 +52,45 @@ public class ModJam3 : ModBehaviour
         ModHelper.Console.WriteLine($"Finished packing jam entry ship logs");
     }
 
+    public Material porcelain, silver, black;
+
     private void OnStarSystemLoaded(string name)
     {
         if (name == SystemName)
         {
-            // Do stuff potentially
+            porcelain = Resources.FindObjectsOfTypeAll<Material>().First(x => x.name.Contains("Structure_NOM_PorcelainClean_mat"));
+            silver = Resources.FindObjectsOfTypeAll<Material>().First(x => x.name.Contains("Structure_NOM_Silver_mat"));
+            black = Resources.FindObjectsOfTypeAll<Material>().First(x => x.name.Contains("Structure_NOM_SilverPorcelain_mat"));
+
+            // Replace materials on the starship community
+            foreach (var meshRenderer in _newHorizons.GetPlanet("Starship Community").GetComponentsInChildren<MeshRenderer>())
+            {
+                meshRenderer.materials = meshRenderer.materials.Select(GetReplacementMaterial).ToArray();
+            }
         }
+    }
+
+    private Material GetReplacementMaterial(Material material)
+    {
+        if (material.name.Contains("Structure_NOM_Whiteboard_mat") ||
+            material.name.Contains("Structure_NOM_SandStone_mat"))
+        {
+            return porcelain;
+        }
+        else if (material.name.Contains("Structure_NOM_PropTile_Color_mat"))
+        {
+            return black;
+        }
+        else if (material.name.Contains("Structure_NOM_CopperOld_mat") ||
+            material.name.Contains("Structure_NOM_TrimPattern_mat"))
+        {
+            return silver;
+        }
+        else if (material.name.Contains("Props_NOM_Scroll_mat"))
+        {
+            material.color = new Color(0.1f, 0.1f, 0.1f);
+        }
+
+        return material;
     }
 }
