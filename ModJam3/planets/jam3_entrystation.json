@@ -1,0 +1,68 @@
+{
+	"$schema": "https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/body_schema.json",
+	"name": "Starship Community",
+	"starSystem": "Jam3",
+
+	"Spawn": {
+		"playerSpawn": {
+			"startWithSuit": true,
+			"position": {
+				"x": 0,
+				"y": 0,
+				"z": 0
+			},
+			"rotation": {
+				"x": 90
+			}
+		},
+		"shipSpawn": {
+			"position": {"x": 1, "y": -40, "z": 5},
+			"rotation": {"x": 240, "y": 90, "z": 90 },
+			"alignRadial": false
+		}
+	},
+
+	"Base": {
+		"showMinimap": false,
+		"gravityFallOff": "linear",
+		"surfaceSize": 0,
+		"hasMapMarker": false,
+		"soiOverride": 0,
+		"surfaceGravity": 0
+	},
+
+	"Orbit": {
+		"staticPosition": {
+			"y": 10000.0
+		},
+		"isStatic": true,
+		"primaryBody": "Jam 3 Sun"
+	},
+
+	"Props": { 
+		"details": [
+			{
+				"assetBundle": "planets/jam3bundle",
+				"path": "Root_StarshipCommunity.prefab",
+				"rename": "Entry Station",
+				"position": {},
+				"rotation": {
+					"x": 90
+				},
+				"keepLoaded": true
+				
+			}
+		]
+	},
+
+	"ReferenceFrame": {
+		"hideInMap": true,
+		"maxTargetDistance": 7000.0,
+		"targetColliderRadius": 700.0
+	},
+	"ShipLog": {
+		"mapMode": {
+			"revealedSprite": "planets/shiplog/starship_community.png"
+		}
+	}
+}

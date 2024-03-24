@@ -3,5 +3,9 @@
 	"canEnterViaWarpDrive": true,
   "startHere": true,
   "loopDuration": 22,
-  "enableTimeLoop": true
+  "enableTimeLoop": true,
+  "initialReveal": [
+    "STARSHIP_COMMUNITY_EXPLORE_FACT",
+    "JAM3_EXPLORE_FACT"
+  ]
 }

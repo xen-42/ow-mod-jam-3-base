@@ -1,0 +1,18 @@
+﻿<AstroObjectEntry xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/shiplog_schema.xsd">
+  <ID>STARSHIPCOMMUNITY</ID>
+
+  <Entry>
+    <ID>STARSHIP_COMMUNITY_ENTRY</ID>
+    <Name>Starship Community</Name>
+    <Curiosity>JAM3_CURIOSITY</Curiosity>
+    <IgnoreMoreToExplore/>
+
+    <ExploreFact>
+      <ID>STARSHIP_COMMUNITY_EXPLORE_FACT</ID>
+      <Text>Streetlights Behind the Trees provided us with this lovely spawn point for the community mod jam.</Text>
+    </ExploreFact>
+
+  </Entry>
+
+</AstroObjectEntry>
