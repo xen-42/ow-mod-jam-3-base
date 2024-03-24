@@ -61,8 +61,10 @@
 		"targetColliderRadius": 700.0
 	},
 	"ShipLog": {
-		"mapMode": {
-			"revealedSprite": "planets/shiplog/starship_community.png"
-		}
+    "mapMode": {
+      "revealedSprite": "planets/shiplog/starship_community.png"
+    },
+    "xmlFile": "planets/shiplog/StarshipCommunity.xml",
+    "spriteFolder": "planets/shiplog/sprites"
 	}
 }

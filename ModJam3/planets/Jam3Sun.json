@@ -59,6 +59,8 @@
   "ShipLog": {
     "mapMode": {
       "scale": 3
-    }
+    },
+    "xmlFile": "planets/shiplog/Jam3Sun.xml",
+    "spriteFolder": "planets/shiplog/sprites"
   }
 }

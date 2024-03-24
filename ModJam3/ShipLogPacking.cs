@@ -35,7 +35,7 @@ internal static class ShipLogPacking
 
                 // Add a slight margin
                 // Ship log cards are kinda big and the rects dont account for their actual sizes
-                var margin = 100;
+                var margin = 150;
                 var xMax = xPositions.Max() + margin;
                 var xMin = xPositions.Min() - margin;
                 var yMax = yPositions.Max() + margin;

@@ -8,6 +8,13 @@
     <Curiosity>JAM3_CURIOSITY</Curiosity>
     <IgnoreMoreToExplore/>
 
+    <RumorFact>
+      <ID>STARSHIP_COMMUNITY_RUMOR_FACT</ID>
+      <RumorName>Starship Community</RumorName>
+      <SourceID>JAM3_ROOT</SourceID>
+      <Text>I awoke in a space station high above a blue star.</Text>
+    </RumorFact>
+
     <ExploreFact>
       <ID>STARSHIP_COMMUNITY_EXPLORE_FACT</ID>
       <Text>Streetlights Behind the Trees provided us with this lovely spawn point for the community mod jam.</Text>

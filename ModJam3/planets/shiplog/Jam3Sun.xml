@@ -11,7 +11,12 @@
 
     <ExploreFact>
       <ID>JAM3_EXPLORE_FACT</ID>
-      <Text>Welcome to the 3rd Outer Wilds mod jam! All entries will exist here, in this one solar system. This time, the theme was COMMUNITY.</Text>
+      <Text>Welcome to the 3rd Outer Wilds mod jam! All entries will exist here, in this one solar system.</Text>
+    </ExploreFact>
+
+    <ExploreFact>
+      <ID>JAM3_EXPLORE_FACT_2</ID>
+      <Text>This time, the theme was COMMUNITY.</Text>
     </ExploreFact>
 
   </Entry>
