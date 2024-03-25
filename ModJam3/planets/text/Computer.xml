@@ -1,29 +1,29 @@
 <NomaiObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/text_schema.xsd">
-	<TextBlock>
-		<ID>1</ID>
-		<Text>
-            Welcome to the 3rd Outer Wilds mod jam.
-        </Text>
-	</TextBlock>
-	<TextBlock>
-		<ID>2</ID>
-		<ParentID>1</ParentID>
-		<Text>
-            Participants had 11 days to create a story-mod centered around a single planet.
-        </Text>
-	</TextBlock>
-	<TextBlock>
-		<ID>3</ID>
-		<ParentID>2</ParentID>
-		<Text>
-            All previous mod jams have a required theme. This time the theme was community!
-        </Text>
-	</TextBlock>
-	<TextBlock>
-		<ID>4</ID>
-		<ParentID>3</ParentID>
-		<Text>
-            In the spirit of the theme, all mod entries were required to take place in the same solar system, which you are now in!
-		</Text>
-	</TextBlock>
+  <TextBlock>
+    <ID>1</ID>
+    <Text>
+      Welcome to the 3rd Outer Wilds mod jam.
+    </Text>
+  </TextBlock>
+  <TextBlock>
+    <ID>2</ID>
+    <ParentID>1</ParentID>
+    <Text>
+      Participants had 11 days to create a story-mod centered around a single planet.
+    </Text>
+  </TextBlock>
+  <TextBlock>
+    <ID>3</ID>
+    <ParentID>2</ParentID>
+    <Text>
+      All previous mod jams have a required theme. This time the theme was community!
+    </Text>
+  </TextBlock>
+  <TextBlock>
+    <ID>4</ID>
+    <ParentID>3</ParentID>
+    <Text>
+      In the spirit of the theme, all mod entries were required to take place in the same solar system, which you are now in!
+    </Text>
+  </TextBlock>
 </NomaiObject>

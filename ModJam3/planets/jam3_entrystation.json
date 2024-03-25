@@ -9,7 +9,7 @@
       "position": {
         "x": 0,
         "y": 0,
-        "z": 0
+        "z": -2.75
       },
       "rotation": {
         "x": 90
@@ -34,9 +34,9 @@
     "showMinimap": false,
     "gravityFallOff": "linear",
     "surfaceSize": 0,
-    "hasMapMarker": false,
     "soiOverride": 0,
-    "surfaceGravity": 0
+    "surfaceGravity": 0,
+    "hasMapMarker": true
   },
 
   "Orbit": {
@@ -50,7 +50,7 @@
   "Props": {
     "details": [
       {
-        "assetBundle": "planets/jam3bundle",
+        "assetBundle": "planets/assets/jam3bundle",
         "path": "Root_StarshipCommunity.prefab",
         "rename": "Entry Station",
         "position": {},
@@ -134,7 +134,33 @@
         "path": "QuantumIsland_Body/Sector_QuantumIsland/Sector_QuantumTowerInterior/Sector_QuantumTowerFinalRoom/Interactables_FinalRoom/FinalRoom_QProps/FinalRoom_Shelf/Q_Shelf/Prefab_NOM_Shelf",
         "position": {
           "x": 12,
+          "y": 22,
+          "z": -1
+        },
+        "rotation": {
+          "x": 300,
+          "y": 90,
+          "z": 90
+        }
+      },
+      {
+        "path": "QuantumIsland_Body/Sector_QuantumIsland/Sector_QuantumTowerInterior/Sector_QuantumTowerFinalRoom/Interactables_FinalRoom/FinalRoom_QProps/FinalRoom_Shelf/Q_Shelf/Prefab_NOM_Shelf",
+        "position": {
+          "x": 12,
           "y": -22,
+          "z": -1
+        },
+        "rotation": {
+          "x": 300,
+          "y": 270,
+          "z": 270
+        }
+      },
+      {
+        "path": "QuantumIsland_Body/Sector_QuantumIsland/Sector_QuantumTowerInterior/Sector_QuantumTowerFinalRoom/Interactables_FinalRoom/FinalRoom_QProps/FinalRoom_Shelf/Q_Shelf/Prefab_NOM_Shelf",
+        "position": {
+          "x": -12,
+          "y": 22,
           "z": -1
         },
         "rotation": {
@@ -497,6 +523,20 @@
           "y": 270,
           "z": 270
         }
+      },
+      {
+        "rename": "Note",
+        "path": "TimberHearth_Body/Sector_TH/Sector_Village/Sector_Observatory/Interactables_Observatory/Prefab_HEA_DeepFieldExhibit/DeepFieldNotes_1/plaque_paper_1 (1)",
+        "position": {
+          "x": -6.492548,
+          "y": -15.53195,
+          "z": 7.149746
+        },
+        "rotation": {
+          "x": 19.7076,
+          "y": 205.8015,
+          "z": 204.669
+        }
       }
     ],
     "translatorText": [
@@ -558,12 +598,43 @@
         },
         "xmlFile": "planets/text/Whiteboard3.xml",
         "seed": 13
+      },
+      {
+        "type": "preCrashRecorder",
+        "position": {
+          "x": -18,
+          "y": -11,
+          "z": -0.04
+        },
+        "rotation": {
+          "x": 350,
+          "y": 90,
+          "z": 90
+        },
+        "xmlFile": "planets/text/OrganizerRecording.xml"
+      }
+    ],
+    "dialogue": [
+      {
+        "pathToAnimController": "Sector/Nomai",
+        "lookAtRadius": 10,
+        "isRelativeToParent": true,
+        "position": {
+          "y": 1.6
+        },
+        "radius": 1.5,
+        "range": 4,
+        "xmlFile": "planets/text/Nomai.xml"
+      },
+      {
+        "parentPath": "Sector/Note",
+        "isRelativeToParent": true,
+        "xmlFile": "planets/text/Note.xml"
       }
     ]
   },
 
   "ReferenceFrame": {
-    "hideInMap": true,
     "maxTargetDistance": 7000.0,
     "targetColliderRadius": 700.0
   },
@@ -582,6 +653,11 @@
         "radius": 30,
         "track": "music",
         "volume": 0.1
+      }
+    ],
+    "zeroGravityVolumes": [
+      {
+        "radius": 150
       }
     ]
   }

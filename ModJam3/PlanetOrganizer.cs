@@ -27,8 +27,9 @@ internal static class PlanetOrganizer
             var foundSpawnFlag = false;
             foreach (var body in bodiesWithSpawns)
             {
-                // Only take the first one we find that isnt the sun
-                var keepSpawn = !body.Config.Base.centerOfSolarSystem && !foundSpawnFlag;
+                var isDefaultSpawn = body.Config.name == "Starship Community";
+                var isValidSpawn = (isDefaultSpawn && !ModJam3.Instance.AllowSpawnOverride) || (!isDefaultSpawn && ModJam3.Instance.AllowSpawnOverride);
+                var keepSpawn = isValidSpawn && !foundSpawnFlag;
                 if (keepSpawn)
                 {
                     foundSpawnFlag = true;

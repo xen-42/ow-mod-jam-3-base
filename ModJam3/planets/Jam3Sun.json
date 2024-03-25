@@ -8,23 +8,6 @@
     "surfaceGravity": 20,
     "centerOfSolarSystem": true
   },
-  "Spawn": {
-    "playerSpawn": {
-      "startWithSuit": true,
-      "position": {
-        "x": 0,
-        "y": 10000,
-        "z": 0
-      }
-    },
-    "shipSpawn": {
-      "position": {
-        "x": 0,
-        "y": 10000,
-        "z": 0
-      }
-    }
-  },
   "Star": {
     "stellarDeathType": "supernova",
     "size": 2000,

@@ -1,5 +1,6 @@
 ﻿using HarmonyLib;
 using NewHorizons;
+using OWML.Common;
 using OWML.ModHelper;
 using System.Linq;
 using System.Reflection;
@@ -13,6 +14,8 @@ public class ModJam3 : ModBehaviour
     private INewHorizons _newHorizons;
 
     public static ModJam3 Instance { get; private set; }
+
+    public bool AllowSpawnOverride { get; private set; }
 
     public void Start()
     {
@@ -30,6 +33,13 @@ public class ModJam3 : ModBehaviour
 
         // Wait til next frame so all dependants have run Start
         ModHelper.Events.Unity.FireOnNextUpdate(FixCompatIssues);
+    }
+
+    public override void Configure(IModConfig config)
+    {
+        base.Configure(config);
+
+        AllowSpawnOverride = config.GetSettingsValue<bool>("allowSpawnOverride");
     }
 
     public void FixCompatIssues()
