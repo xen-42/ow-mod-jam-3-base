@@ -1,5 +1,5 @@
 ﻿<DialogueTree xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/dialogue_schema.xsd">
-  <NameField>Tagetes</NameField>
+  <NameField>Ping</NameField>
 
   <DialogueNode>
     <Name>START</Name>
@@ -56,7 +56,7 @@
   <DialogueNode>
     <Name>Who</Name>
     <Dialogue>
-      <Page>My name is Tagetes. I am an explorer, much like yourself, I imagine.</Page>
+      <Page>My name is Ping. I am an explorer, much like yourself, I imagine.</Page>
       <Page>While I would love to explore this system myself, if I linger too long I will be late for my clan's next <![CDATA[<color="orange">]]>Festival<![CDATA[</color>]]>.</Page>
       <Page>Still, I have some time to observe this system for myself, at least from a distance.</Page>
     </Dialogue>
