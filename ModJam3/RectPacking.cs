@@ -19,7 +19,9 @@ internal static class RectPacking
         }
 
         // Sort by height, descending
-        rects = rects.OrderByDescending(rect => rect.height).ToArray();
+        // Keep indices to put them back later
+        var index = 0;
+        var orderedRects = rects.Select(x => (x, index++)).OrderByDescending(rect => rect.Item1.height).ToArray();
 
         var squareWidth = Mathf.Ceil(Mathf.Sqrt(area / 0.95f));
         var startWidth = Mathf.Max(squareWidth, maxWidth);
@@ -27,10 +29,12 @@ internal static class RectPacking
         DebugLog($"Square width {squareWidth}, max width: {maxWidth}");
 
         var spaces = new List<Rect>() { new Rect(0, 0, startWidth, float.MaxValue) };
-        var packed = new List<Rect>();
+        var packed = new Rect[rects.Length];
 
-        foreach (var rect in rects)
+        foreach (var orderedRect in orderedRects)
         {
+            var rect = orderedRect.Item1;
+            var rectIndex = orderedRect.Item2;
             for (int i = spaces.Count() - 1; i >= 0; i--)
             {
                 var space = spaces[i];
@@ -43,7 +47,7 @@ internal static class RectPacking
 
                 // Add the rect to this space
                 var packedRect = new Rect(space.x, space.y, rect.width, rect.height);
-                packed.Add(packedRect);
+                packed[rectIndex] = packedRect;
 
                 // It fit perfectly
                 if (rect.width == space.width && rect.height == space.height)

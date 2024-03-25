@@ -16,8 +16,12 @@ internal static class ShipLogPacking
 		var jamShipLogEntries = new Dictionary<IModBehaviour, ShipLogModule.EntryPositionInfo[]>();
 		var jamShipLogRects = new List<(IModBehaviour, Rect)>();
 
-		// Collect all ship log entries from each mod
-		foreach (var jamEntry in jamEntries)
+        // Add a slight margin
+        // Ship log cards are kinda big and the rects dont account for their actual sizes
+        var margin = 150;
+
+        // Collect all ship log entries from each mod
+        foreach (var jamEntry in jamEntries)
 		{
             try
             {
@@ -33,9 +37,6 @@ internal static class ShipLogPacking
                 var xPositions = starSystem.entryPositions.Select(x => x.position.x);
                 var yPositions = starSystem.entryPositions.Select(x => x.position.y);
 
-                // Add a slight margin
-                // Ship log cards are kinda big and the rects dont account for their actual sizes
-                var margin = 150;
                 var xMax = xPositions.Max() + margin;
                 var xMin = xPositions.Min() - margin;
                 var yMax = yPositions.Max() + margin;
@@ -66,7 +67,7 @@ internal static class ShipLogPacking
 			// We adjust the positions of all ship log entires to be in the new packed rectangles
 			var (mod, originalRect) = jamShipLogRects[i];
 			var packedRect = packedRectPositions[i];
-			var offset = packedRect.position - originalRect.position;
+            var offset = packedRect.position - originalRect.position;
 
 			foreach (var shipLogEntry in jamShipLogEntries[mod])
 			{
