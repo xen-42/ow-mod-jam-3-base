@@ -1,4 +1,12 @@
 {
   "$schema": "https://raw.githubusercontent.com/ow-mods/owml/master/schemas/config_schema.json",
-  "enabled": true
+  "enabled": true,
+  "settings": {
+    "allowSpawnOverride": {
+      "type": "toggle",
+      "title": "Allow Spawn Override",
+      "tooltip": "Let jam entries change the spawn point.",
+      "value": false
+    }
+  }
 }

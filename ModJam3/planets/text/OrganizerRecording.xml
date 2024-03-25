@@ -1,0 +1,11 @@
+﻿<NomaiObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/text_schema.xsd">
+  <TextBlock>
+    <ID>1</ID>
+    <Text>The 3rd Outer Wilds mod jam was organized by xen, Raicuparta, _nebula, JohnCorby, and Idiot.</Text>
+  </TextBlock>
+  <TextBlock>
+    <ID>2</ID>
+    <ParentID>1</ParentID>
+    <Text>Thank you to GameWyrm, Raicuparta, Hawkbar, Book, Locochoco, JohnCorby, xen, and Idiot for donating to the prize pool!</Text>
+  </TextBlock>
+</NomaiObject>

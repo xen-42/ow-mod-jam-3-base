@@ -3,5 +3,44 @@
 	"canEnterViaWarpDrive": true,
   "startHere": true,
   "loopDuration": 22,
-  "enableTimeLoop": true
+  "enableTimeLoop": true,
+  "initialReveal": [
+    "STARSHIP_COMMUNITY_EXPLORE_FACT",
+    "STARSHIP_COMMUNITY_RUMOR_FACT",
+    "JAM3_EXPLORE_FACT",
+    "JAM3_EXPLORE_FACT_2"
+  ],
+  "curiosities": [
+    {
+      "id": "JAM3_CURIOSITY",
+      "color": {
+        "r": 120,
+        "g": 150,
+        "b": 250,
+        "a": 255
+      },
+      "highlightColor": {
+        "r": 150,
+        "g": 180,
+        "b": 250,
+        "a": 255
+      }
+    }
+  ],
+  "entryPositions": [
+    {
+      "id": "JAM3_ROOT",
+      "position": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "id": "STARSHIP_COMMUNITY_ENTRY",
+      "position": {
+        "x": 250,
+        "y": 0
+      }
+    }
+  ]
 }

@@ -1,0 +1,664 @@
+{
+  "$schema": "https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/body_schema.json",
+  "name": "Starship Community",
+  "starSystem": "Jam3",
+
+  "Spawn": {
+    "playerSpawn": {
+      "startWithSuit": true,
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": -2.75
+      },
+      "rotation": {
+        "x": 90
+      }
+    },
+    "shipSpawn": {
+      "position": {
+        "x": 1,
+        "y": -40,
+        "z": 5
+      },
+      "rotation": {
+        "x": 240,
+        "y": 90,
+        "z": 90
+      },
+      "alignRadial": false
+    }
+  },
+
+  "Base": {
+    "showMinimap": false,
+    "gravityFallOff": "linear",
+    "surfaceSize": 0,
+    "soiOverride": 0,
+    "surfaceGravity": 0,
+    "hasMapMarker": true
+  },
+
+  "Orbit": {
+    "staticPosition": {
+      "y": 10000.0
+    },
+    "isStatic": true,
+    "primaryBody": "Jam 3 Sun"
+  },
+
+  "Props": {
+    "details": [
+      {
+        "assetBundle": "planets/assets/jam3bundle",
+        "path": "Root_StarshipCommunity.prefab",
+        "rename": "Entry Station",
+        "position": {},
+        "rotation": {
+          "x": 90
+        },
+        "keepLoaded": true
+
+      },
+      {
+        "rename": "Treepot_1",
+        "path": "DB_VesselDimension_Body/Sector_VesselDimension/Props_VesselDimension/Prefab_NOM_NomaiTree_VarDRY_3/GEO_Treepot_3",
+        "position": {
+          "x": -7.4,
+          "y": -7.4,
+          "z": -1.1
+        },
+        "rotation": {
+          "x": 45,
+          "y": 270,
+          "z": 270
+        }
+      },
+      {
+        "path": "WhiteholeStation_Body/Sector_WhiteholeStation/Props_WhiteHoleStation/Prefab_NOM_NomaiTree_Var_2/GEO_NomaiTree_2_Trunk",
+        "parentPath": "Sector/Treepot_1",
+        "isRelativeToParent": true
+      },
+      {
+        "rename": "Treepot_2",
+        "path": "DB_VesselDimension_Body/Sector_VesselDimension/Props_VesselDimension/Prefab_NOM_NomaiTree_VarDRY_3/GEO_Treepot_3",
+        "position": {
+          "x": -7.4,
+          "y": 7.4,
+          "z": -1.1
+        },
+        "rotation": {
+          "x": 315,
+          "y": 270,
+          "z": 270
+        }
+      },
+      {
+        "path": "WhiteholeStation_Body/Sector_WhiteholeStation/Props_WhiteHoleStation/Prefab_NOM_NomaiTree_Var_2/GEO_NomaiTree_2_Trunk",
+        "parentPath": "Sector/Treepot_2",
+        "isRelativeToParent": true
+      },
+      {
+        "rename": "Treepot_3",
+        "path": "DB_VesselDimension_Body/Sector_VesselDimension/Props_VesselDimension/Prefab_NOM_NomaiTree_VarDRY_3/GEO_Treepot_3",
+        "position": {
+          "x": 7.4,
+          "y": 7.4,
+          "z": -1.1
+        },
+        "rotation": {
+          "x": 315,
+          "y": 90,
+          "z": 90
+        }
+      },
+      {
+        "path": "WhiteholeStation_Body/Sector_WhiteholeStation/Props_WhiteHoleStation/Prefab_NOM_NomaiTree_Var_2/GEO_NomaiTree_2_Trunk",
+        "parentPath": "Sector/Treepot_3",
+        "isRelativeToParent": true
+      },
+      {
+        "path": "QuantumIsland_Body/Sector_QuantumIsland/Sector_QuantumTowerInterior/Sector_QuantumTowerFinalRoom/Interactables_FinalRoom/FinalRoom_QProps/FinalRoom_Shelf/Q_Shelf/Prefab_NOM_Shelf",
+        "position": {
+          "x": -12,
+          "y": -22,
+          "z": -1
+        },
+        "rotation": {
+          "x": 300,
+          "y": 90,
+          "z": 90
+        }
+      },
+      {
+        "path": "QuantumIsland_Body/Sector_QuantumIsland/Sector_QuantumTowerInterior/Sector_QuantumTowerFinalRoom/Interactables_FinalRoom/FinalRoom_QProps/FinalRoom_Shelf/Q_Shelf/Prefab_NOM_Shelf",
+        "position": {
+          "x": 12,
+          "y": 22,
+          "z": -1
+        },
+        "rotation": {
+          "x": 300,
+          "y": 90,
+          "z": 90
+        }
+      },
+      {
+        "path": "QuantumIsland_Body/Sector_QuantumIsland/Sector_QuantumTowerInterior/Sector_QuantumTowerFinalRoom/Interactables_FinalRoom/FinalRoom_QProps/FinalRoom_Shelf/Q_Shelf/Prefab_NOM_Shelf",
+        "position": {
+          "x": 12,
+          "y": -22,
+          "z": -1
+        },
+        "rotation": {
+          "x": 300,
+          "y": 270,
+          "z": 270
+        }
+      },
+      {
+        "path": "QuantumIsland_Body/Sector_QuantumIsland/Sector_QuantumTowerInterior/Sector_QuantumTowerFinalRoom/Interactables_FinalRoom/FinalRoom_QProps/FinalRoom_Shelf/Q_Shelf/Prefab_NOM_Shelf",
+        "position": {
+          "x": -12,
+          "y": 22,
+          "z": -1
+        },
+        "rotation": {
+          "x": 300,
+          "y": 270,
+          "z": 270
+        }
+      },
+      {
+        "path": "BrittleHollow_Body/Sector_BH/Sector_NorthHemisphere/Sector_NorthPole/Sector_HangingCity/Sector_HangingCity_BlackHoleForge/BlackHoleForgePivot/Props_BlackHoleForge/Prefab_NOM_SimpleChair_NoSkeleton (1)",
+        "position": {
+          "x": -5,
+          "y": -9,
+          "z": -1.1
+        },
+        "rotation": {
+          "x": 60,
+          "y": 270,
+          "z": 270
+        }
+      },
+      {
+        "path": "BrittleHollow_Body/Sector_BH/Sector_NorthHemisphere/Sector_NorthPole/Sector_HangingCity/Sector_HangingCity_BlackHoleForge/BlackHoleForgePivot/Props_BlackHoleForge/Prefab_NOM_SimpleChair_NoSkeleton (1)",
+        "position": {
+          "x": -9,
+          "y": -5,
+          "z": -1.1
+        },
+        "rotation": {
+          "x": 20,
+          "y": 270,
+          "z": 270
+        }
+      },
+      {
+        "path": "BrittleHollow_Body/Sector_BH/Sector_NorthHemisphere/Sector_NorthPole/Sector_HangingCity/Sector_HangingCity_BlackHoleForge/BlackHoleForgePivot/Props_BlackHoleForge/Prefab_NOM_SimpleChair_NoSkeleton (1)",
+        "position": {
+          "x": -9,
+          "y": 5,
+          "z": -1.1
+        },
+        "rotation": {
+          "x": 330,
+          "y": 270,
+          "z": 270
+        }
+      },
+      {
+        "path": "BrittleHollow_Body/Sector_BH/Sector_NorthHemisphere/Sector_NorthPole/Sector_HangingCity/Sector_HangingCity_BlackHoleForge/BlackHoleForgePivot/Props_BlackHoleForge/Prefab_NOM_SimpleChair_NoSkeleton (1)",
+        "position": {
+          "x": -5,
+          "y": 9,
+          "z": -1.1
+        },
+        "rotation": {
+          "x": 300,
+          "y": 270,
+          "z": 270
+        }
+      },
+      {
+        "path": "BrittleHollow_Body/Sector_BH/Sector_NorthHemisphere/Sector_NorthPole/Sector_HangingCity/Sector_HangingCity_BlackHoleForge/BlackHoleForgePivot/Props_BlackHoleForge/Prefab_NOM_SimpleChair_NoSkeleton (1)",
+        "position": {
+          "x": 5,
+          "y": 9,
+          "z": -1.1
+        },
+        "rotation": {
+          "x": 300,
+          "y": 90,
+          "z": 90
+        }
+      },
+      {
+        "path": "BrittleHollow_Body/Sector_BH/Sector_NorthHemisphere/Sector_NorthPole/Sector_HangingCity/Sector_HangingCity_BlackHoleForge/BlackHoleForgePivot/Props_BlackHoleForge/Props_NOM_Table",
+        "position": {
+          "x": -18,
+          "y": -12,
+          "z": -1.1
+        },
+        "rotation": {
+          "x": 300,
+          "y": 270,
+          "z": 270
+        }
+      },
+      {
+        "path": "StatueIsland_Body/Sector_StatueIsland/Interactables_StatueIsland/ControlledByProxy_StatueIsland/Props_NOM_DockingTractorBeam (1)",
+        "rename": "Props_NOM_DockingTractorBeam",
+        "position": {
+          "x": 0,
+          "y": -40,
+          "z": 0
+        },
+        "rotation": {
+          "x": 0,
+          "y": 270,
+          "z": 270
+        },
+        "removeChildren": [
+          "Props_NOM_LargeTractorBeam_Geo"
+        ],
+        "scale": 0.8,
+        "keepLoaded": true
+      },
+      {
+        "path": "BrittleHollow_Body/Sector_BH/Sector_NorthHemisphere/Sector_NorthPole/Sector_HangingCity/Sector_HangingCity_BlackHoleForge/BlackHoleForgePivot/Props_BlackHoleForge/Prefab_NOM_SimpleChair_NoSkeleton (1)",
+        "position": {
+          "x": 9,
+          "y": -9,
+          "z": 6
+        },
+        "rotation": {
+          "x": 45,
+          "y": 90,
+          "z": 90
+        }
+      },
+      {
+        "path": "BrittleHollow_Body/Sector_BH/Sector_NorthHemisphere/Sector_NorthPole/Sector_HangingCity/Sector_HangingCity_BlackHoleForge/BlackHoleForgePivot/Props_BlackHoleForge/Prefab_NOM_SimpleChair_NoSkeleton (1)",
+        "position": {
+          "x": -9,
+          "y": -9,
+          "z": 6
+        },
+        "rotation": {
+          "x": 45,
+          "y": 270,
+          "z": 270
+        }
+      },
+      {
+        "path": "BrittleHollow_Body/Sector_BH/Sector_NorthHemisphere/Sector_NorthPole/Sector_HangingCity/Sector_HangingCity_BlackHoleForge/BlackHoleForgePivot/Props_BlackHoleForge/Prefab_NOM_SimpleChair_NoSkeleton (1)",
+        "position": {
+          "x": -9,
+          "y": 9,
+          "z": 6
+        },
+        "rotation": {
+          "x": 315,
+          "y": 270,
+          "z": 270
+        }
+      },
+      {
+        "path": "BrittleHollow_Body/Sector_BH/Sector_NorthHemisphere/Sector_NorthPole/Sector_HangingCity/Sector_HangingCity_BlackHoleForge/BlackHoleForgePivot/Props_BlackHoleForge/Prefab_NOM_SimpleChair_NoSkeleton (1)",
+        "position": {
+          "x": 9,
+          "y": 9,
+          "z": 6
+        },
+        "rotation": {
+          "x": 315,
+          "y": 90,
+          "z": 90
+        }
+      },
+      {
+        "path": "",
+        "position": {
+          "x": -23.95,
+          "y": 9.91,
+          "z": 2
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 65
+        },
+        "rename": "Lamp_Pivot_1"
+      },
+      {
+        "path": "DB_VesselDimension_Body/Sector_VesselDimension/Sector_VesselBridge/Interactibles_VesselBridge/UNSORTED/Wall Lamps/Prefab_NOM_Lamp_Glow_Vessel_Wall",
+        "parentPath": "Sector/Lamp_Pivot_1",
+        "isRelativeToParent": true,
+        "rotation": {
+          "x": 90,
+          "y": 0,
+          "z": 0
+        }
+      },
+      {
+        "path": "",
+        "position": {
+          "x": -9.91,
+          "y": 23.95,
+          "z": 2
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 205
+        },
+        "rename": "Lamp_Pivot_2"
+      },
+      {
+        "path": "DB_VesselDimension_Body/Sector_VesselDimension/Sector_VesselBridge/Interactibles_VesselBridge/UNSORTED/Wall Lamps/Prefab_NOM_Lamp_Glow_Vessel_Wall",
+        "parentPath": "Sector/Lamp_Pivot_2",
+        "isRelativeToParent": true,
+        "rotation": {
+          "x": 90,
+          "y": 0,
+          "z": 0
+        }
+      },
+      {
+        "path": "",
+        "position": {
+          "x": 23.95,
+          "y": 9.91,
+          "z": 2
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 115
+        },
+        "rename": "Lamp_Pivot_3"
+      },
+      {
+        "path": "DB_VesselDimension_Body/Sector_VesselDimension/Sector_VesselBridge/Interactibles_VesselBridge/UNSORTED/Wall Lamps/Prefab_NOM_Lamp_Glow_Vessel_Wall",
+        "parentPath": "Sector/Lamp_Pivot_3",
+        "isRelativeToParent": true,
+        "rotation": {
+          "x": 90,
+          "y": 0,
+          "z": 0
+        }
+      },
+      {
+        "path": "",
+        "position": {
+          "x": 23.95,
+          "y": -9.91,
+          "z": 2
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 65
+        },
+        "rename": "Lamp_Pivot_4"
+      },
+      {
+        "path": "DB_VesselDimension_Body/Sector_VesselDimension/Sector_VesselBridge/Interactibles_VesselBridge/UNSORTED/Wall Lamps/Prefab_NOM_Lamp_Glow_Vessel_Wall",
+        "parentPath": "Sector/Lamp_Pivot_4",
+        "isRelativeToParent": true,
+        "rotation": {
+          "x": 90,
+          "y": 0,
+          "z": 0
+        }
+      },
+      {
+        "path": "",
+        "position": {
+          "x": -23.95,
+          "y": -9.91,
+          "z": 2
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 115
+        },
+        "rename": "Lamp_Pivot_5"
+      },
+      {
+        "path": "DB_VesselDimension_Body/Sector_VesselDimension/Sector_VesselBridge/Interactibles_VesselBridge/UNSORTED/Wall Lamps/Prefab_NOM_Lamp_Glow_Vessel_Wall",
+        "parentPath": "Sector/Lamp_Pivot_5",
+        "isRelativeToParent": true,
+        "rotation": {
+          "x": 90,
+          "y": 0,
+          "z": 0
+        }
+      },
+      {
+        "path": "",
+        "position": {
+          "x": 9.91,
+          "y": -23.95,
+          "z": 2
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 205
+        },
+        "rename": "Lamp_Pivot_6"
+      },
+      {
+        "path": "DB_VesselDimension_Body/Sector_VesselDimension/Sector_VesselBridge/Interactibles_VesselBridge/UNSORTED/Wall Lamps/Prefab_NOM_Lamp_Glow_Vessel_Wall",
+        "parentPath": "Sector/Lamp_Pivot_6",
+        "isRelativeToParent": true,
+        "rotation": {
+          "x": 90,
+          "y": 0,
+          "z": 0
+        }
+      },
+      {
+        "path": "",
+        "position": {
+          "x": 9.91,
+          "y": 23.95,
+          "z": 2
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 155
+        },
+        "rename": "Lamp_Pivot_7"
+      },
+      {
+        "path": "DB_VesselDimension_Body/Sector_VesselDimension/Sector_VesselBridge/Interactibles_VesselBridge/UNSORTED/Wall Lamps/Prefab_NOM_Lamp_Glow_Vessel_Wall",
+        "parentPath": "Sector/Lamp_Pivot_7",
+        "isRelativeToParent": true,
+        "rotation": {
+          "x": 90,
+          "y": 0,
+          "z": 0
+        }
+      },
+      {
+        "path": "",
+        "position": {
+          "x": -9.91,
+          "y": -23.95,
+          "z": 2
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 155
+        },
+        "rename": "Lamp_Pivot_8"
+      },
+      {
+        "path": "DB_VesselDimension_Body/Sector_VesselDimension/Sector_VesselBridge/Interactibles_VesselBridge/UNSORTED/Wall Lamps/Prefab_NOM_Lamp_Glow_Vessel_Wall",
+        "parentPath": "Sector/Lamp_Pivot_8",
+        "isRelativeToParent": true,
+        "rotation": {
+          "x": 90,
+          "y": 0,
+          "z": 0
+        }
+      },
+      {
+        "rename": "Nomai",
+        "path": "QuantumMoon_Body/Sector_QuantumMoon/State_EYE/Interactables_EYEState/ConversationPivot/Character_NOM_Solanum/Nomai_ANIM_SkyWatching_Idle",
+        "position": {
+          "x": 5.810219,
+          "y": -22.26209,
+          "z": -1.100004
+        },
+        "rotation": {
+          "x": 306.199,
+          "y": 270,
+          "z": 270
+        }
+      },
+      {
+        "rename": "Note",
+        "path": "TimberHearth_Body/Sector_TH/Sector_Village/Sector_Observatory/Interactables_Observatory/Prefab_HEA_DeepFieldExhibit/DeepFieldNotes_1/plaque_paper_1 (1)",
+        "position": {
+          "x": -6.492548,
+          "y": -15.53195,
+          "z": 7.149746
+        },
+        "rotation": {
+          "x": 19.7076,
+          "y": 205.8015,
+          "z": 204.669
+        }
+      }
+    ],
+    "translatorText": [
+      {
+        "type": "preCrashComputer",
+        "position": {
+          "x": 0,
+          "y": 0,
+          "z": 5.7
+        },
+        "rotation": {
+          "x": 90,
+          "y": 270,
+          "z": 270
+        },
+        "xmlFile": "planets/text/Computer.xml"
+      },
+      {
+        "type": "whiteboard",
+        "position": {
+          "x": -25,
+          "y": 0,
+          "z": -1
+        },
+        "rotation": {
+          "x": 0,
+          "y": 90,
+          "z": 90
+        },
+        "xmlFile": "planets/text/Whiteboard1.xml",
+        "seed": 11
+      },
+      {
+        "type": "whiteboard",
+        "position": {
+          "x": 0,
+          "y": 25,
+          "z": -1
+        },
+        "rotation": {
+          "x": 90,
+          "y": 270,
+          "z": 270
+        },
+        "xmlFile": "planets/text/Whiteboard2.xml",
+        "seed": 12
+      },
+      {
+        "type": "whiteboard",
+        "position": {
+          "x": 25,
+          "y": 0,
+          "z": -1
+        },
+        "rotation": {
+          "x": 0,
+          "y": 270,
+          "z": 270
+        },
+        "xmlFile": "planets/text/Whiteboard3.xml",
+        "seed": 13
+      },
+      {
+        "type": "preCrashRecorder",
+        "position": {
+          "x": -18,
+          "y": -11,
+          "z": -0.04
+        },
+        "rotation": {
+          "x": 350,
+          "y": 90,
+          "z": 90
+        },
+        "xmlFile": "planets/text/OrganizerRecording.xml"
+      }
+    ],
+    "dialogue": [
+      {
+        "pathToAnimController": "Sector/Nomai",
+        "lookAtRadius": 10,
+        "isRelativeToParent": true,
+        "position": {
+          "y": 1.6
+        },
+        "radius": 1.5,
+        "range": 4,
+        "xmlFile": "planets/text/Nomai.xml"
+      },
+      {
+        "parentPath": "Sector/Note",
+        "isRelativeToParent": true,
+        "xmlFile": "planets/text/Note.xml"
+      }
+    ]
+  },
+
+  "ReferenceFrame": {
+    "maxTargetDistance": 7000.0,
+    "targetColliderRadius": 700.0
+  },
+  "ShipLog": {
+    "mapMode": {
+      "revealedSprite": "planets/shiplog/starship_community.png"
+    },
+    "xmlFile": "planets/shiplog/StarshipCommunity.xml",
+    "spriteFolder": "planets/shiplog/sprites"
+  },
+
+  "Volumes": {
+    "audioVolumes": [
+      {
+        "audio": "OW_TravelerTheme_piano",
+        "radius": 30,
+        "track": "music",
+        "volume": 0.1
+      }
+    ],
+    "zeroGravityVolumes": [
+      {
+        "radius": 150
+      }
+    ]
+  }
+}

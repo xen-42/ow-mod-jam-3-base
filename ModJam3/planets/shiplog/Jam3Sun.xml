@@ -1,0 +1,24 @@
+﻿<AstroObjectEntry xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/shiplog_schema.xsd">
+  <ID>JAM3SUN</ID>
+
+  <Entry>
+    <ID>JAM3_ROOT</ID>
+    <Name>Outer Wilds Mod Jam 3</Name>
+    <Curiosity>JAM3_CURIOSITY</Curiosity>
+    <IsCuriosity/>
+    <IgnoreMoreToExplore/>
+
+    <ExploreFact>
+      <ID>JAM3_EXPLORE_FACT</ID>
+      <Text>Welcome to the 3rd Outer Wilds mod jam! All entries will exist here, in this one solar system.</Text>
+    </ExploreFact>
+
+    <ExploreFact>
+      <ID>JAM3_EXPLORE_FACT_2</ID>
+      <Text>This time, the theme was COMMUNITY.</Text>
+    </ExploreFact>
+
+  </Entry>
+
+</AstroObjectEntry>

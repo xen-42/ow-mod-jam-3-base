@@ -1,0 +1,73 @@
+﻿<DialogueTree xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/dialogue_schema.xsd">
+  <NameField>Tagetes</NameField>
+
+  <DialogueNode>
+    <Name>START</Name>
+    <EntryCondition>DEFAULT</EntryCondition>
+    <Dialogue>
+      <Page>Greetings visitor!</Page>
+    </Dialogue>
+    <SetCondition>SpokeToStarshipCommunityNomai</SetCondition>
+    <DialogueTarget>Menu</DialogueTarget>
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>START_2</Name>
+    <EntryCondition>SpokeToStarshipCommunityNomai</EntryCondition>
+    <Dialogue>
+      <Page>Hello again visitor!</Page>
+    </Dialogue>
+    <SetCondition>SpokeToStarshipCommunityNomai</SetCondition>
+    <DialogueTarget>Menu</DialogueTarget>
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>Menu</Name>
+    <Dialogue>
+      <Page>What is on your mind, traveler?</Page>
+    </Dialogue>
+
+    <DialogueOptionsList>
+      <DialogueOption>
+        <Text>What is this place?</Text>
+        <DialogueTarget>What</DialogueTarget>
+      </DialogueOption>
+      <DialogueOption>
+        <Text>Who are you?</Text>
+        <DialogueTarget>Who</DialogueTarget>
+      </DialogueOption>
+      <DialogueOption>
+        <Text>Goodbye.</Text>
+        <DialogueTarget>Goodbye</DialogueTarget>
+      </DialogueOption>
+    </DialogueOptionsList>
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>What</Name>
+    <Dialogue>
+      <Page>This is the <![CDATA[<color="orange">]]>Starship Community<![CDATA[</color>]]>. It is a small vessel of which I am captain.</Page>
+      <Page>We're stopped in quite a bizarre system, with a myriad of strange worlds.</Page>
+      <Page>Throughout my ship you can find some observations I have made about this system. Feel free to peruse them at your leisure.</Page>
+    </Dialogue>
+    <DialogueTarget>Menu</DialogueTarget>
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>Who</Name>
+    <Dialogue>
+      <Page>My name is Tagetes. I am an explorer, much like yourself, I imagine.</Page>
+      <Page>While I would love to explore this system myself, if I linger too long I will be late for my clan's next <![CDATA[<color="orange">]]>Festival<![CDATA[</color>]]>.</Page>
+      <Page>Still, I have some time to observe this system for myself, at least from a distance.</Page>
+    </Dialogue>
+    <DialogueTarget>Menu</DialogueTarget>
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>Goodbye</Name>
+    <Dialogue>
+      <Page>Farewell visitor! Safe travels to you.</Page>
+    </Dialogue>
+  </DialogueNode>
+
+</DialogueTree>

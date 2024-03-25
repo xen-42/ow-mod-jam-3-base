@@ -8,23 +8,6 @@
     "surfaceGravity": 20,
     "centerOfSolarSystem": true
   },
-  "Spawn": {
-    "playerSpawn": {
-      "startWithSuit": true,
-      "position": {
-        "x": 0,
-        "y": 10000,
-        "z": 0
-      }
-    },
-    "shipSpawn": {
-      "position": {
-        "x": 0,
-        "y": 10000,
-        "z": 0
-      }
-    }
-  },
   "Star": {
     "stellarDeathType": "supernova",
     "size": 2000,
@@ -59,6 +42,8 @@
   "ShipLog": {
     "mapMode": {
       "scale": 3
-    }
+    },
+    "xmlFile": "planets/shiplog/Jam3Sun.xml",
+    "spriteFolder": "planets/shiplog/sprites"
   }
 }
