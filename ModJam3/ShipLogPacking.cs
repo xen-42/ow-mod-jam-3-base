@@ -11,10 +11,10 @@ namespace ModJam3;
 
 internal static class ShipLogPacking
 {
-	public static void Apply(IModBehaviour[] jamEntries)
-	{
-		var jamShipLogEntries = new Dictionary<IModBehaviour, ShipLogModule.EntryPositionInfo[]>();
-		var jamShipLogRects = new List<(IModBehaviour, Rect)>();
+    public static void Apply(IModBehaviour[] jamEntries)
+    {
+        var jamShipLogEntries = new Dictionary<IModBehaviour, ShipLogModule.EntryPositionInfo[]>();
+        var jamShipLogRects = new List<(IModBehaviour, Rect)>();
 
         // Add a slight margin
         // Ship log cards are kinda big and the rects dont account for their actual sizes
@@ -22,7 +22,7 @@ internal static class ShipLogPacking
 
         // Collect all ship log entries from each mod
         foreach (var jamEntry in jamEntries)
-		{
+        {
             try
             {
                 var starSystem = jamEntry.ModHelper.Storage.Load<StarSystemConfig>(Path.Combine("systems", $"{ModJam3.SystemName}.json"));
@@ -45,36 +45,36 @@ internal static class ShipLogPacking
                 jamShipLogRects.Add((jamEntry, new Rect(xMin, yMin, xMax - xMin, yMax - yMin)));
             }
             catch { }
-		}
+        }
 
-		// Some mods might not have ship logs
-		var numValidMods = jamShipLogEntries.Keys.Count;
+        // Some mods might not have ship logs
+        var numValidMods = jamShipLogEntries.Keys.Count;
 
-		// Might not have to do anything at all
-		if (numValidMods <= 1)
-		{
-			return;
-		}
+        // Might not have to do anything at all
+        if (numValidMods <= 1)
+        {
+            return;
+        }
 
-		// Need to alter the values NH is actually using
-		var finalEntryPositions = Main.SystemDict[ModJam3.SystemName].Config.entryPositions;
-		var finalEntryLookup = finalEntryPositions.ToDictionary(x => x.id, x => x);
+        // Need to alter the values NH is actually using
+        var finalEntryPositions = Main.SystemDict[ModJam3.SystemName].Config.entryPositions;
+        var finalEntryLookup = finalEntryPositions.ToDictionary(x => x.id, x => x);
 
-		// Each rect holds all of an addons ship log entires, optimally packed
-		var packedRectPositions = RectPacking.Apply(jamShipLogRects.Select(x => x.Item2).ToArray());
-		for (int i = 0; i < numValidMods; i++)
-		{
-			// We adjust the positions of all ship log entires to be in the new packed rectangles
-			var (mod, originalRect) = jamShipLogRects[i];
-			var packedRect = packedRectPositions[i];
+        // Each rect holds all of an addons ship log entires, optimally packed
+        var packedRectPositions = RectPacking.Apply(jamShipLogRects.Select(x => x.Item2).ToArray());
+        for (int i = 0; i < numValidMods; i++)
+        {
+            // We adjust the positions of all ship log entires to be in the new packed rectangles
+            var (mod, originalRect) = jamShipLogRects[i];
+            var packedRect = packedRectPositions[i];
             var offset = packedRect.position - originalRect.position;
 
-			foreach (var shipLogEntry in jamShipLogEntries[mod])
-			{
-				var shipLogID = shipLogEntry.id;
-				var finalShipLogEntry = finalEntryLookup[shipLogID];
-				finalShipLogEntry.position += offset;
-			}
-		}
-	}
+            foreach (var shipLogEntry in jamShipLogEntries[mod])
+            {
+                var shipLogID = shipLogEntry.id;
+                var finalShipLogEntry = finalEntryLookup[shipLogID];
+                finalShipLogEntry.position += offset;
+            }
+        }
+    }
 }
