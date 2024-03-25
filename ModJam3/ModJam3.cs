@@ -26,6 +26,8 @@ public class ModJam3 : ModBehaviour
 
         _newHorizons.GetStarSystemLoadedEvent().AddListener(OnStarSystemLoaded);
 
+        nomaiSuit = ModHelper.Assets.GetTexture("planets/assets/Character_NOM_Nomai_v2_d 1.png");
+
         // Wait til next frame so all dependants have run Start
         ModHelper.Events.Unity.FireOnNextUpdate(FixCompatIssues);
     }
@@ -53,6 +55,7 @@ public class ModJam3 : ModBehaviour
     }
 
     public Material porcelain, silver, black;
+    public Texture2D nomaiSuit;
 
     private void OnStarSystemLoaded(string name)
     {
@@ -63,9 +66,9 @@ public class ModJam3 : ModBehaviour
             black = Resources.FindObjectsOfTypeAll<Material>().First(x => x.name.Contains("Structure_NOM_SilverPorcelain_mat"));
 
             // Replace materials on the starship community
-            foreach (var meshRenderer in _newHorizons.GetPlanet("Starship Community").GetComponentsInChildren<MeshRenderer>())
+            foreach (var renderer in _newHorizons.GetPlanet("Starship Community").GetComponentsInChildren<Renderer>())
             {
-                meshRenderer.materials = meshRenderer.materials.Select(GetReplacementMaterial).ToArray();
+                renderer.materials = renderer.materials.Select(GetReplacementMaterial).ToArray();
             }
         }
     }
@@ -73,22 +76,34 @@ public class ModJam3 : ModBehaviour
     private Material GetReplacementMaterial(Material material)
     {
         if (material.name.Contains("Structure_NOM_Whiteboard_mat") ||
-            material.name.Contains("Structure_NOM_SandStone_mat"))
+            material.name.Contains("Structure_NOM_SandStone_mat") ||
+            material.name.Contains("Structure_NOM_SandStone_Dark_mat")
+            )
         {
             return porcelain;
         }
-        else if (material.name.Contains("Structure_NOM_PropTile_Color_mat"))
+        else if (material.name.Contains("Structure_NOM_PropTile_Color_mat") ||
+            material.name.Contains("Structure_NOM_SandStone_Darker_mat")
+            )
         {
             return black;
         }
         else if (material.name.Contains("Structure_NOM_CopperOld_mat") ||
-            material.name.Contains("Structure_NOM_TrimPattern_mat"))
+            material.name.Contains("Structure_NOM_TrimPattern_mat") ||
+            material.name.Contains("Structure_NOM_CopperOld_Dark_mat")
+            )
         {
             return silver;
         }
-        else if (material.name.Contains("Props_NOM_Scroll_mat"))
+        else if (material.name.Contains("Props_NOM_Scroll_mat") ||
+            material.name.Contains("Props_NOM_Mask_Trim_mat")
+            )
         {
-            material.color = new Color(0.1f, 0.1f, 0.1f);
+            material.color = new Color(0.05f, 0.05f, 0.05f);
+        }
+        else if (material.name.Contains("Character_NOM_Nomai_v2_mat"))
+        {
+            material.mainTexture = nomaiSuit;
         }
 
         return material;
