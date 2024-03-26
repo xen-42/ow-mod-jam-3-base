@@ -118,6 +118,63 @@
         "isRelativeToParent": true
       },
       {
+        "rename": "Treepot_4",
+        "path": "DB_VesselDimension_Body/Sector_VesselDimension/Props_VesselDimension/Prefab_NOM_NomaiTree_VarDRY_3/GEO_Treepot_3",
+        "position": {
+          "x": 22.6,
+          "y": -5,
+          "z": -1.1
+        },
+        "rotation": {
+          "x": 325,
+          "y": 270,
+          "z": 270
+        }
+      },
+      {
+        "path": "WhiteholeStation_Body/Sector_WhiteholeStation/Props_WhiteHoleStation/Prefab_NOM_NomaiTree_Var_2/GEO_NomaiTree_2_Trunk",
+        "parentPath": "Sector/Treepot_4",
+        "isRelativeToParent": true
+      },
+      {
+        "rename": "Treepot_5",
+        "path": "DB_VesselDimension_Body/Sector_VesselDimension/Props_VesselDimension/Prefab_NOM_NomaiTree_VarDRY_3/GEO_Treepot_3",
+        "position": {
+          "x": 22.6,
+          "y": 5,
+          "z": -1.1
+        },
+        "rotation": {
+          "x": 45,
+          "y": 270,
+          "z": 270
+        }
+      },
+      {
+        "path": "WhiteholeStation_Body/Sector_WhiteholeStation/Props_WhiteHoleStation/Prefab_NOM_NomaiTree_Var_2/GEO_NomaiTree_1_Trunk",
+        "parentPath": "Sector/Treepot_5",
+        "isRelativeToParent": true
+      },
+      {
+        "rename": "Treepot_6",
+        "path": "DB_VesselDimension_Body/Sector_VesselDimension/Props_VesselDimension/Prefab_NOM_NomaiTree_VarDRY_3/GEO_Treepot_3",
+        "position": {
+          "x": 5,
+          "y": 22.6,
+          "z": -1.1
+        },
+        "rotation": {
+          "x": 45,
+          "y": 270,
+          "z": 270
+        }
+      },
+      {
+        "path": "WhiteholeStation_Body/Sector_WhiteholeStation/Props_WhiteHoleStation/Prefab_NOM_NomaiTree_Var_2/GEO_NomaiTree_1_Trunk",
+        "parentPath": "Sector/Treepot_6",
+        "isRelativeToParent": true
+      },
+      {
         "path": "QuantumIsland_Body/Sector_QuantumIsland/Sector_QuantumTowerInterior/Sector_QuantumTowerFinalRoom/Interactables_FinalRoom/FinalRoom_QProps/FinalRoom_Shelf/Q_Shelf/Prefab_NOM_Shelf",
         "position": {
           "x": -12,

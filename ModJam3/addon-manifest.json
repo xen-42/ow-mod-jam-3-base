@@ -1,3 +1,8 @@
 {
-    "$schema": "https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/addon_manifest_schema.json"
+  "$schema": "https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/addon_manifest_schema.json",
+  "credits": [
+    "Organizers#xen\n#Raicuparta\n#_nebula\n#JohnCorby\n#Idiot",
+    "Starship Community model#Streetlights Behind the Trees",
+    "Pre-crash Nomai suit texture#hearth1an"
+  ]
 }
