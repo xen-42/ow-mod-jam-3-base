@@ -1,5 +1,4 @@
 ﻿using NewHorizons.External;
-using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
@@ -10,8 +9,8 @@ namespace ModJam3;
 
 internal static class PlanetOrganizer
 {
-    public const float STARTING_ORBIT = 5000f;
-    public const float ORBIT_SPACING = 1500f;
+    public const float STARTING_ORBIT = 5500f;
+    public const float ORBIT_SPACING = 2500f;
 
     public const float STATIC_BODY_RADIUS = 7000f;
 
@@ -93,7 +92,8 @@ internal static class PlanetOrganizer
     {
         ModJam3.Instance.ModHelper.Console.WriteLine($"Handling {regularPlanets.Count()} regular planets");
 
-        var lastSemiMajorAxis = STARTING_ORBIT;
+        // So it actually starts at the starting orbit since it always adds the spacing
+        var lastSemiMajorAxis = STARTING_ORBIT - ORBIT_SPACING;
 
         // Handle order
         var orderedPlanets = regularPlanets.OrderBy(GetOrder);
@@ -113,8 +113,12 @@ internal static class PlanetOrganizer
                 orbit.eccentricity = 0;
                 orbit.inclination = Mathf.Clamp(orbit.inclination, -33f, 33f);
 
-                var semiMajorAxis = lastSemiMajorAxis + ORBIT_SPACING + planetSOI;
+                var semiMajorAxis = lastSemiMajorAxis + ORBIT_SPACING + planetSOI * 2f;
                 orbit.semiMajorAxis = semiMajorAxis;
+
+                // If they didn't set the true anomaly, randomize it
+                orbit.trueAnomaly = orbit.trueAnomaly == 0f ? UnityEngine.Random.Range(0f, 360f) : orbit.trueAnomaly;
+
                 // Add our SOI to the spacing after us
                 lastSemiMajorAxis = semiMajorAxis + planetSOI;
             }
