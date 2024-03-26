@@ -22,7 +22,7 @@
         "z": 5
       },
       "rotation": {
-        "x": 240,
+        "x": 110,
         "y": 90,
         "z": 90
       },
@@ -566,7 +566,7 @@
           "y": 90,
           "z": 90
         },
-        "xmlFile": "planets/text/Whiteboard1.xml",
+        "xmlFile": "planets/text/Whiteboard3.xml",
         "seed": 11
       },
       {
@@ -596,7 +596,7 @@
           "y": 270,
           "z": 270
         },
-        "xmlFile": "planets/text/Whiteboard3.xml",
+        "xmlFile": "planets/text/Whiteboard1.xml",
         "seed": 13
       },
       {
