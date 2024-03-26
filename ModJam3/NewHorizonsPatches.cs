@@ -1,12 +1,20 @@
 ﻿using HarmonyLib;
+using NewHorizons.Handlers;
 using NewHorizons.Utility.DebugTools;
 
 namespace ModJam3;
 
-[HarmonyPatch(typeof(DebugReload))]
+[HarmonyPatch]
 internal class NewHorizonsPatches
 {
     [HarmonyPostfix]
-    [HarmonyPatch("ReloadConfigs")]
+    [HarmonyPatch(typeof(DebugReload), "ReloadConfigs")]
     public static void DebugReload_ReloadConfigs() => ModJam3.Instance.FixCompatIssues();
+
+    /// <summary>
+    /// Don't let any one entry steal the spotlight
+    /// </summary>
+    [HarmonyPrefix]
+    [HarmonyPatch(typeof(TitleSceneHandler), "DisplayBodyOnTitleScreen")]
+    public static bool DebugReload_DisplayBodyOnTitleScreen() => false;
 }
