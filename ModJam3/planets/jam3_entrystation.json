@@ -94,7 +94,7 @@
         }
       },
       {
-        "path": "WhiteholeStation_Body/Sector_WhiteholeStation/Props_WhiteHoleStation/Prefab_NOM_NomaiTree_Var_2/GEO_NomaiTree_2_Trunk",
+        "path": "WhiteholeStation_Body/Sector_WhiteholeStation/Props_WhiteHoleStation/Prefab_NOM_NomaiTree_Var_2/GEO_NomaiTree_1_Trunk",
         "parentPath": "Sector/Treepot_2",
         "isRelativeToParent": true
       },
@@ -536,6 +536,66 @@
           "x": 19.7076,
           "y": 205.8015,
           "z": 204.669
+        }
+      },
+      {
+        "path": "CaveTwin_Body/Sector_CaveTwin/Sector_SouthHemisphere/Sector_EscapePod/Interactables_EscapePod/EscapePod_VisibleFrom_Far/DistressBeaconTransmitter/Props_NOM_Transponder/Upper_Housing",
+        "position": {
+          "x": 16,
+          "y": -16,
+          "z": -1
+        },
+        "rotation": {
+          "x": 311,
+          "y": 270,
+          "z": 270
+        },
+        "removeChildren": [ "light_ball", "orb_cage" ],
+        "rename": "NomaiFirepit"
+      },
+      {
+        "path": "TimberHearth_Body/Sector_TH/Sector_Village/Interactables_Village/LaunchTower/Effects_HEA_Campfire",
+        "isRelativeToParent": true,
+        "parentPath": "Sector/NomaiFirepit",
+        "removeChildren": [ "Props_HEA_Campfire/Campfire_Rocks", "Effects/Effects_HEA_SmokeColumn" ]
+      },
+      {
+        "path": "BrittleHollow_Body/Sector_BH/Sector_NorthHemisphere/Sector_NorthPole/Sector_HangingCity/Sector_HangingCity_BlackHoleForge/BlackHoleForgePivot/Props_BlackHoleForge/Prefab_NOM_SimpleChair_NoSkeleton (1)",
+        "position": {
+          "x": 17.5,
+          "y": -14.5,
+          "z": -1.1
+        },
+        "rotation": {
+          "x": 20,
+          "y": 270,
+          "z": 270
+        }
+      },
+      {
+        "path": "BrittleHollow_Body/Sector_BH/Sector_NorthHemisphere/Sector_NorthPole/Sector_HangingCity/Sector_HangingCity_BlackHoleForge/BlackHoleForgePivot/Props_BlackHoleForge/Prefab_NOM_SimpleChair_NoSkeleton (1)",
+        "position": {
+          "x": 14.5,
+          "y": -17.5,
+          "z": -1.1
+        },
+        "rotation": {
+          "x": 300,
+          "y": 90,
+          "z": 90
+        }
+      },
+      {
+        "path": "BrittleHollow_Body/Sector_BH/Sector_NorthHemisphere/Sector_NorthPole/Sector_HangingCity/Sector_HangingCity_BlackHoleForge/BlackHoleForgePivot/Props_BlackHoleForge/Prefab_NOM_Staff",
+        "position": {
+          "x": 12.69909,
+          "y": -21.47394,
+          "z": -1.000004
+        },
+        "rotation": {
+          "x": 296.6208,
+          "y": 85.8949,
+          "z": 90
         }
       }
     ],
