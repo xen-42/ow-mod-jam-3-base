@@ -5,7 +5,7 @@
     "allowSpawnOverride": {
       "type": "toggle",
       "title": "Allow Spawn Override",
-      "tooltip": "Let jam entries change the spawn point.",
+      "tooltip": "Let jam entries change the spawn point. You have to restart or reload configs for changing this to take effect.",
       "value": false
     }
   }
