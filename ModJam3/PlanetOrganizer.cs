@@ -10,7 +10,7 @@ namespace ModJam3;
 internal static class PlanetOrganizer
 {
     public const float STARTING_ORBIT = 5500f;
-    public const float ORBIT_SPACING = 2500f;
+    public const float ORBIT_SPACING = 1750f;
 
     public const float STATIC_BODY_RADIUS = 7000f;
 
