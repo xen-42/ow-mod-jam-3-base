@@ -35,6 +35,8 @@ public class ModJam3 : ModBehaviour
         emberEmission = ModHelper.Assets.GetTexture("planets/assets/Props_HEA_CampfireEmbers_e.png");
         ash = ModHelper.Assets.GetTexture("planets/assets/Props_HEA_CampfireAsh_e.png");
 
+        MeditationConditionHandler.Setup();
+
         // Wait til next frame so all dependants have run Start
         ModHelper.Events.Unity.FireOnNextUpdate(FixCompatIssues);
     }

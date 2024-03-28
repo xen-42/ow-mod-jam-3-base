@@ -37,6 +37,11 @@
         <DialogueTarget>Who</DialogueTarget>
       </DialogueOption>
       <DialogueOption>
+        <CancelledPersistentCondition>KNOWS_MEDITATION</CancelledPersistentCondition>
+        <Text>Hey, do you know how to meditate?</Text>
+        <DialogueTarget>TeachMeditation</DialogueTarget>
+      </DialogueOption>
+      <DialogueOption>
         <Text>Goodbye.</Text>
         <DialogueTarget>Goodbye</DialogueTarget>
       </DialogueOption>
@@ -68,6 +73,32 @@
     <Dialogue>
       <Page>Farewell visitor! Safe travels to you.</Page>
     </Dialogue>
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>TeachMeditation</Name>
+    <Dialogue>
+      <Page>Yes, I do! Here, let me teach you.</Page>
+    </Dialogue>
+
+    <DialogueOptionsList>
+      <DialogueOption>
+        <Text>Okay, let's do this.</Text>
+        <DialogueTarget>StartMeditation</DialogueTarget>
+      </DialogueOption>
+      <DialogueOption>
+        <Text>Wait, nevermind.</Text>
+        <DialogueTarget>Menu</DialogueTarget>
+      </DialogueOption>
+    </DialogueOptionsList>
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>StartMeditation</Name>
+    <Dialogue>
+      <Page>Okay traveler, breathe in, and breathe out...</Page>
+    </Dialogue>
+    <SetCondition>PingStartMeditation</SetCondition>
   </DialogueNode>
 
 </DialogueTree>
