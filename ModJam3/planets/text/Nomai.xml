@@ -35,6 +35,10 @@
       <DialogueOption>
         <Text>Who are you?</Text>
         <DialogueTarget>Who</DialogueTarget>
+      </DialogueOption>         
+      <DialogueOption>
+        <Text>I found something!</Text>
+        <DialogueTarget>FoundSomethingMenu</DialogueTarget>
       </DialogueOption>
       <DialogueOption>
         <CancelledPersistentCondition>KNOWS_MEDITATION</CancelledPersistentCondition>
@@ -52,7 +56,7 @@
     <Name>What</Name>
     <Dialogue>
       <Page>This is the <![CDATA[<color="orange">]]>Starship Community<![CDATA[</color>]]>. It is a small vessel of which I am captain.</Page>
-      <Page>We're stopped in quite a bizarre system, with a myriad of strange worlds.</Page>
+      <Page>We are stopped in quite a bizarre system, with a myriad of strange worlds.</Page>
       <Page>Throughout my ship you can find some observations I have made about this system. Feel free to peruse them at your leisure.</Page>
     </Dialogue>
     <DialogueTarget>Menu</DialogueTarget>
@@ -99,6 +103,76 @@
       <Page>Okay traveler, breathe in, and breathe out...</Page>
     </Dialogue>
     <SetCondition>PingStartMeditation</SetCondition>
+  </DialogueNode>
+  
+  <!-- Dialogue below is specific to each jam mod installed -->
+  
+  <DialogueNode>
+    <Name>FoundSomethingMenu</Name>
+    <Dialogue>
+      <Page>Share your discoveries with me traveler, perhaps I will be able to present them at my clan's Festival.</Page>
+    </Dialogue>
+
+    <DialogueOptionsList>
+      <!-- Callis's Thesis -->
+      <DialogueOption>
+        <RequiredLogCondition>CALLISTHESIS_SHIPLOG_THESIS_DOWNLOADED</RequiredLogCondition>
+        <Text>I found a Nomai Festival taking place on an egg-shaped planet.</Text>
+        <DialogueTarget>CallisThesisMod</DialogueTarget>
+      </DialogueOption>          
+      
+      <!-- Jam Hub -->
+      <DialogueOption>
+        <RequiredLogCondition>PARTY_EXISTENCE_FACT_CCL</RequiredLogCondition>
+        <Text>I found a party held by the Outer Wilds modding community.</Text>
+        <DialogueTarget>JamHubMod</DialogueTarget>
+      </DialogueOption>         
+      
+      <!-- Echo Hike -->
+      <DialogueOption>
+        <RequiredLogCondition>EH_PHOSPHORS_X3</RequiredLogCondition>
+        <Text>I reached the core of an icy planet with beautiful rings.</Text>
+        <DialogueTarget>EchoHikeMod</DialogueTarget>
+      </DialogueOption>
+      
+      <DialogueOption>
+        <Text>Nevermind.</Text>
+        <DialogueTarget>Menu</DialogueTarget>
+      </DialogueOption>
+    </DialogueOptionsList>
+
+  </DialogueNode>
+
+  <!-- Callis Thesis -->
+  <DialogueNode>
+    <Name>CallisThesisMod</Name>
+    <Dialogue>
+      <Page>To think I had not realized there were other Nomai in this system!</Page>
+      <Page>I will have to go visit them later, there is much we could learn from each other.</Page>
+      <Page>You are saying a young Nomai named Callis is giving their first thesis presentation? I hope it goes well.</Page>
+      <Page>I remember when I first presented a thesis during a Festival. A rewarding experience, but one that racks the nervous system indeed.</Page>
+    </Dialogue>
+    <DialogueTarget>FoundSomethingMenu</DialogueTarget>
+  </DialogueNode>     
+  
+  <!-- Jam Hub -->
+  <DialogueNode>
+    <Name>JamHubMod</Name>
+    <Dialogue>
+      <Page>I beg your pardon? Modders? I have never heard of this species before in my travels, nor am I familiar with this "Ernesto" you speak of.</Page>
+      <Page>It sounds to me as if they are having a Festival of their own! A celebration of the works they have created. How interesting!</Page>
+    </Dialogue>
+    <DialogueTarget>FoundSomethingMenu</DialogueTarget>
+  </DialogueNode>   
+  
+  <!-- Echo Hike -->
+  <DialogueNode>
+    <Name>EchoHikeMod</Name>
+    <Dialogue>
+      <Page>Wow, what a find! Advanced gravitational technology AND the discovery of a new species? The xenobiologist and physicist in me are delighted to hear this.</Page>
+      <Page>Were you able to communicate with these phosphors? I would love to ask them more about this Threader technology, and why those beacons were so important to them.</Page>
+    </Dialogue>
+    <DialogueTarget>FoundSomethingMenu</DialogueTarget>
   </DialogueNode>
 
 </DialogueTree>
