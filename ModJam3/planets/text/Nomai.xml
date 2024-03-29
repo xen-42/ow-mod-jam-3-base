@@ -131,8 +131,15 @@
       <!-- Echo Hike -->
       <DialogueOption>
         <RequiredLogCondition>EH_PHOSPHORS_X3</RequiredLogCondition>
-        <Text>I reached the core of an icy planet with beautiful rings.</Text>
+        <Text>I reached the center of an icy planet with beautiful rings.</Text>
         <DialogueTarget>EchoHikeMod</DialogueTarget>
+      </DialogueOption>          
+      
+      <!-- Magistarium -->
+      <DialogueOption>
+        <RequiredLogCondition>HN2_Device3</RequiredLogCondition>
+        <Text>I used the Magister's Device to ascend to the Outer Planes.</Text>
+        <DialogueTarget>MagistariumMod</DialogueTarget>
       </DialogueOption>
       
       <DialogueOption>
@@ -171,6 +178,19 @@
     <Dialogue>
       <Page>Wow, what a find! Advanced gravitational technology AND the discovery of a new species? The xenobiologist and physicist in me are delighted to hear this.</Page>
       <Page>Were you able to communicate with these phosphors? I would love to ask them more about this Threader technology, and why those beacons were so important to them.</Page>
+    </Dialogue>
+    <DialogueTarget>FoundSomethingMenu</DialogueTarget>
+  </DialogueNode>     
+  
+  <!-- Magistarium -->
+  <DialogueNode>
+    <Name>MagistariumMod</Name>
+    <Dialogue>
+      <Page>I am sorry I must have misheard you, you what?</Page>
+      <Page>Are you abruptly applying force to my fastening constraint?</Page>
+      <Page>So this "Magister" was searching for their creators, but instead found a new family to ascend from the universe with? That is quite nice for them, if not hard to believe.</Page>
+      <Page>The Magister mentioned "a cow, a rock, a nebula, and a Canadian" eh? Individuals defying entropy to extend a positive experience? Sounds like a bunch of meta-commentary to me.</Page>
+      <Page>Uh, not that I would know about any of that, of course.</Page>
     </Dialogue>
     <DialogueTarget>FoundSomethingMenu</DialogueTarget>
   </DialogueNode>
