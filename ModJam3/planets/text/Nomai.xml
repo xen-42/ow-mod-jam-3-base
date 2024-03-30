@@ -140,6 +140,20 @@
         <RequiredLogCondition>HN2_Device3</RequiredLogCondition>
         <Text>I used the Magister's Device to ascend to the Outer Planes.</Text>
         <DialogueTarget>MagistariumMod</DialogueTarget>
+      </DialogueOption>            
+      
+      <!-- Solar Rangers -->
+      <DialogueOption>
+        <RequiredLogCondition>RANGER_EGGSTAR_VICTORY</RequiredLogCondition>
+        <Text>I destroyed the Egg Star battlestation and stopped an invasion!</Text>
+        <DialogueTarget>SolarRangersMod</DialogueTarget>
+      </DialogueOption>           
+      
+      <!-- Axiom -->
+      <DialogueOption>
+        <RequiredLogCondition>AXIOM_ESCAPE_POD_X2</RequiredLogCondition>
+        <Text>I found a village founded by the escapees of a destroyed solar system.</Text>
+        <DialogueTarget>AxiomMod</DialogueTarget>
       </DialogueOption>
       
       <DialogueOption>
@@ -191,6 +205,32 @@
       <Page>So this "Magister" was searching for their creators, but instead found a new family to ascend from the universe with? That is quite nice for them, if not hard to believe.</Page>
       <Page>The Magister mentioned "a cow, a rock, a nebula, and a Canadian" eh? Individuals defying entropy to extend a positive experience? Sounds like a bunch of meta-commentary to me.</Page>
       <Page>Uh, not that I would know about any of that, of course.</Page>
+    </Dialogue>
+    <DialogueTarget>FoundSomethingMenu</DialogueTarget>
+  </DialogueNode>       
+  
+  <!-- Solar Rangers -->
+  <DialogueNode>
+    <Name>SolarRangersMod</Name>
+    <Dialogue>
+      <Page>What do you mean you destroyed it, I can still see it now. It is the large red one, right?</Page>
+      <Page>You say it "happened last loop"? I am not quite following you there. Is this some expression my clan is not familiar with?</Page>
+      <Page>Regardless, I am quite impressed your ship held up in an interplanetary dogfight, even with the addition of advanced armaments.</Page>
+      <Page>Perhaps these Solar Rangers you mentioned could teach my clan about their laser and pyrotechnic technologies.</Page>
+      <Page>For peaceful purposes, of course.</Page>
+    </Dialogue>
+    <DialogueTarget>FoundSomethingMenu</DialogueTarget>
+  </DialogueNode>    
+  
+  <!-- Axiom -->
+  <DialogueNode>
+    <Name>AxiomMod</Name>
+    <Dialogue>
+      <Page>So the history of these villagers mirrors the history of your own, right down to the same names of the planets in their solar system, diverging with them escaping their exploding star using an escape pod.</Page>
+      <Page>You say a three-eyed species previously inhabited their solar system, and a clan of my own species also previously inhabited your solar system?</Page>
+      <Page>These similarities are much too specific to be mere coincidence. Hypothesis: These villagers come from an alternate universe which predates our own!</Page>
+      <Page>I propose we call their universe, the "Alpha" universe.</Page>
+      <Page>And ours? The "2019 official release" universe.</Page>
     </Dialogue>
     <DialogueTarget>FoundSomethingMenu</DialogueTarget>
   </DialogueNode>
