@@ -148,12 +148,19 @@
         <Text>I destroyed the Egg Star battlestation and stopped an invasion!</Text>
         <DialogueTarget>SolarRangersMod</DialogueTarget>
       </DialogueOption>           
-      
+
       <!-- Axiom -->
       <DialogueOption>
         <RequiredLogCondition>AXIOM_ESCAPE_POD_X2</RequiredLogCondition>
-        <Text>I found a village founded by the escapees of a destroyed solar system.</Text>
+        <Text>I discovered a village founded by the escapees of a destroyed solar system.</Text>
         <DialogueTarget>AxiomMod</DialogueTarget>
+      </DialogueOption>
+
+      <!-- Reflections -->
+      <DialogueOption>
+        <RequiredLogCondition>TeamErnesto_10</RequiredLogCondition>
+        <Text>I found a projection pool which transported me to an artificial reality.</Text>
+        <DialogueTarget>ReflectionsMod</DialogueTarget>
       </DialogueOption>
       
       <DialogueOption>
@@ -203,7 +210,7 @@
       <Page>I am sorry I must have misheard you, you what?</Page>
       <Page>Are you abruptly applying force to my fastening constraint?</Page>
       <Page>So this "Magister" was searching for their creators, but instead found a new family to ascend from the universe with? That is quite nice for them, if not hard to believe.</Page>
-      <Page>The Magister mentioned "a cow, a rock, a nebula, and a Canadian" eh? Individuals defying entropy to extend a positive experience? Sounds like a bunch of meta-commentary to me.</Page>
+      <Page>The Magister started talking about "medleys of planets" and an "incursion" of sorts? Individuals defying entropy to extend a positive experience? Sounds like a bunch of meta-commentary to me.</Page>
       <Page>Uh, not that I would know about any of that, of course.</Page>
     </Dialogue>
     <DialogueTarget>FoundSomethingMenu</DialogueTarget>
@@ -231,6 +238,19 @@
       <Page>These similarities are much too specific to be mere coincidence. Hypothesis: These villagers come from an alternate universe which predates our own!</Page>
       <Page>I propose we call their universe, the "Alpha" universe.</Page>
       <Page>And ours? The "2019 official release" universe.</Page>
+    </Dialogue>
+    <DialogueTarget>FoundSomethingMenu</DialogueTarget>
+  </DialogueNode>
+
+  <!-- Reflections -->
+  <DialogueNode>
+    <Name>ReflectionsMod</Name>
+    <Dialogue>
+      <Page>So, a group of Nomai devised a way to <![CDATA[<Color=orange>]]>load<![CDATA[</Color>]]> their minds into a constructed reality, to live there even after the heat-death of the universe?</Page>
+      <Page>I can understand their motiviation to begin such an undertaking. I can also understand the reasoning that ultimately led them to abandon the project.</Page>
+      <Page>To live a life without exploration, without discovery, would for a Nomai be a fate worse than death. I hope they eventually found the different solution they were looking for.</Page>
+      <Page>"Fear of failure is a poor reason not to try", inspiring words from this Primm you spoke of. I will do well to remember them.</Page>
+      <Page>Reminds me of something my third cousin twice removed once said. I wonder what Poke is up to these days.</Page>
     </Dialogue>
     <DialogueTarget>FoundSomethingMenu</DialogueTarget>
   </DialogueNode>
