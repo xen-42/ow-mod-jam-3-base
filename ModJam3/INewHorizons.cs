@@ -74,5 +74,16 @@ namespace ModJam3
         /// Returns the uniqueIDs of each installed NH addon.
         /// </summary>
         string[] GetInstalledAddons();
+
+        /// <summary>
+        /// Allows you to spawn a copy of a prop by specifying its path.
+        /// This is the same as using Props->details in a config, but also returns the spawned gameObject to you.
+        /// </summary>
+        GameObject SpawnObject(IModBehaviour mod, GameObject planet, Sector sector, string propToCopyPath, Vector3 position, Vector3 eulerAngles,
+            float scale, bool alignWithNormal);
+
+        (CharacterDialogueTree, RemoteDialogueTrigger) SpawnDialogue(IModBehaviour mod, GameObject root, string xmlFile, float radius = 1f,
+            float range = 1f, string blockAfterPersistentCondition = null, float lookAtRadius = 1f, string pathToAnimController = null,
+            float remoteTriggerRadius = 0f);
     }
 }

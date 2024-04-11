@@ -29,6 +29,9 @@ internal static class PingConditionHandler
             var logRevealed = (PlayerData.GetShipLogFactSave(pair.shipLog)?.revealOrder ?? -1) > -1;
             DialogueConditionManager.SharedInstance.SetConditionState(pair.condition, logRevealed);
         }
+
+        var spokeToNomai = "SpokeToStarshipCommunityNomaiEver";
+        DialogueConditionManager.SharedInstance.SetConditionState(spokeToNomai, PlayerData.GetPersistentCondition(spokeToNomai));
     }
 
     private static void OnExitConversation()

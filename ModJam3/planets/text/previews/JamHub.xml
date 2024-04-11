@@ -5,8 +5,8 @@
     <Name>START</Name>
     <EntryCondition>DEFAULT</EntryCondition>
     <Dialogue>
-      <Page>Thank you Streetlights Behind the Trees for making this space station model for the community jam!</Page>
-      <Page>Also thanks hearth1an for the texture used for the Nomai downstairs.</Page>
+      <Page>A temperate world, with obvious signs of inhabitation.</Page>
+      <Page>Many beings have gathered here, for what purpose is unknown to me at this time.</Page>
     </Dialogue>
     <SetPersistentCondition>HasReadNoteInStarship</SetPersistentCondition>
   </DialogueNode>

@@ -5,8 +5,9 @@
     <Name>START</Name>
     <EntryCondition>DEFAULT</EntryCondition>
     <Dialogue>
-      <Page>Thank you Streetlights Behind the Trees for making this space station model for the community jam!</Page>
-      <Page>Also thanks hearth1an for the texture used for the Nomai downstairs.</Page>
+      <Page>A giant, ominous looking space ship orbits the sun. It possesses a considerable arsenal.</Page>
+      <Page>Hypothesis: I should stay far away from this place.</Page>
+      <Page>Author's note: That was not a proper hypothesis, but an attempt at humour in the face of danger.</Page>
     </Dialogue>
     <SetPersistentCondition>HasReadNoteInStarship</SetPersistentCondition>
   </DialogueNode>

@@ -5,8 +5,8 @@
     <Name>START</Name>
     <EntryCondition>DEFAULT</EntryCondition>
     <Dialogue>
-      <Page>Thank you Streetlights Behind the Trees for making this space station model for the community jam!</Page>
-      <Page>Also thanks hearth1an for the texture used for the Nomai downstairs.</Page>
+      <Page>A spherical body levitates above the sun, opposite my station.</Page>
+      <Page>An entrance hatch is left open, but my scans are unable to penetrate the interior.</Page>
     </Dialogue>
     <SetPersistentCondition>HasReadNoteInStarship</SetPersistentCondition>
   </DialogueNode>

@@ -5,8 +5,8 @@
     <Name>START</Name>
     <EntryCondition>DEFAULT</EntryCondition>
     <Dialogue>
-      <Page>Thank you Streetlights Behind the Trees for making this space station model for the community jam!</Page>
-      <Page>Also thanks hearth1an for the texture used for the Nomai downstairs.</Page>
+      <Page>This body is not in hydrostatic equilibrium, and has a prolate shape.</Page>
+      <Page>Gravitational scans indicate the world has a low density - Hypothesis: This planet has deep cave systems.</Page>
     </Dialogue>
     <SetPersistentCondition>HasReadNoteInStarship</SetPersistentCondition>
   </DialogueNode>

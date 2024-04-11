@@ -5,8 +5,8 @@
     <Name>START</Name>
     <EntryCondition>DEFAULT</EntryCondition>
     <Dialogue>
-      <Page>Thank you Streetlights Behind the Trees for making this space station model for the community jam!</Page>
-      <Page>Also thanks hearth1an for the texture used for the Nomai downstairs.</Page>
+      <Page>A cold planet and moon in a distant orbit. Signs of intelligent life are present.</Page>
+      <Page>Hypothesis: The inclination of their orbit is due to these celestial bodies being captured by the local star's gravity.</Page>
     </Dialogue>
     <SetPersistentCondition>HasReadNoteInStarship</SetPersistentCondition>
   </DialogueNode>

@@ -1,23 +1,46 @@
 ﻿<DialogueTree xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/dialogue_schema.xsd">
   <NameField>Ping</NameField>
 
+  <!-- First time talking to them, mimic the Prisoner/Solanum interaction -->
+  <DialogueNode>
+    <Name>FirstTimeTalking</Name>
+    <EntryCondition>DEFAULT</EntryCondition>
+    <Dialogue>
+      <Page>...</Page>
+    </Dialogue>
+
+    <DialogueOptionsList>
+      <DialogueOption>
+        <Text>Who are you?</Text>
+        <DialogueTarget>Who</DialogueTarget>
+      </DialogueOption>
+      <DialogueOption>
+        <Text>Where are we?</Text>
+        <DialogueTarget>Where</DialogueTarget>
+      </DialogueOption>
+    </DialogueOptionsList>
+
+    <SetCondition>SpokeToStarshipCommunityNomaiThisLoop</SetCondition>
+    <SetPersistentCondition>SpokeToStarshipCommunityNomaiEver</SetPersistentCondition>
+  </DialogueNode>
+
+  <!-- Entry condition has to be set manually from a persistent condition -->
   <DialogueNode>
     <Name>START</Name>
-    <EntryCondition>DEFAULT</EntryCondition>
+    <EntryCondition>SpokeToStarshipCommunityNomaiEver</EntryCondition>
     <Dialogue>
       <Page>Greetings visitor!</Page>
     </Dialogue>
-    <SetCondition>SpokeToStarshipCommunityNomai</SetCondition>
+    <SetCondition>SpokeToStarshipCommunityNomaiThisLoop</SetCondition>
     <DialogueTarget>Menu</DialogueTarget>
   </DialogueNode>
 
   <DialogueNode>
     <Name>START_2</Name>
-    <EntryCondition>SpokeToStarshipCommunityNomai</EntryCondition>
+    <EntryCondition>SpokeToStarshipCommunityNomaiThisLoop</EntryCondition>
     <Dialogue>
       <Page>Hello again visitor!</Page>
     </Dialogue>
-    <SetCondition>SpokeToStarshipCommunityNomai</SetCondition>
     <DialogueTarget>Menu</DialogueTarget>
   </DialogueNode>
 
@@ -26,16 +49,20 @@
     <Dialogue>
       <Page>What is on your mind, traveler?</Page>
     </Dialogue>
-
     <DialogueOptionsList>
-      <DialogueOption>
-        <Text>What is this place?</Text>
-        <DialogueTarget>What</DialogueTarget>
-      </DialogueOption>
       <DialogueOption>
         <Text>Who are you?</Text>
         <DialogueTarget>Who</DialogueTarget>
-      </DialogueOption>         
+      </DialogueOption>
+      <DialogueOption>
+        <Text>Where are we?</Text>
+        <DialogueTarget>Where</DialogueTarget>
+      </DialogueOption>
+      <DialogueOption>
+        <RequiredPersistentCondition>HasReadNoteInStarship</RequiredPersistentCondition>
+        <Text>The notes written in my language scattered about the ship, did you write those?</Text>
+        <DialogueTarget>Notes</DialogueTarget>
+      </DialogueOption>
       <DialogueOption>
         <Text>I found something!</Text>
         <DialogueTarget>FoundSomethingMenu</DialogueTarget>
@@ -53,12 +80,15 @@
   </DialogueNode>
 
   <DialogueNode>
-    <Name>What</Name>
+    <Name>Where</Name>
     <Dialogue>
       <Page>This is the <![CDATA[<color="orange">]]>Starship Community<![CDATA[</color>]]>. It is a small vessel of which I am captain.</Page>
       <Page>We are stopped in quite a bizarre system, with a myriad of strange worlds.</Page>
       <Page>Throughout my ship you can find some observations I have made about this system. Feel free to peruse them at your leisure.</Page>
+      <Page>Those displayed on this floor are places I have deemed higher in terms of potential discovery. You may say I have <![CDATA[<color="orange">]]>ranked<![CDATA[</color>]]> them as if it were some sort of <![CDATA[<color="orange">]]>contest!<![CDATA[</color>]]></Page>
+      <Page>However, those on the top floor are nonetheless worthy of exploration! If you should find anything on these worlds please, share your findings with me!</Page>
     </Dialogue>
+    <SetPersistentCondition>HasSpokenToPing</SetPersistentCondition>
     <DialogueTarget>Menu</DialogueTarget>
   </DialogueNode>
 
@@ -68,6 +98,17 @@
       <Page>My name is Ping. I am an explorer, much like yourself, I imagine.</Page>
       <Page>While I would love to explore this system myself, if I linger too long I will be late for my clan's next <![CDATA[<color="orange">]]>Festival<![CDATA[</color>]]>.</Page>
       <Page>Still, I have some time to observe this system for myself, at least from a distance.</Page>
+    </Dialogue>
+    <SetPersistentCondition>HasSpokenToPing</SetPersistentCondition>
+    <DialogueTarget>Menu</DialogueTarget>
+  </DialogueNode>      
+  
+  <DialogueNode>
+    <Name>Notes</Name>
+    <Dialogue>
+      <Page>Why yes! During my travels, I have encounted many systems of reading and writing. I consider myself an accomplished xeno-linguist.</Page>
+      <Page>After all, I am <![CDATA[<i>]]>speaking<![CDATA[</i>]]> to you in your language currently, am I not?</Page>
+      <Page>In fact, I took Hearthian as an elective in college.</Page>
     </Dialogue>
     <DialogueTarget>Menu</DialogueTarget>
   </DialogueNode>
