@@ -116,51 +116,65 @@
     <DialogueOptionsList>
       <!-- Callis's Thesis -->
       <DialogueOption>
-        <RequiredLogCondition>CALLISTHESIS_SHIPLOG_THESIS_DOWNLOADED</RequiredLogCondition>
+        <RequiredCondition>CallisModComplete</RequiredCondition>
         <Text>I found a Nomai Festival taking place on an egg-shaped planet.</Text>
         <DialogueTarget>CallisThesisMod</DialogueTarget>
       </DialogueOption>          
       
       <!-- Jam Hub -->
       <DialogueOption>
-        <RequiredLogCondition>PARTY_EXISTENCE_FACT_CCL</RequiredLogCondition>
+        <RequiredCondition>JamHubComplete</RequiredCondition>
         <Text>I found a party held by the Outer Wilds modding community.</Text>
         <DialogueTarget>JamHubMod</DialogueTarget>
       </DialogueOption>         
       
       <!-- Echo Hike -->
       <DialogueOption>
-        <RequiredLogCondition>EH_PHOSPHORS_X3</RequiredLogCondition>
+        <RequiredCondition>EchoHikeComplete</RequiredCondition>
         <Text>I reached the center of an icy planet with beautiful rings.</Text>
         <DialogueTarget>EchoHikeMod</DialogueTarget>
       </DialogueOption>          
       
       <!-- Magistarium -->
       <DialogueOption>
-        <RequiredLogCondition>HN2_Device3</RequiredLogCondition>
+        <RequiredCondition>MagistariumComplete</RequiredCondition>
         <Text>I used the Magister's Device to ascend to the Outer Planes.</Text>
         <DialogueTarget>MagistariumMod</DialogueTarget>
       </DialogueOption>            
       
       <!-- Solar Rangers -->
       <DialogueOption>
-        <RequiredLogCondition>RANGER_EGGSTAR_VICTORY</RequiredLogCondition>
+        <RequiredCondition>SolarRangersComplete</RequiredCondition>
         <Text>I destroyed the Egg Star battlestation and stopped an invasion!</Text>
         <DialogueTarget>SolarRangersMod</DialogueTarget>
       </DialogueOption>           
 
       <!-- Axiom -->
       <DialogueOption>
-        <RequiredLogCondition>AXIOM_ESCAPE_POD_X2</RequiredLogCondition>
+        <RequiredCondition>AxiomComplete</RequiredCondition>
         <Text>I discovered a village founded by the escapees of a destroyed solar system.</Text>
         <DialogueTarget>AxiomMod</DialogueTarget>
       </DialogueOption>
 
       <!-- Reflections -->
       <DialogueOption>
-        <RequiredLogCondition>TeamErnesto_10</RequiredLogCondition>
+        <RequiredCondition>ReflectionsComplete</RequiredCondition>
         <Text>I found a projection pool which transported me to an artificial reality.</Text>
         <DialogueTarget>ReflectionsMod</DialogueTarget>
+      </DialogueOption>
+      
+      <!-- Symbiosis -->
+      <DialogueOption>
+        <RequiredCondition>SymbiosisComplete</RequiredCondition>
+        <Text>I found a shadowy simulacrum of my home planet.</Text>
+        <DialogueTarget>SymbiosisMod</DialogueTarget>
+      </DialogueOption>
+      
+      <!-- Finis -->
+      <DialogueOption>
+        <RequiredCondition>FinisComplete</RequiredCondition>
+        <Text>I used a strange staff to see the invisible.</Text>
+        <DialogueTarget>FinisMod</DialogueTarget>
       </DialogueOption>
       
       <DialogueOption>
@@ -251,6 +265,32 @@
       <Page>To live a life without exploration, without discovery, would for a Nomai be a fate worse than death. I hope they eventually found the different solution they were looking for.</Page>
       <Page>"Fear of failure is a poor reason not to try", inspiring words from this Primm you spoke of. I will do well to remember them.</Page>
       <Page>Reminds me of something my third cousin twice removed once said. I wonder what Poke is up to these days.</Page>
+    </Dialogue>
+    <DialogueTarget>FoundSomethingMenu</DialogueTarget>
+  </DialogueNode>
+
+  <!-- Symbiosis -->
+  <DialogueNode>
+    <Name>SymbiosisMod</Name>
+    <Dialogue>
+      <Page>Shrouded beneath the clouds you found an approximation of your home planet, but missing its native inhabitants?</Page>
+      <Page>You say a group of Nomai discovered plant life which released a potent hallucinogen into the atmosphere, which did not affect them.</Page>
+      <Page>I agree that you would likely be more susceptable to such a particulate, as your skin is much more porous than mine due to your amphibious origin.</Page>
+      <Page>However, I propose a hypothesis: These Nomai were not real, and were in fact a result of your hallucination. Perhaps a poor theory, as proving the null hypothesis would be impossible for you with your altered perception.</Page>
+      <Page>These entities that spoke to you through their "spokesperson", I wonder where they came from. I hope some day we may learn more about them.</Page>
+      <Page>Still, I wonder how much of what you saw was real, and how much was due to hallucination.</Page>
+    </Dialogue>
+    <DialogueTarget>FoundSomethingMenu</DialogueTarget>
+  </DialogueNode>
+
+  <!-- Finis -->
+  <DialogueNode>
+    <Name>FinisMod</Name>
+    <Dialogue>
+      <Page>So a group of Nomai crash landed on one of the planets in this system, and discovered the ruins of an ancient civilization?</Page>
+      <Page>The king wielded a similar staff capable of making crystaline structures visible, and when interacting with a certain crystal made additional structures materialize.</Page>
+      <Page>You mentioned a cycle of death and rebirth, and depictions of a eye-like symbol. I wonder what it could all mean?</Page>
+      <Page>Perhaps some day we will find more answers!</Page>
     </Dialogue>
     <DialogueTarget>FoundSomethingMenu</DialogueTarget>
   </DialogueNode>

@@ -42,12 +42,28 @@ internal static class PlanetOrganizer
 
         foreach (var body in bodies)
         {
+            var hadShipLog = body.Config.ShipLog?.mapMode != null;
+
+            // Force all bodies to have shiplogs so we can remove them if need be
+            body.Config.ShipLog ??= new();
+            body.Config.ShipLog.mapMode ??= new();
+
             // Force all planets to be automatic placement
-            var mapMode = body.Config.ShipLog?.mapMode;
-            if (mapMode != null)
+            var mapMode = body.Config.ShipLog.mapMode;
+
+            mapMode.manualPosition = null;
+            mapMode.manualNavigationPosition = null;
+
+            // If it's a moon with no ship logs, just get rid of it
+            var isMoon = !string.IsNullOrEmpty(body.Config.Orbit.primaryBody) && body.Config.Orbit.primaryBody != "Jam 3 Sun";
+            var shouldRemove = isMoon && !hadShipLog;
+            if (shouldRemove)
             {
-                mapMode.manualPosition = null;
-                mapMode.manualNavigationPosition = null;
+                mapMode.remove = true;
+            }
+            else if (isMoon)
+            {
+                mapMode.scale = 0.5f;
             }
         }
 
@@ -97,6 +113,9 @@ internal static class PlanetOrganizer
 
         // Handle order
         var orderedPlanets = regularPlanets.OrderBy(GetOrder);
+
+        // Use constant seed so orientations are the same each time
+        UnityEngine.Random.InitState(3);
 
         foreach (var body in orderedPlanets)
         {
