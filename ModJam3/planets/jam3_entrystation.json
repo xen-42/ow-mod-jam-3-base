@@ -121,12 +121,12 @@
         "rename": "Treepot_4",
         "path": "DB_VesselDimension_Body/Sector_VesselDimension/Props_VesselDimension/Prefab_NOM_NomaiTree_VarDRY_3/GEO_Treepot_3",
         "position": {
-          "x": 22.6,
-          "y": -5,
+          "x": 20.6,
+          "y": -10,
           "z": -1.1
         },
         "rotation": {
-          "x": 325,
+          "x": 315,
           "y": 270,
           "z": 270
         }
@@ -159,14 +159,14 @@
         "rename": "Treepot_6",
         "path": "DB_VesselDimension_Body/Sector_VesselDimension/Props_VesselDimension/Prefab_NOM_NomaiTree_VarDRY_3/GEO_Treepot_3",
         "position": {
-          "x": 5,
+          "x": -5,
           "y": 22.6,
           "z": -1.1
         },
         "rotation": {
           "x": 45,
-          "y": 270,
-          "z": 270
+          "y": 90,
+          "z": 90
         }
       },
       {
