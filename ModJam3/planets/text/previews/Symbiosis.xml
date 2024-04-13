@@ -6,6 +6,18 @@
     <EntryCondition>DEFAULT</EntryCondition>
     <Dialogue>
       <Page>A dark shadowy world. Were it not for intermittent flashes of lightning, it would be largely invisible against the background of space.</Page>
+      <Page>Unfortunately, this world is so nebulous and mysterious that even a Hearthian ship log cannot record data on it.</Page>
+      <Page>Until ship logs can be obtained, we can learn nothing new here.</Page>
+    </Dialogue>
+    <SetPersistentCondition>HasReadNoteInStarship</SetPersistentCondition>
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>COMPLETE</Name>
+    <EntryCondition>CrypticBird_Jam3_Complete_EntryCondition</EntryCondition>
+    <Dialogue>
+      <Page>A dark shadowy world. Were it not for intermittent flashes of lightning, it would be largely invisible against the background of space.</Page>
+      <Page>Wait how did you unlock this entry condition, that's impossible!</Page>
     </Dialogue>
     <SetPersistentCondition>HasReadNoteInStarship</SetPersistentCondition>
   </DialogueNode>

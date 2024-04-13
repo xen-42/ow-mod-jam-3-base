@@ -7,6 +7,9 @@
     <Dialogue>
       <Page>A bizarre world with a clear deliniation between hemispheres.</Page>
       <Page>Signs of intelligent life are present.</Page>
+      <Page>This planet and its people seem quite unstable at the moment. Hypothesis: Exploring here would not yet yield a satisfying conclusion.</Page>
+      <Page>Hopefully the... organizers of this world might soon... enact social order?</Page>
+      <Page>(Okay listen the mod is kinda broken right now so you won't unlock anything here from doing it yet, okay?)</Page>
     </Dialogue>
     <SetPersistentCondition>HasReadNoteInStarship</SetPersistentCondition>
   </DialogueNode>

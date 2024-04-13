@@ -11,4 +11,17 @@
     <SetPersistentCondition>HasReadNoteInStarship</SetPersistentCondition>
   </DialogueNode>
 
+  <DialogueNode>
+    <Name>COMPLETE</Name>
+    <EntryCondition>GameWyrm_HearthsNeighbor2_Complete_EntryCondition</EntryCondition>
+    <Dialogue>
+      <Page>A spherical body levitates above the sun, opposite my station.</Page>
+      <Page>An entrance hatch is left open, but my scans are unable to penetrate the interior.</Page>
+      <Page>My Hearthian friend tells me this space station contains a device capable of ascending the user to a higher plane!</Page>
+      <Page>While I was unable to ascend, I did however find some interesting artifacts which I have appropriated for my own collection.</Page>
+      <Page>The disco ball in particular will be quite the show-stopper at my clan's Festival, I believe.</Page>
+    </Dialogue>
+    <SetPersistentCondition>HasReadNoteInStarship</SetPersistentCondition>
+  </DialogueNode>
+
 </DialogueTree>

@@ -7,7 +7,21 @@
     <Dialogue>
       <Page>A giant, ominous looking space ship orbits the sun. It possesses a considerable arsenal.</Page>
       <Page>Hypothesis: I should stay far away from this place.</Page>
-      <Page>Author's note: That was not a proper hypothesis, but an attempt at humour in the face of danger.</Page>
+      <Page>Note: That was not a genuine hypothesis, but an attempt at humour in the face of danger.</Page>
+    </Dialogue>
+    <SetPersistentCondition>HasReadNoteInStarship</SetPersistentCondition>
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>COMPLETE</Name>
+    <EntryCondition>Hawkbar_SolarRangers_Complete_EntryCondition</EntryCondition>
+    <Dialogue>
+      <Page>A giant, ominous looking space ship orbits the sun. It possesses a considerable arsenal.</Page>
+      <Page>Hypothesis: I should stay far away from this place.</Page>
+      <Page>Note: That was not a genuine hypothesis, but an attempt at humour in the face of danger.</Page>
+      <Page>My Hearthian friend assures me that with the help of the Solar Rangers, this ship can ultimately be destroyed.</Page>
+      <Page>In fact, I have obtained copies of its schematics and determined it has an obvious vulnerability!</Page>
+      <Page>It is vulnerable to lasers and bombs.</Page>
     </Dialogue>
     <SetPersistentCondition>HasReadNoteInStarship</SetPersistentCondition>
   </DialogueNode>

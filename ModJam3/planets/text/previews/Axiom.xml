@@ -6,7 +6,19 @@
     <EntryCondition>DEFAULT</EntryCondition>
     <Dialogue>
       <Page>A cold planet and moon in a distant orbit. Signs of intelligent life are present.</Page>
-      <Page>Hypothesis: The inclination of their orbit is due to these celestial bodies being captured by the local star's gravity.</Page>
+      <Page>Hypothesis: Tidal heating from the planet's moon may allow it to support a subsurface ocean.</Page>
+    </Dialogue>
+    <SetPersistentCondition>HasReadNoteInStarship</SetPersistentCondition>
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>MODCOMPLETE</Name>
+    <EntryCondition>MegaPiggy_Axiom_Complete_EntryCondition</EntryCondition>
+    <Dialogue>
+      <Page>A cold planet and moon in a distant orbit. Signs of intelligent life are present.</Page>
+      <Page>Hypothesis: Tidal heating from the planet's moon may allow it to support a subsurface ocean.</Page>
+      <Page>My Hearthian friend has informed me this planet is populated by a similar species, and that they possess Nomai artifacts</Page>
+      <Page>From them I was able to acquire a new recipe for cactus soup!</Page>
     </Dialogue>
     <SetPersistentCondition>HasReadNoteInStarship</SetPersistentCondition>
   </DialogueNode>

@@ -4,6 +4,8 @@ using NewHorizons.Utility;
 using NewHorizons.Utility.Files;
 using OWML.Common;
 using OWML.ModHelper;
+using System;
+using System.IO;
 using System.Linq;
 using System.Reflection;
 using UnityEngine;
@@ -18,6 +20,8 @@ public class ModJam3 : ModBehaviour
     public static ModJam3 Instance { get; private set; }
 
     public bool AllowSpawnOverride { get; private set; }
+
+    private GameObject _starship;
 
     public void Start()
     {
@@ -82,30 +86,36 @@ public class ModJam3 : ModBehaviour
             silver = Resources.FindObjectsOfTypeAll<Material>().First(x => x.name.Contains("Structure_NOM_Silver_mat"));
             black = Resources.FindObjectsOfTypeAll<Material>().First(x => x.name.Contains("Structure_NOM_SilverPorcelain_mat"));
 
-            var starship = _newHorizons.GetPlanet("Starship Community");
+            _starship = _newHorizons.GetPlanet("Starship Community");
 
             // Add previews
-            PlacePicture("gruh", new Vector3(-15.5f, 6.5f, 8f), new Vector3(0.92f, -0.37f, 0f), starship.transform);
-            PlacePicture("gruh", new Vector3(-6.5f, 15.5f, 8f), new Vector3(0.37f, -0.92f, 0f), starship.transform);
-            PlacePicture("gruh", new Vector3(6.5f, 15.5f, 8f), new Vector3(-0.37f, -0.92f, 0f), starship.transform);
-            PlacePicture("gruh", new Vector3(15.5f, 6.5f, 8f), new Vector3(-0.92f, -0.37f, 0f), starship.transform);
-            PlacePicture("gruh", new Vector3(15.5f, -6.5f, 8f), new Vector3(-0.92f, 0.37f, 0f), starship.transform);
-            PlacePicture("gruh", new Vector3(6.5f, -15.5f, 8f), new Vector3(-0.37f, 0.92f, 0f), starship.transform);
-            PlacePicture("gruh", new Vector3(-15.5f, -6.5f, 8f), new Vector3(0.92f, 0.37f, 0f), starship.transform);
+            PlacePicture("EchoHike", new Vector3(-15.5f, 6.5f, 8f), new Vector3(0.92f, -0.37f, 0f));
+            PlacePicture("Axiom", new Vector3(-6.5f, 15.5f, 8f), new Vector3(0.37f, -0.92f, 0f));
+            PlacePicture("Callis", new Vector3(6.5f, 15.5f, 8f), new Vector3(-0.37f, -0.92f, 0f));
+            PlacePicture("Finis", new Vector3(15.5f, 6.5f, 8f), new Vector3(-0.92f, -0.37f, 0f));
+            PlacePicture("JamHub", new Vector3(15.5f, -6.5f, 8f), new Vector3(-0.92f, 0.37f, 0f));
+            PlacePicture("Symbiosis", new Vector3(6.5f, -15.5f, 8f), new Vector3(-0.37f, 0.92f, 0f));
+            PlacePicture("BandTogether", new Vector3(-15.5f, -6.5f, 8f), new Vector3(0.92f, 0.37f, 0f));
 
             // Winner previews
-            PlacePicture("gruh", new Vector3(-25.32f, 6.49f, 1f), new Vector3(0.95f, -0.29f, 0f), starship.transform);
-            PlacePicture("gruh", new Vector3(6.49f, 25.32f, 1f), new Vector3(-0.29f, -0.95f, 0f), starship.transform);
-            PlacePicture("gruh", new Vector3(25.32f, -6.49f, 1f), new Vector3(-0.95f, 0.29f, 0f), starship.transform);
+            PlacePicture("SolarRangers", new Vector3(-25f, 6.8f, 1f), new Vector3(0.75f, -0.15f, 0f));
+            PlacePicture("Reflections", new Vector3(6.8f, 25f, 1f), new Vector3(-0.15f, -0.75f, 0f));
+            PlacePicture("Magistarium", new Vector3(25f, -6.8f, 1f), new Vector3(-0.75f, 0.15f, 0f));
+
+            try
+            {
+                SpawnCompletionItems();
+            }
+            catch { }
 
             // Replace materials on the starship community
-            foreach (var renderer in starship.GetComponentsInChildren<Renderer>())
+            foreach (var renderer in _starship.GetComponentsInChildren<Renderer>())
             {
                 renderer.materials = renderer.materials.Select(GetReplacementMaterial).ToArray();
             }
 
             // Replace campfires
-            foreach (var campfire in starship.GetComponentsInChildren<Campfire>())
+            foreach (var campfire in _starship.GetComponentsInChildren<Campfire>())
             {
                 var emberMaterial = campfire.transform.parent.Find("Props_HEA_Campfire/Campfire_Embers").GetComponent<MeshRenderer>().material;
                 emberMaterial.SetTexture("_MainTex", ember);
@@ -122,6 +132,176 @@ public class ModJam3 : ModBehaviour
                 campfire._flames.material.color = new Color(0f, 0.2f, 1f);
             }
         }
+    }
+
+    private void SpawnCompletionItems()
+    {
+        // ECHO HIKE
+        // Trifid.TrifidJam3
+        if(IsModComplete("Trifid.TrifidJam3"))
+        {
+            try
+            {
+                SpawnObject(_starship, "EchoHike_Body/Sector/PlanetInterior/EntranceRoot2/Interior/GrappleSpawn/Grapple",
+                    new Vector3(-14.89f, 4.43f, 6.6f), new Vector3(315, 90, 90));
+            }
+            catch (Exception e)
+            {
+                ModHelper.Console.WriteLine(e.ToString(), MessageType.Error);
+            }
+        }
+
+        // MAGISTARIUM
+        // GameWyrm.HearthsNeighbor2
+        if (IsModComplete("GameWyrm.HearthsNeighbor2"))
+        {
+            try
+            {
+                // Custom memory cube
+                var memoryCube = SpawnObject(_starship, "MAGISTARIUM_Body/Sector/Magistration/Sectors/DockingBay/EntranceCube",
+                    new Vector3(21f, 3.5f, 0f), new Vector3(30, 270, 270));
+                memoryCube.name = "PingMemoryCube";
+                _newHorizons.CreateDialogueFromXML(null, File.ReadAllText(Path.Combine(ModHelper.Manifest.ModFolderPath, "planets/text/NomaiMemoryCube.xml")),
+                    "{ pathToExistingDialogue: \"Sector/PingMemoryCube/Dialogue\" }", _starship);
+
+                // Disco ball
+                var discoBall = SpawnObject(_starship, "MAGISTARIUM_Body/Sector/Magistration/Sectors/Library/Props/DiscoBall",
+                    new Vector3(19.3f, -7.3f, -1.1f), new Vector3(330, 270, 270));
+                // Disco ball is jank and needs a root object
+                var discoBallRoot = new GameObject("DiscoBallRoot");
+                discoBallRoot.transform.parent = discoBall.transform.parent;
+                discoBallRoot.transform.localPosition = discoBall.transform.localPosition;
+                discoBallRoot.transform.localRotation = discoBall.transform.localRotation;
+                discoBall.transform.parent = discoBallRoot.transform;
+                discoBall.transform.localRotation = Quaternion.identity;
+            }
+            catch (Exception e)
+            {
+                ModHelper.Console.WriteLine(e.ToString(), MessageType.Error);
+            }
+        }
+
+        // REFLECTIONS -> Anchor
+        // TeamErnesto.OWJam3ModProject
+        if (IsModComplete("TeamErnesto.OWJam3ModProject"))
+        {
+            try
+            {
+                var anchor = SpawnObject(_starship, "ProjectionSimulation_Body/Sector/SimulationPrefab/NomaiInteriorRoot/SignalCenter/Signal3Root/TileAnchor/SignalPosition/ToyBall",
+                    new Vector3(9.5f, 20f, 1f), new Vector3(15f, 270f, 270f));
+                anchor.name = "Anchor";
+                anchor.transform.localScale = Vector3.one * 5f;
+
+                anchor.AddComponent<Oscillator>();
+            }
+            catch (Exception e)
+            {
+                ModHelper.Console.WriteLine(e.ToString(), MessageType.Error);
+            }
+        }
+
+        // RANGERS -> Mini Egg star + medal
+        // Hawkbar.SolarRangers
+        if (IsModComplete("Hawkbar.SolarRangers"))
+        {
+            try
+            {
+                var medal = SpawnObject(_starship, "EggStar_Body/Sector/PREFAB_Medal/SolarRanger_Medal",
+                    new Vector3(-23.9f, 9.9f, 0.42f), new Vector3(25f, 90f, 90f));
+                medal.transform.localScale = Vector3.one * 0.4f;
+
+                var body = SpawnObject(_starship, "EggStar_Body/Sector/Prefab_NOM_Airlock (1)",
+                    new Vector3(-21, -4.6f, 0f), new Vector3(0, 180, 350));
+                var cap = SpawnObject(_starship, "EggStar_Body/Sector/Airlock_Cap_Empty",
+                    new Vector3(-21, -4.6f, 0f), new Vector3(20, 0, 185));
+
+                var eggStarRoot = new GameObject("EggStarModel");
+                eggStarRoot.transform.parent = body.transform.parent;
+                eggStarRoot.transform.localPosition = body.transform.localPosition;
+                body.transform.parent = eggStarRoot.transform;
+                cap.transform.parent = eggStarRoot.transform;
+                cap.transform.localScale = Vector3.one * 1.025f;
+                eggStarRoot.transform.localScale = Vector3.one * 0.2f;
+                var rotate = eggStarRoot.AddComponent<RotateTransform>();
+                rotate._degreesPerSecond = 15f;
+                rotate._localAxis = new Vector3(0, 0, 1);
+                eggStarRoot.transform.localPosition = new Vector3(-21, -4.6f, 2f);
+
+                var oscillator = eggStarRoot.AddComponent<Oscillator>();
+            }
+            catch (Exception e)
+            {
+                ModHelper.Console.WriteLine(e.ToString(), MessageType.Error);
+            }
+        }
+
+        // CALLIS -> Copy of the thesis
+        // Echatsum.CallisThesis
+        if (IsModComplete("Echatsum.CallisThesis"))
+        {
+            // Wait a frame to not replace materials
+            ModHelper.Events.Unity.FireOnNextUpdate(() =>
+            {
+                var modFolder = ModHelper.Interaction.TryGetMod("Echatsum.CallisThesis").ModHelper.Manifest.ModFolderPath;
+                var text = File.ReadAllText(Path.Combine(modFolder, "text/main_text/scrolls/Scroll_Thesis.xml"));
+                var scroll = _newHorizons.CreateNomaiText(text, "{ type: \"scroll\", seed: 1230000 }", _starship);
+                scroll.transform.localPosition = new Vector3(5.0911f, 15.4626f, 6.1342f);
+                scroll.transform.localRotation = Quaternion.Euler(30.319f, 90f, 153.435f);
+            });
+        }
+
+        // FINIS -> The staff + a crystal
+        // orclecle.Finis
+        // For some reason the RodItem component is added programatically after some frames
+        // We know it's done once a collider is added
+        if (IsModComplete("orclecle.Finis"))
+        {
+            var rod = GameObject.Find("FinisPlateau_Body/Sector/finis_plateau/Rod");
+            ModHelper.Events.Unity.RunWhen(() => rod.GetComponent<OWCollider>() != null, () =>
+            {
+                SpawnObject(_starship, "FinisPlateau_Body/Sector/finis_plateau/Rod",
+                    new Vector3(13.8f, 7.5f, 6.7f), new Vector3(335f, 270f, 270f));
+                ModHelper.Console.WriteLine("Copied Finis rod item");
+            });
+        }
+
+        // AXIOM -> Nomai codex
+        // MegaPiggy.Axiom
+        if (IsModComplete("MegaPiggy.Axiom"))
+        {
+            try
+            {
+                var codex = SpawnObject(_starship, "Axiom_Body/Sector/IcePlanet/Interior/Observatory/Interior/Exhibits/AncientCultureExhibit/ExhibitRoot/Rosetta Stone",
+                new Vector3(-7.3f, 13.6f, 6.35f), new Vector3(80f, 90f, 90f));
+                codex.transform.localScale = 100f * Vector3.one;
+            }
+            catch (Exception e)
+            {
+                ModHelper.Console.WriteLine(e.ToString(), MessageType.Error);
+            }
+        }
+
+        // JAM HUB -> just cleric
+        // coderCleric.JamHub
+        if (IsModComplete("coderCleric.JamHub"))
+        {
+            try
+            {
+                SpawnObject(_starship, "ModJamHub_Body/Sector/jamplanet/modder_shack_area/moddershack/building/modders/coderCleric",
+                    new Vector3(15.3f, -3.4f, 6f), new Vector3(350f, 270f, 270f));
+            }
+            catch (Exception e)
+            {
+                ModHelper.Console.WriteLine(e.ToString(), MessageType.Error);
+            }
+        }
+
+        // SYMBIOSIS -> a talking dead anglerfish skull
+        // CrypticBird.Jam3
+        // Mod doesn't have ship logs yet so this isn't implemented
+
+        // Band together -> A shrubbery ig
+        // pikpik_carrot.BandTogether
     }
 
     private Material GetReplacementMaterial(Material material)
@@ -149,7 +329,8 @@ public class ModJam3 : ModBehaviour
             return silver;
         }
         else if (material.name.Contains("Props_NOM_Scroll_mat") ||
-            material.name.Contains("Props_NOM_Mask_Trim_mat")
+            material.name.Contains("Props_NOM_Mask_Trim_mat") ||
+            material.name.Contains("Structure_NOM_Airlock_mat")
             )
         {
             material.color = new Color(0.05f, 0.05f, 0.05f);
@@ -166,9 +347,11 @@ public class ModJam3 : ModBehaviour
         return material;
     }
 
-    private void PlacePicture(string name, Vector3 position, Vector3 normal, Transform parent)
+    private void PlacePicture(string name, Vector3 position, Vector3 normal)
     {
         var texture = ImageUtilities.GetTexture(this, $"planets/assets/previews/{name}.png", linear: true);
+
+        var parent = _starship.GetComponentInChildren<Sector>().transform;
 
         var gameObject = new GameObject(name);
         gameObject.transform.parent = parent;
@@ -214,5 +397,29 @@ public class ModJam3 : ModBehaviour
         dialogue.transform.localPosition = new Vector3(-0.0057f, 1.2161f, -0.168f);
         dialogue.transform.localRotation = Quaternion.identity;
         dialogue._attentionPoint = gameObject.transform;
+    }
+
+    private bool IsModComplete(string modID)
+    {
+        var conditionName = $"{modID.Replace(".", "_")}_Complete";
+        if (ModHelper.Interaction.ModExists(modID) && PlayerData.GetPersistentCondition(conditionName))
+        {
+            // We update the plaques, so make sure they have the dialogue condition set now
+            // Have to wait else it wont work
+            // Uses a separate condition than persistent so that can get set, then only next loop does the object spawn and we get the dialogue
+            // Setting a persistent condition in dialogue automatically sets a dialogue condition with the same name
+            // Also was breaking until waiting a frame
+            ModHelper.Events.Unity.FireOnNextUpdate(() =>
+            {
+                DialogueConditionManager.SharedInstance.SetConditionState(conditionName + "_EntryCondition", true);
+            });
+            return true;
+        }
+        return false;
+    }
+
+    private GameObject SpawnObject(GameObject root, string path, Vector3 position, Vector3 euler)
+    {
+        return _newHorizons.SpawnObject(this, root, root.GetComponentInChildren<Sector>(), path, position, euler, 1f, false);
     }
 }

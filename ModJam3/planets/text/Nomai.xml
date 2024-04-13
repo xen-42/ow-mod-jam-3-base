@@ -86,7 +86,7 @@
       <Page>We are stopped in quite a bizarre system, with a myriad of strange worlds.</Page>
       <Page>Throughout my ship you can find some observations I have made about this system. Feel free to peruse them at your leisure.</Page>
       <Page>Those displayed on this floor are places I have deemed higher in terms of potential discovery. You may say I have <![CDATA[<color="orange">]]>ranked<![CDATA[</color>]]> them as if it were some sort of <![CDATA[<color="orange">]]>contest!<![CDATA[</color>]]></Page>
-      <Page>However, those on the top floor are nonetheless worthy of exploration! If you should find anything on these worlds please, share your findings with me!</Page>
+      <Page>However, those on the top floor are nonetheless worthy of exploration!</Page>
     </Dialogue>
     <SetPersistentCondition>HasSpokenToPing</SetPersistentCondition>
     <DialogueTarget>Menu</DialogueTarget>
@@ -98,7 +98,11 @@
       <Page>My name is Ping. I am an explorer, much like yourself, I imagine.</Page>
       <Page>While I would love to explore this system myself, if I linger too long I will be late for my clan's next <![CDATA[<color="orange">]]>Festival<![CDATA[</color>]]>.</Page>
       <Page>Still, I have some time to observe this system for myself, at least from a distance.</Page>
+      <Page>If you are to make any discoveries in this system, please share them with me! Perhaps we can create a collection of knowledge I can share with my <![CDATA[<color="orange">]]>community<![CDATA[</color>]]>.</Page>
     </Dialogue>
+    <RevealFacts>
+      <FactID>STARSHIP_COMMUNITY_PING_FACT</FactID>
+    </RevealFacts>
     <SetPersistentCondition>HasSpokenToPing</SetPersistentCondition>
     <DialogueTarget>Menu</DialogueTarget>
   </DialogueNode>      
@@ -151,10 +155,31 @@
   <DialogueNode>
     <Name>FoundSomethingMenu</Name>
     <Dialogue>
-      <Page>Share your discoveries with me traveler, perhaps I will be able to present them at my clan's Festival.</Page>
+      <Page>Share your discoveries with me traveler, perhaps I will be able to present them at my clan's <![CDATA[<color="orange">]]>Festival<![CDATA[</color>]]>.</Page>
     </Dialogue>
 
     <DialogueOptionsList>
+      <!-- Magistarium -->
+      <DialogueOption>
+        <RequiredCondition>MagistariumComplete</RequiredCondition>
+        <Text>I used the Magister's Device to ascend to the Outer Planes.</Text>
+        <DialogueTarget>MagistariumMod</DialogueTarget>
+      </DialogueOption>
+
+      <!-- Reflections -->
+      <DialogueOption>
+        <RequiredCondition>ReflectionsComplete</RequiredCondition>
+        <Text>I found a projection pool which transported me to an artificial reality.</Text>
+        <DialogueTarget>ReflectionsMod</DialogueTarget>
+      </DialogueOption>
+
+      <!-- Solar Rangers -->
+      <DialogueOption>
+        <RequiredCondition>SolarRangersComplete</RequiredCondition>
+        <Text>I destroyed the Egg Star battlestation and stopped an invasion!</Text>
+        <DialogueTarget>SolarRangersMod</DialogueTarget>
+      </DialogueOption>
+
       <!-- Callis's Thesis -->
       <DialogueOption>
         <RequiredCondition>CallisModComplete</RequiredCondition>
@@ -174,34 +199,13 @@
         <RequiredCondition>EchoHikeComplete</RequiredCondition>
         <Text>I reached the center of an icy planet with beautiful rings.</Text>
         <DialogueTarget>EchoHikeMod</DialogueTarget>
-      </DialogueOption>          
-      
-      <!-- Magistarium -->
-      <DialogueOption>
-        <RequiredCondition>MagistariumComplete</RequiredCondition>
-        <Text>I used the Magister's Device to ascend to the Outer Planes.</Text>
-        <DialogueTarget>MagistariumMod</DialogueTarget>
-      </DialogueOption>            
-      
-      <!-- Solar Rangers -->
-      <DialogueOption>
-        <RequiredCondition>SolarRangersComplete</RequiredCondition>
-        <Text>I destroyed the Egg Star battlestation and stopped an invasion!</Text>
-        <DialogueTarget>SolarRangersMod</DialogueTarget>
-      </DialogueOption>           
+      </DialogueOption>                  
 
       <!-- Axiom -->
       <DialogueOption>
         <RequiredCondition>AxiomComplete</RequiredCondition>
         <Text>I discovered a village founded by the escapees of a destroyed solar system.</Text>
         <DialogueTarget>AxiomMod</DialogueTarget>
-      </DialogueOption>
-
-      <!-- Reflections -->
-      <DialogueOption>
-        <RequiredCondition>ReflectionsComplete</RequiredCondition>
-        <Text>I found a projection pool which transported me to an artificial reality.</Text>
-        <DialogueTarget>ReflectionsMod</DialogueTarget>
       </DialogueOption>
       
       <!-- Symbiosis -->
@@ -235,6 +239,7 @@
       <Page>You are saying a young Nomai named Callis is giving their first thesis presentation? I hope it goes well.</Page>
       <Page>I remember when I first presented a thesis during a Festival. A rewarding experience, but one that racks the nervous system indeed.</Page>
     </Dialogue>
+    <SetPersistentCondition>Echatsum_CallisThesis_Complete</SetPersistentCondition>
     <DialogueTarget>FoundSomethingMenu</DialogueTarget>
   </DialogueNode>     
   
@@ -245,6 +250,7 @@
       <Page>I beg your pardon? Modders? I have never heard of this species before in my travels, nor am I familiar with this "Ernesto" you speak of.</Page>
       <Page>It sounds to me as if they are having a Festival of their own! A celebration of the works they have created. How interesting!</Page>
     </Dialogue>
+    <SetPersistentCondition>coderCleric_JamHub_Complete</SetPersistentCondition>
     <DialogueTarget>FoundSomethingMenu</DialogueTarget>
   </DialogueNode>   
   
@@ -255,6 +261,7 @@
       <Page>Wow, what a find! Advanced gravitational technology AND the discovery of a new species? The xenobiologist and physicist in me are delighted to hear this.</Page>
       <Page>Were you able to communicate with these phosphors? I would love to ask them more about this Threader technology, and why those beacons were so important to them.</Page>
     </Dialogue>
+    <SetPersistentCondition>Trifid_TrifidJam3_Complete</SetPersistentCondition>
     <DialogueTarget>FoundSomethingMenu</DialogueTarget>
   </DialogueNode>     
   
@@ -268,6 +275,7 @@
       <Page>The Magister started talking about "medleys of planets" and an "incursion" of sorts? Individuals defying entropy to extend a positive experience? Sounds like a bunch of meta-commentary to me.</Page>
       <Page>Uh, not that I would know about any of that, of course.</Page>
     </Dialogue>
+    <SetPersistentCondition>GameWyrm_HearthsNeighbor2_Complete</SetPersistentCondition>
     <DialogueTarget>FoundSomethingMenu</DialogueTarget>
   </DialogueNode>       
   
@@ -281,6 +289,7 @@
       <Page>Perhaps these Solar Rangers you mentioned could teach my clan about their laser and pyrotechnic technologies.</Page>
       <Page>For peaceful purposes, of course.</Page>
     </Dialogue>
+    <SetPersistentCondition>Hawkbar_SolarRangers_Complete</SetPersistentCondition>
     <DialogueTarget>FoundSomethingMenu</DialogueTarget>
   </DialogueNode>    
   
@@ -294,6 +303,7 @@
       <Page>I propose we call their universe, the "Alpha" universe.</Page>
       <Page>And ours? The "2019 official release" universe.</Page>
     </Dialogue>
+    <SetPersistentCondition>MegaPiggy_Axiom_Complete</SetPersistentCondition>
     <DialogueTarget>FoundSomethingMenu</DialogueTarget>
   </DialogueNode>
 
@@ -307,6 +317,7 @@
       <Page>"Fear of failure is a poor reason not to try", inspiring words from this Primm you spoke of. I will do well to remember them.</Page>
       <Page>Reminds me of something my third cousin twice removed once said. I wonder what Poke is up to these days.</Page>
     </Dialogue>
+    <SetPersistentCondition>TeamErnesto_OWJam3ModProject_Complete</SetPersistentCondition>
     <DialogueTarget>FoundSomethingMenu</DialogueTarget>
   </DialogueNode>
 
@@ -321,6 +332,7 @@
       <Page>These entities that spoke to you through their "spokesperson", I wonder where they came from. I hope some day we may learn more about them.</Page>
       <Page>Still, I wonder how much of what you saw was real, and how much was due to hallucination.</Page>
     </Dialogue>
+    <SetPersistentCondition>CrypticBird_Jam3_Complete</SetPersistentCondition>
     <DialogueTarget>FoundSomethingMenu</DialogueTarget>
   </DialogueNode>
 
@@ -333,6 +345,7 @@
       <Page>You mentioned a cycle of death and rebirth, and depictions of a eye-like symbol. I wonder what it could all mean?</Page>
       <Page>Perhaps some day we will find more answers!</Page>
     </Dialogue>
+    <SetPersistentCondition>orclecle_Finis_Complete</SetPersistentCondition>
     <DialogueTarget>FoundSomethingMenu</DialogueTarget>
   </DialogueNode>
 

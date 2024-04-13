@@ -11,4 +11,17 @@
     <SetPersistentCondition>HasReadNoteInStarship</SetPersistentCondition>
   </DialogueNode>
 
+  <DialogueNode>
+    <Name>COMPLETE</Name>
+    <EntryCondition>TeamErnesto_OWJam3ModProject_Complete_EntryCondition</EntryCondition>
+    <Dialogue>
+      <Page>A distant world, with a single ruin visible on the surface.</Page>
+      <Page>Hypothesis: There is more to this world than meets the eye.</Page>
+      <Page>My Hearthian friend has informed me that this world houses a Nomai-created simulated reality which offers immortality.</Page>
+      <Page>While the Nomai who created it abandoned it, wishing never to be trapped in a world without the thrill of exploration, I have appropriated some of their schematics.</Page>
+      <Page>Even though they wished not to pursue the technology further, this advanced projection technology may still have its merits.</Page>
+    </Dialogue>
+    <SetPersistentCondition>HasReadNoteInStarship</SetPersistentCondition>
+  </DialogueNode>
+
 </DialogueTree>

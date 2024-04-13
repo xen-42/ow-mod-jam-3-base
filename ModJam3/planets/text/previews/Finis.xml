@@ -11,4 +11,16 @@
     <SetPersistentCondition>HasReadNoteInStarship</SetPersistentCondition>
   </DialogueNode>
 
+  <DialogueNode>
+    <Name>COMPLETE</Name>
+    <EntryCondition>orclecle_Finis_Complete_EntryCondition</EntryCondition>
+    <Dialogue>
+      <Page>This body is not in hydrostatic equilibrium, and has a prolate shape.</Page>
+      <Page>Gravitational scans indicate the world has a low density - Hypothesis: This planet has deep cave systems.</Page>
+      <Page>My Hearthian friend has told me that a Nomai escape pod was present on the surface, and that they discovered ancient ruins with fascinating technology.</Page>
+      <Page>I have managed to replicate a staff from this planet that allows the wearer to see the unseen.</Page>
+    </Dialogue>
+    <SetPersistentCondition>HasReadNoteInStarship</SetPersistentCondition>
+  </DialogueNode>
+
 </DialogueTree>

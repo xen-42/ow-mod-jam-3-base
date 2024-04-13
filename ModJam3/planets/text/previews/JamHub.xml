@@ -11,4 +11,17 @@
     <SetPersistentCondition>HasReadNoteInStarship</SetPersistentCondition>
   </DialogueNode>
 
+  <DialogueNode>
+    <Name>COMPLETE</Name>
+    <EntryCondition>coderCleric_JamHub_Complete_EntryCondition</EntryCondition>
+    <Dialogue>
+      <Page>A temperate world, with obvious signs of inhabitation.</Page>
+      <Page>Many beings have gathered here, for what purpose is unknown to me at this time.</Page>
+      <Page>My Hearthian friend has told me that the being gathered here are known as "modders".</Page>
+      <Page>I have invited one to visit my ship, as I am entirely unable to grasp what exactly a "mod" is.</Page>
+      <Page>Unfortunately, I have not yet gleaned any useful info. This particular individual claims to have created the "mod" displayed here, whatever that means.</Page>
+    </Dialogue>
+    <SetPersistentCondition>HasReadNoteInStarship</SetPersistentCondition>
+  </DialogueNode>
+
 </DialogueTree>

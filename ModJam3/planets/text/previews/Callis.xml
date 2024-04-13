@@ -11,4 +11,16 @@
     <SetPersistentCondition>HasReadNoteInStarship</SetPersistentCondition>
   </DialogueNode>
 
+  <DialogueNode>
+    <Name>COMPLETE</Name>
+    <EntryCondition>Echatsum_CallisThesis_Complete_EntryCondition</EntryCondition>
+    <Dialogue>
+      <Page>An egg shaped world, close to the star.</Page>
+      <Page>Signs of intelligent life are present on the north pole and the equator.</Page>
+      <Page>My Hearthian friend has informed me that there are Nomai on this planet!</Page>
+      <Page>I ventured there to observe their Festival and learned of an interesting theory on marshmallow universality. Very informative!</Page>
+    </Dialogue>
+    <SetPersistentCondition>HasReadNoteInStarship</SetPersistentCondition>
+  </DialogueNode>
+
 </DialogueTree>
