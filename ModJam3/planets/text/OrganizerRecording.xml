@@ -8,4 +8,9 @@
     <ParentID>1</ParentID>
     <Text>Thank you to GameWyrm, Raicuparta, Hawkbar, Book, Locochoco, JohnCorby, xen, and Idiot for donating to the prize pool!</Text>
   </TextBlock>
+  <TextBlock>
+    <ID>3</ID>
+    <ParentID>2</ParentID>
+    <Text>The judges were: Book, Idiot, JohnCorby, xen, and _nebula.</Text>
+  </TextBlock>
 </NomaiObject>

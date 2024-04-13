@@ -1,0 +1,26 @@
+﻿<DialogueTree xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/dialogue_schema.xsd">
+  <NameField>SIGN</NameField>
+
+  <DialogueNode>
+    <Name>START</Name>
+    <EntryCondition>DEFAULT</EntryCondition>
+    <Dialogue>
+      <Page>A cold planet and moon in a distant orbit. Signs of intelligent life are present.</Page>
+      <Page>Hypothesis: Tidal heating from the planet's moon may allow it to support a subsurface ocean.</Page>
+    </Dialogue>
+    <SetPersistentCondition>HasReadNoteInStarship</SetPersistentCondition>
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>MODCOMPLETE</Name>
+    <EntryCondition>MegaPiggy_Axiom_Complete_EntryCondition</EntryCondition>
+    <Dialogue>
+      <Page>A cold planet and moon in a distant orbit. Signs of intelligent life are present.</Page>
+      <Page>Hypothesis: Tidal heating from the planet's moon may allow it to support a subsurface ocean.</Page>
+      <Page>My Hearthian friend has informed me this planet is populated by a similar species, and that they possess Nomai artifacts</Page>
+      <Page>From them I was able to acquire a new recipe for cactus soup!</Page>
+    </Dialogue>
+    <SetPersistentCondition>HasReadNoteInStarship</SetPersistentCondition>
+  </DialogueNode>
+
+</DialogueTree>

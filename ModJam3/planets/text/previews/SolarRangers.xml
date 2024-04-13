@@ -1,0 +1,29 @@
+﻿<DialogueTree xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/dialogue_schema.xsd">
+  <NameField>SIGN</NameField>
+
+  <DialogueNode>
+    <Name>START</Name>
+    <EntryCondition>DEFAULT</EntryCondition>
+    <Dialogue>
+      <Page>A giant, ominous looking space ship orbits the sun. It possesses a considerable arsenal.</Page>
+      <Page>Hypothesis: I should stay far away from this place.</Page>
+      <Page>Note: That was not a genuine hypothesis, but an attempt at humour in the face of danger.</Page>
+    </Dialogue>
+    <SetPersistentCondition>HasReadNoteInStarship</SetPersistentCondition>
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>COMPLETE</Name>
+    <EntryCondition>Hawkbar_SolarRangers_Complete_EntryCondition</EntryCondition>
+    <Dialogue>
+      <Page>A giant, ominous looking space ship orbits the sun. It possesses a considerable arsenal.</Page>
+      <Page>Hypothesis: I should stay far away from this place.</Page>
+      <Page>Note: That was not a genuine hypothesis, but an attempt at humour in the face of danger.</Page>
+      <Page>My Hearthian friend assures me that with the help of the Solar Rangers, this ship can ultimately be destroyed.</Page>
+      <Page>In fact, I have obtained copies of its schematics and determined it has an obvious vulnerability!</Page>
+      <Page>It is vulnerable to lasers and bombs.</Page>
+    </Dialogue>
+    <SetPersistentCondition>HasReadNoteInStarship</SetPersistentCondition>
+  </DialogueNode>
+
+</DialogueTree>
