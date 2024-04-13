@@ -5,13 +5,13 @@
     <Name>START</Name>
     <EntryCondition>DEFAULT</EntryCondition>
     <Dialogue>
-      <Page>Thank you Streetlights Behind the Trees for making this space station model for the community jam!</Page>
-      <Page>Also thanks hearth1an for the texture used for the Nomai downstairs.</Page>
+      <Page>PING: What an interesting cube. I wonder what it does.</Page>
+      <Page>PING: Oh. It reads my mind. Fascinating. I hope I do not think of anything embarassing.</Page>
+      <Page>PING: ...</Page>
+      <Page>PING: ...</Page>
+      <Page>PING: ...</Page>
+      <Page>PING: Okay good, I did not.</Page>
     </Dialogue>
-    <RevealFacts>
-      <FactID>STARSHIP_COMMUNITY_EXPLORE_FACT</FactID>
-    </RevealFacts>
-    <SetPersistentCondition>HasReadNoteInStarship</SetPersistentCondition>
   </DialogueNode>
 
 </DialogueTree>

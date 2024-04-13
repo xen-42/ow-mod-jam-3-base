@@ -1,23 +1,46 @@
 ﻿<DialogueTree xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/dialogue_schema.xsd">
   <NameField>Ping</NameField>
 
+  <!-- First time talking to them, mimic the Prisoner/Solanum interaction -->
+  <DialogueNode>
+    <Name>FirstTimeTalking</Name>
+    <EntryCondition>DEFAULT</EntryCondition>
+    <Dialogue>
+      <Page>...</Page>
+    </Dialogue>
+
+    <DialogueOptionsList>
+      <DialogueOption>
+        <Text>Who are you?</Text>
+        <DialogueTarget>Who</DialogueTarget>
+      </DialogueOption>
+      <DialogueOption>
+        <Text>Where are we?</Text>
+        <DialogueTarget>Where</DialogueTarget>
+      </DialogueOption>
+    </DialogueOptionsList>
+
+    <SetCondition>SpokeToStarshipCommunityNomaiThisLoop</SetCondition>
+    <SetPersistentCondition>SpokeToStarshipCommunityNomaiEver</SetPersistentCondition>
+  </DialogueNode>
+
+  <!-- Entry condition has to be set manually from a persistent condition -->
   <DialogueNode>
     <Name>START</Name>
-    <EntryCondition>DEFAULT</EntryCondition>
+    <EntryCondition>SpokeToStarshipCommunityNomaiEver</EntryCondition>
     <Dialogue>
       <Page>Greetings visitor!</Page>
     </Dialogue>
-    <SetCondition>SpokeToStarshipCommunityNomai</SetCondition>
+    <SetCondition>SpokeToStarshipCommunityNomaiThisLoop</SetCondition>
     <DialogueTarget>Menu</DialogueTarget>
   </DialogueNode>
 
   <DialogueNode>
     <Name>START_2</Name>
-    <EntryCondition>SpokeToStarshipCommunityNomai</EntryCondition>
+    <EntryCondition>SpokeToStarshipCommunityNomaiThisLoop</EntryCondition>
     <Dialogue>
       <Page>Hello again visitor!</Page>
     </Dialogue>
-    <SetCondition>SpokeToStarshipCommunityNomai</SetCondition>
     <DialogueTarget>Menu</DialogueTarget>
   </DialogueNode>
 
@@ -26,15 +49,23 @@
     <Dialogue>
       <Page>What is on your mind, traveler?</Page>
     </Dialogue>
-
     <DialogueOptionsList>
-      <DialogueOption>
-        <Text>What is this place?</Text>
-        <DialogueTarget>What</DialogueTarget>
-      </DialogueOption>
       <DialogueOption>
         <Text>Who are you?</Text>
         <DialogueTarget>Who</DialogueTarget>
+      </DialogueOption>
+      <DialogueOption>
+        <Text>Where are we?</Text>
+        <DialogueTarget>Where</DialogueTarget>
+      </DialogueOption>
+      <DialogueOption>
+        <RequiredPersistentCondition>HasReadNoteInStarship</RequiredPersistentCondition>
+        <Text>The notes written in my language scattered about the ship, did you write those?</Text>
+        <DialogueTarget>Notes</DialogueTarget>
+      </DialogueOption>
+      <DialogueOption>
+        <Text>I found something!</Text>
+        <DialogueTarget>FoundSomethingMenu</DialogueTarget>
       </DialogueOption>
       <DialogueOption>
         <CancelledPersistentCondition>KNOWS_MEDITATION</CancelledPersistentCondition>
@@ -49,12 +80,15 @@
   </DialogueNode>
 
   <DialogueNode>
-    <Name>What</Name>
+    <Name>Where</Name>
     <Dialogue>
       <Page>This is the <![CDATA[<color="orange">]]>Starship Community<![CDATA[</color>]]>. It is a small vessel of which I am captain.</Page>
-      <Page>We're stopped in quite a bizarre system, with a myriad of strange worlds.</Page>
+      <Page>We are stopped in quite a bizarre system, with a myriad of strange worlds.</Page>
       <Page>Throughout my ship you can find some observations I have made about this system. Feel free to peruse them at your leisure.</Page>
+      <Page>Those displayed on this floor are places I have deemed higher in terms of potential discovery. You may say I have <![CDATA[<color="orange">]]>ranked<![CDATA[</color>]]> them as if it were some sort of <![CDATA[<color="orange">]]>contest!<![CDATA[</color>]]></Page>
+      <Page>However, those on the top floor are nonetheless worthy of exploration!</Page>
     </Dialogue>
+    <SetPersistentCondition>HasSpokenToPing</SetPersistentCondition>
     <DialogueTarget>Menu</DialogueTarget>
   </DialogueNode>
 
@@ -64,6 +98,21 @@
       <Page>My name is Ping. I am an explorer, much like yourself, I imagine.</Page>
       <Page>While I would love to explore this system myself, if I linger too long I will be late for my clan's next <![CDATA[<color="orange">]]>Festival<![CDATA[</color>]]>.</Page>
       <Page>Still, I have some time to observe this system for myself, at least from a distance.</Page>
+      <Page>If you are to make any discoveries in this system, please share them with me! Perhaps we can create a collection of knowledge I can share with my <![CDATA[<color="orange">]]>community<![CDATA[</color>]]>.</Page>
+    </Dialogue>
+    <RevealFacts>
+      <FactID>STARSHIP_COMMUNITY_PING_FACT</FactID>
+    </RevealFacts>
+    <SetPersistentCondition>HasSpokenToPing</SetPersistentCondition>
+    <DialogueTarget>Menu</DialogueTarget>
+  </DialogueNode>      
+  
+  <DialogueNode>
+    <Name>Notes</Name>
+    <Dialogue>
+      <Page>Why yes! During my travels, I have encounted many systems of reading and writing. I consider myself an accomplished xeno-linguist.</Page>
+      <Page>After all, I am <![CDATA[<i>]]>speaking<![CDATA[</i>]]> to you in your language currently, am I not?</Page>
+      <Page>In fact, I took Hearthian as an elective in college.</Page>
     </Dialogue>
     <DialogueTarget>Menu</DialogueTarget>
   </DialogueNode>
@@ -99,6 +148,205 @@
       <Page>Okay traveler, breathe in, and breathe out...</Page>
     </Dialogue>
     <SetCondition>PingStartMeditation</SetCondition>
+  </DialogueNode>
+  
+  <!-- Dialogue below is specific to each jam mod installed -->
+  
+  <DialogueNode>
+    <Name>FoundSomethingMenu</Name>
+    <Dialogue>
+      <Page>Share your discoveries with me traveler, perhaps I will be able to present them at my clan's <![CDATA[<color="orange">]]>Festival<![CDATA[</color>]]>.</Page>
+    </Dialogue>
+
+    <DialogueOptionsList>
+      <!-- Magistarium -->
+      <DialogueOption>
+        <RequiredCondition>MagistariumComplete</RequiredCondition>
+        <Text>I used the Magister's Device to ascend to the Outer Planes.</Text>
+        <DialogueTarget>MagistariumMod</DialogueTarget>
+      </DialogueOption>
+
+      <!-- Reflections -->
+      <DialogueOption>
+        <RequiredCondition>ReflectionsComplete</RequiredCondition>
+        <Text>I found a projection pool which transported me to an artificial reality.</Text>
+        <DialogueTarget>ReflectionsMod</DialogueTarget>
+      </DialogueOption>
+
+      <!-- Solar Rangers -->
+      <DialogueOption>
+        <RequiredCondition>SolarRangersComplete</RequiredCondition>
+        <Text>I destroyed the Egg Star battlestation and stopped an invasion!</Text>
+        <DialogueTarget>SolarRangersMod</DialogueTarget>
+      </DialogueOption>
+
+      <!-- Callis's Thesis -->
+      <DialogueOption>
+        <RequiredCondition>CallisModComplete</RequiredCondition>
+        <Text>I found a Nomai Festival taking place on an egg-shaped planet.</Text>
+        <DialogueTarget>CallisThesisMod</DialogueTarget>
+      </DialogueOption>          
+      
+      <!-- Jam Hub -->
+      <DialogueOption>
+        <RequiredCondition>JamHubComplete</RequiredCondition>
+        <Text>I found a party held by the Outer Wilds modding community.</Text>
+        <DialogueTarget>JamHubMod</DialogueTarget>
+      </DialogueOption>         
+      
+      <!-- Echo Hike -->
+      <DialogueOption>
+        <RequiredCondition>EchoHikeComplete</RequiredCondition>
+        <Text>I reached the center of an icy planet with beautiful rings.</Text>
+        <DialogueTarget>EchoHikeMod</DialogueTarget>
+      </DialogueOption>                  
+
+      <!-- Axiom -->
+      <DialogueOption>
+        <RequiredCondition>AxiomComplete</RequiredCondition>
+        <Text>I discovered a village founded by the escapees of a destroyed solar system.</Text>
+        <DialogueTarget>AxiomMod</DialogueTarget>
+      </DialogueOption>
+      
+      <!-- Symbiosis -->
+      <DialogueOption>
+        <RequiredCondition>SymbiosisComplete</RequiredCondition>
+        <Text>I found a shadowy simulacrum of my home planet.</Text>
+        <DialogueTarget>SymbiosisMod</DialogueTarget>
+      </DialogueOption>
+      
+      <!-- Finis -->
+      <DialogueOption>
+        <RequiredCondition>FinisComplete</RequiredCondition>
+        <Text>I used a strange staff to see the invisible.</Text>
+        <DialogueTarget>FinisMod</DialogueTarget>
+      </DialogueOption>
+      
+      <DialogueOption>
+        <Text>Nevermind.</Text>
+        <DialogueTarget>Menu</DialogueTarget>
+      </DialogueOption>
+    </DialogueOptionsList>
+
+  </DialogueNode>
+
+  <!-- Callis Thesis -->
+  <DialogueNode>
+    <Name>CallisThesisMod</Name>
+    <Dialogue>
+      <Page>To think I had not realized there were other Nomai in this system!</Page>
+      <Page>I will have to go visit them later, there is much we could learn from each other.</Page>
+      <Page>You are saying a young Nomai named Callis is giving their first thesis presentation? I hope it goes well.</Page>
+      <Page>I remember when I first presented a thesis during a Festival. A rewarding experience, but one that racks the nervous system indeed.</Page>
+    </Dialogue>
+    <SetPersistentCondition>Echatsum_CallisThesis_Complete</SetPersistentCondition>
+    <DialogueTarget>FoundSomethingMenu</DialogueTarget>
+  </DialogueNode>     
+  
+  <!-- Jam Hub -->
+  <DialogueNode>
+    <Name>JamHubMod</Name>
+    <Dialogue>
+      <Page>I beg your pardon? Modders? I have never heard of this species before in my travels, nor am I familiar with this "Ernesto" you speak of.</Page>
+      <Page>It sounds to me as if they are having a Festival of their own! A celebration of the works they have created. How interesting!</Page>
+    </Dialogue>
+    <SetPersistentCondition>coderCleric_JamHub_Complete</SetPersistentCondition>
+    <DialogueTarget>FoundSomethingMenu</DialogueTarget>
+  </DialogueNode>   
+  
+  <!-- Echo Hike -->
+  <DialogueNode>
+    <Name>EchoHikeMod</Name>
+    <Dialogue>
+      <Page>Wow, what a find! Advanced gravitational technology AND the discovery of a new species? The xenobiologist and physicist in me are delighted to hear this.</Page>
+      <Page>Were you able to communicate with these phosphors? I would love to ask them more about this Threader technology, and why those beacons were so important to them.</Page>
+    </Dialogue>
+    <SetPersistentCondition>Trifid_TrifidJam3_Complete</SetPersistentCondition>
+    <DialogueTarget>FoundSomethingMenu</DialogueTarget>
+  </DialogueNode>     
+  
+  <!-- Magistarium -->
+  <DialogueNode>
+    <Name>MagistariumMod</Name>
+    <Dialogue>
+      <Page>I am sorry I must have misheard you, you what?</Page>
+      <Page>Are you abruptly applying force to my fastening constraint?</Page>
+      <Page>So this "Magister" was searching for their creators, but instead found a new family to ascend from the universe with? That is quite nice for them, if not hard to believe.</Page>
+      <Page>The Magister started talking about "medleys of planets" and an "incursion" of sorts? Individuals defying entropy to extend a positive experience? Sounds like a bunch of meta-commentary to me.</Page>
+      <Page>Uh, not that I would know about any of that, of course.</Page>
+    </Dialogue>
+    <SetPersistentCondition>GameWyrm_HearthsNeighbor2_Complete</SetPersistentCondition>
+    <DialogueTarget>FoundSomethingMenu</DialogueTarget>
+  </DialogueNode>       
+  
+  <!-- Solar Rangers -->
+  <DialogueNode>
+    <Name>SolarRangersMod</Name>
+    <Dialogue>
+      <Page>What do you mean you destroyed it, I can still see it now. It is the large red one, right?</Page>
+      <Page>You say it "happened last loop"? I am not quite following you there. Is this some expression my clan is not familiar with?</Page>
+      <Page>Regardless, I am quite impressed your ship held up in an interplanetary dogfight, even with the addition of advanced armaments.</Page>
+      <Page>Perhaps these Solar Rangers you mentioned could teach my clan about their laser and pyrotechnic technologies.</Page>
+      <Page>For peaceful purposes, of course.</Page>
+    </Dialogue>
+    <SetPersistentCondition>Hawkbar_SolarRangers_Complete</SetPersistentCondition>
+    <DialogueTarget>FoundSomethingMenu</DialogueTarget>
+  </DialogueNode>    
+  
+  <!-- Axiom -->
+  <DialogueNode>
+    <Name>AxiomMod</Name>
+    <Dialogue>
+      <Page>So the history of these villagers mirrors the history of your own, right down to the same names of the planets in their solar system, diverging with them escaping their exploding star using an escape pod.</Page>
+      <Page>You say a three-eyed species previously inhabited their solar system, and a clan of my own species also previously inhabited your solar system?</Page>
+      <Page>These similarities are much too specific to be mere coincidence. Hypothesis: These villagers come from an alternate universe which predates our own!</Page>
+      <Page>I propose we call their universe, the "Alpha" universe.</Page>
+      <Page>And ours? The "2019 official release" universe.</Page>
+    </Dialogue>
+    <SetPersistentCondition>MegaPiggy_Axiom_Complete</SetPersistentCondition>
+    <DialogueTarget>FoundSomethingMenu</DialogueTarget>
+  </DialogueNode>
+
+  <!-- Reflections -->
+  <DialogueNode>
+    <Name>ReflectionsMod</Name>
+    <Dialogue>
+      <Page>So, a group of Nomai devised a way to <![CDATA[<Color=orange>]]>load<![CDATA[</Color>]]> their minds into a constructed reality, to live there even after the heat-death of the universe?</Page>
+      <Page>I can understand their motiviation to begin such an undertaking. I can also understand the reasoning that ultimately led them to abandon the project.</Page>
+      <Page>To live a life without exploration, without discovery, would for a Nomai be a fate worse than death. I hope they eventually found the different solution they were looking for.</Page>
+      <Page>"Fear of failure is a poor reason not to try", inspiring words from this Primm you spoke of. I will do well to remember them.</Page>
+      <Page>Reminds me of something my third cousin twice removed once said. I wonder what Poke is up to these days.</Page>
+    </Dialogue>
+    <SetPersistentCondition>TeamErnesto_OWJam3ModProject_Complete</SetPersistentCondition>
+    <DialogueTarget>FoundSomethingMenu</DialogueTarget>
+  </DialogueNode>
+
+  <!-- Symbiosis -->
+  <DialogueNode>
+    <Name>SymbiosisMod</Name>
+    <Dialogue>
+      <Page>Shrouded beneath the clouds you found an approximation of your home planet, but missing its native inhabitants?</Page>
+      <Page>You say a group of Nomai discovered plant life which released a potent hallucinogen into the atmosphere, which did not affect them.</Page>
+      <Page>I agree that you would likely be more susceptable to such a particulate, as your skin is much more porous than mine due to your amphibious origin.</Page>
+      <Page>However, I propose a hypothesis: These Nomai were not real, and were in fact a result of your hallucination. Perhaps a poor theory, as proving the null hypothesis would be impossible for you with your altered perception.</Page>
+      <Page>These entities that spoke to you through their "spokesperson", I wonder where they came from. I hope some day we may learn more about them.</Page>
+      <Page>Still, I wonder how much of what you saw was real, and how much was due to hallucination.</Page>
+    </Dialogue>
+    <SetPersistentCondition>CrypticBird_Jam3_Complete</SetPersistentCondition>
+    <DialogueTarget>FoundSomethingMenu</DialogueTarget>
+  </DialogueNode>
+
+  <!-- Finis -->
+  <DialogueNode>
+    <Name>FinisMod</Name>
+    <Dialogue>
+      <Page>So a group of Nomai crash landed on one of the planets in this system, and discovered the ruins of an ancient civilization?</Page>
+      <Page>The king wielded a similar staff capable of making crystaline structures visible, and when interacting with a certain crystal made additional structures materialize.</Page>
+      <Page>You mentioned a cycle of death and rebirth, and depictions of a eye-like symbol. I wonder what it could all mean?</Page>
+      <Page>Perhaps some day we will find more answers!</Page>
+    </Dialogue>
+    <SetPersistentCondition>orclecle_Finis_Complete</SetPersistentCondition>
+    <DialogueTarget>FoundSomethingMenu</DialogueTarget>
   </DialogueNode>
 
 </DialogueTree>

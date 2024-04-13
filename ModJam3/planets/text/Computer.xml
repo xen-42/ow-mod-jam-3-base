@@ -26,4 +26,11 @@
       In the spirit of the theme, all mod entries were required to take place in the same solar system, which you are now in!
     </Text>
   </TextBlock>
+  <TextBlock>
+    <ID>5</ID>
+    <ParentID>4</ParentID>
+    <Text>
+      After finishing each mod, speak with Ping - Something new might show up here next loop!
+    </Text>
+  </TextBlock>
 </NomaiObject>

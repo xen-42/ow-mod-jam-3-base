@@ -6,7 +6,6 @@
     <ID>STARSHIP_COMMUNITY_ENTRY</ID>
     <Name>Starship Community</Name>
     <Curiosity>JAM3_CURIOSITY</Curiosity>
-    <IgnoreMoreToExplore/>
 
     <RumorFact>
       <ID>STARSHIP_COMMUNITY_RUMOR_FACT</ID>
@@ -18,6 +17,11 @@
     <ExploreFact>
       <ID>STARSHIP_COMMUNITY_EXPLORE_FACT</ID>
       <Text>Streetlights Behind the Trees provided us with this lovely spawn point for the community mod jam.</Text>
+    </ExploreFact>
+
+    <ExploreFact>
+      <ID>STARSHIP_COMMUNITY_PING_FACT</ID>
+      <Text>A Nomai named Ping is collecting data to share at their clan's next Festival. When exploring the worlds in this system, I should report my findings to them.</Text>
     </ExploreFact>
 
   </Entry>

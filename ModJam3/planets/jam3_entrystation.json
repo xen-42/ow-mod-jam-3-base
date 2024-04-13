@@ -3,6 +3,19 @@
   "name": "Starship Community",
   "starSystem": "Jam3",
 
+  "AmbientLights": [
+    {
+      "outerRadius": 200,
+      "tint": {
+        "r": 240,
+        "g": 246,
+        "b": 255,
+        "a": 255
+      },
+      "intensity": 0.2
+    }
+  ],
+
   "Spawn": {
     "playerSpawn": {
       "startWithSuit": true,
@@ -121,12 +134,12 @@
         "rename": "Treepot_4",
         "path": "DB_VesselDimension_Body/Sector_VesselDimension/Props_VesselDimension/Prefab_NOM_NomaiTree_VarDRY_3/GEO_Treepot_3",
         "position": {
-          "x": 22.6,
-          "y": -5,
+          "x": 20.6,
+          "y": -10,
           "z": -1.1
         },
         "rotation": {
-          "x": 325,
+          "x": 315,
           "y": 270,
           "z": 270
         }
@@ -159,14 +172,14 @@
         "rename": "Treepot_6",
         "path": "DB_VesselDimension_Body/Sector_VesselDimension/Props_VesselDimension/Prefab_NOM_NomaiTree_VarDRY_3/GEO_Treepot_3",
         "position": {
-          "x": 5,
+          "x": -5,
           "y": 22.6,
           "z": -1.1
         },
         "rotation": {
           "x": 45,
-          "y": 270,
-          "z": 270
+          "y": 90,
+          "z": 90
         }
       },
       {
@@ -654,6 +667,34 @@
           "y": 85.8949,
           "z": 90
         }
+      },
+      {
+        "path": "CaveTwin_Body/Sector_CaveTwin/Sector_SouthHemisphere/Sector_EscapePod/Interactables_EscapePod/EscapePod_VisibleFrom_Far/DistressBeaconTransmitter/Props_NOM_Transponder/Upper_Housing",
+        "position": {
+          "x": -21,
+          "y": -4.6,
+          "z": -1
+        },
+        "rotation": {
+          "x": 311,
+          "y": 270,
+          "z": 270
+        },
+        "rename": "EggStarBase"
+      },
+      {
+        "path": "CaveTwin_Body/Sector_CaveTwin/Sector_SouthHemisphere/Sector_EscapePod/Interactables_EscapePod/EscapePod_VisibleFrom_Far/DistressBeaconTransmitter/Props_NOM_Transponder/Upper_Housing",
+        "position": {
+          "x": 9.5,
+          "y": 20,
+          "z": -1
+        },
+        "rotation": {
+          "x": 311,
+          "y": 270,
+          "z": 270
+        },
+        "rename": "AnchorBase"
       }
     ],
     "translatorText": [
