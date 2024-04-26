@@ -302,6 +302,21 @@ public class ModJam3 : ModBehaviour
 
         // Band together -> A shrubbery ig
         // pikpik_carrot.BandTogether
+        if (IsModComplete("pikpik_carrot.BandTogether"))
+        {
+            try
+            {
+                var shrub = SpawnObject(_starship, "JamPlanet(Clone)/Shrubbery",
+                    new Vector3(-13.5f, -7.65f, 6.5f), new Vector3(50, 270, 270));
+                Component.DestroyImmediate(shrub.GetComponent("BandTogether.Shrubbery"));
+                SpawnObject(_starship, "DB_VesselDimension_Body/Sector_VesselDimension/Props_VesselDimension/Prefab_NOM_NomaiTree_VarDRY_3/GEO_Treepot_3",
+                    new Vector3(-13.5f, -7.65f, 6f), new Vector3(310, 90, 90));
+            }
+            catch (Exception e)
+            {
+                ModHelper.Console.WriteLine(e.ToString(), MessageType.Error);
+            }
+        }
     }
 
     private Material GetReplacementMaterial(Material material)

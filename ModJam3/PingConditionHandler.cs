@@ -13,7 +13,8 @@ internal static class PingConditionHandler
         ("AXIOM_ESCAPE_POD_X2", "AxiomComplete"),
         ("TeamErnesto_10", "ReflectionsComplete"),
         ("BIRD_MAKE_A_SHIP_LOG_PLEASE", "SymbiosisComplete"),
-        ("finis_king_text", "FinisComplete")
+        ("finis_king_text", "FinisComplete"),
+        ("BT_KEY_COMPLETE", "BandTogetherComplete")
     };
 
     public static void Setup()

@@ -221,6 +221,13 @@
         <Text>I used a strange staff to see the invisible.</Text>
         <DialogueTarget>FinisMod</DialogueTarget>
       </DialogueOption>
+
+      <!-- Band Together -->
+      <DialogueOption>
+        <RequiredCondition>BandTogetherComplete</RequiredCondition>
+        <Text>I reunited the fractured clans of a once harmonious planet.</Text>
+        <DialogueTarget>BandTogetherMod</DialogueTarget>
+      </DialogueOption>
       
       <DialogueOption>
         <Text>Nevermind.</Text>
@@ -346,6 +353,19 @@
       <Page>Perhaps some day we will find more answers!</Page>
     </Dialogue>
     <SetPersistentCondition>orclecle_Finis_Complete</SetPersistentCondition>
+    <DialogueTarget>FoundSomethingMenu</DialogueTarget>
+  </DialogueNode>
+
+  <!-- Band Together -->
+  <DialogueNode>
+    <Name>BandTogetherMod</Name>
+    <Dialogue>
+      <Page>So you found a planet inhabited by clans of Nomai and a species called "Ghirds"?</Page>
+      <Page>They once lived in a single civilization, but infighting led them to split apart as they argued over a supposed treasure hidden behind a Great Door.</Page>
+      <Page>You were able to forge cooperation between the clans in order to finally open the door, and while there was no treasure inside, the clans became united once more regardless.</Page>
+      <Page>It is as the old saying goes: The true treasure is the communal bonds we form along our trajectory.</Page>
+    </Dialogue>
+    <SetPersistentCondition>pikpik_carrot_BandTogether_Complete</SetPersistentCondition>
     <DialogueTarget>FoundSomethingMenu</DialogueTarget>
   </DialogueNode>
 
