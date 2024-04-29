@@ -1,0 +1,16 @@
+﻿{
+  "$schema": "https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/translation_schema.json",
+  "DialogueDictionary": {
+    "Who are you?": "Qui es-tu ?",
+    "Where are we?": "Où sommes-nous ?",
+
+    "Greetings visitor!": "Bonjor visiteur !",
+    "Hello again visitor!": "Bonjor encore, visiteur !",
+
+    "What is on your mind, traveler?": "Qu'est-ce qui te préoccupe, voyageur ?",
+    "The notes written in my language scattered about the ship, did you write those?": "Les notes écrites dans ma langue dispersées sur le vaisseau, c'est vous qui les avez écrites ?",
+    "I found something!": "J'ai trouvé quelque chose !",
+    "Hey, do you know how to meditate?": "Sais-tu comment faire de la méditation ?",
+    "Goodbye.": "Au revoir."
+  }
+}
