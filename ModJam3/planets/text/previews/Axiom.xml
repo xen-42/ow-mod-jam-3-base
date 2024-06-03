@@ -12,6 +12,17 @@
   </DialogueNode>
 
   <DialogueNode>
+    <Name>NotInstalled</Name>
+    <EntryCondition>MegaPiggy_Axiom_NotInstalled</EntryCondition>
+    <Dialogue>
+      <Page>A cold planet and moon in a distant orbit. Signs of intelligent life are present.</Page>
+      <Page>Hypothesis: Tidal heating from the planet's moon may allow it to support a subsurface ocean.</Page>
+      <Page>(Install <![CDATA[<color="purple">]]>Axiom's Refuge<![CDATA[</color>]]> to learn more about this world!)</Page>
+    </Dialogue>
+    <SetPersistentCondition>HasReadNoteInStarship</SetPersistentCondition>
+  </DialogueNode>
+
+  <DialogueNode>
     <Name>MODCOMPLETE</Name>
     <EntryCondition>MegaPiggy_Axiom_Complete_EntryCondition</EntryCondition>
     <Dialogue>

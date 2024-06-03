@@ -12,6 +12,17 @@
   </DialogueNode>
 
   <DialogueNode>
+    <Name>NotInstalled</Name>
+    <EntryCondition>pikpik_carrot_BandTogether_NotInstalled</EntryCondition>
+    <Dialogue>
+      <Page>A bizarre world with a clear deliniation between hemispheres.</Page>
+      <Page>Signs of intelligent life are present.</Page>
+      <Page>(Install <![CDATA[<color="purple">]]>Band Together<![CDATA[</color>]]> to learn more about this world!)</Page>
+    </Dialogue>
+    <SetPersistentCondition>HasReadNoteInStarship</SetPersistentCondition>
+  </DialogueNode>
+
+  <DialogueNode>
     <Name>MODCOMPLETE</Name>
     <EntryCondition>pikpik_carrot_BandTogether_Complete_EntryCondition</EntryCondition>
     <Dialogue>

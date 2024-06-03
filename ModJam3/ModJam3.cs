@@ -110,7 +110,7 @@ public class ModJam3 : ModBehaviour
             catch { }
 
             // Replace materials on the starship community
-            foreach (var renderer in GameObject.FindObjectsOfType<AstroObject>().SelectMany(x => x.GetComponentsInChildren<Renderer>()))
+            foreach (var renderer in _starship.GetComponentsInChildren<Renderer>())
             {
                 renderer.materials = renderer.materials.Select(GetReplacementMaterial).ToArray();
             }
@@ -467,6 +467,10 @@ public class ModJam3 : ModBehaviour
     private bool IsModComplete(string modID)
     {
         var conditionName = $"{modID.Replace(".", "_")}_Complete";
+
+        Delay.FireOnNextUpdate(() => 
+            DialogueConditionManager.SharedInstance.SetConditionState(modID.Replace(".", "_") + "_NotInstalled", !ModHelper.Interaction.ModExists(modID)));
+
         if (ModHelper.Interaction.ModExists(modID) && PlayerData.GetPersistentCondition(conditionName))
         {
             // We update the plaques, so make sure they have the dialogue condition set now

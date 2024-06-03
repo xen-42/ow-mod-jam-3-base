@@ -12,6 +12,17 @@
   </DialogueNode>
 
   <DialogueNode>
+    <Name>NotInstalled</Name>
+    <EntryCondition>Echatsum_CallisThesis_NotInstalled</EntryCondition>
+    <Dialogue>
+      <Page>An egg shaped world, close to the star.</Page>
+      <Page>Signs of intelligent life are present on the north pole and the equator.</Page>
+      <Page>(Install <![CDATA[<color="purple">]]>Callis's Thesis<![CDATA[</color>]]> to learn more about this world!)</Page>
+    </Dialogue>
+    <SetPersistentCondition>HasReadNoteInStarship</SetPersistentCondition>
+  </DialogueNode>
+
+  <DialogueNode>
     <Name>COMPLETE</Name>
     <EntryCondition>Echatsum_CallisThesis_Complete_EntryCondition</EntryCondition>
     <Dialogue>

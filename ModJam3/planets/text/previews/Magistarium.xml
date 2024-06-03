@@ -12,6 +12,17 @@
   </DialogueNode>
 
   <DialogueNode>
+    <Name>NotInstalled</Name>
+    <EntryCondition>GameWyrm_HearthsNeighbor2_NotInstalled</EntryCondition>
+    <Dialogue>
+      <Page>A spherical body levitates above the sun, opposite my station.</Page>
+      <Page>An entrance hatch is left open, but my scans are unable to penetrate the interior.</Page>
+      <Page>(Install <![CDATA[<color="purple">]]>Hearth's Neighbor 2: Magistarium<![CDATA[</color>]]> to learn more about this world!)</Page>
+    </Dialogue>
+    <SetPersistentCondition>HasReadNoteInStarship</SetPersistentCondition>
+  </DialogueNode>
+
+  <DialogueNode>
     <Name>COMPLETE</Name>
     <EntryCondition>GameWyrm_HearthsNeighbor2_Complete_EntryCondition</EntryCondition>
     <Dialogue>

@@ -8,7 +8,7 @@
       <Page>A dark shadowy world. Were it not for intermittent flashes of lightning, it would be largely invisible against the background of space.</Page>
       <Page>Unfortunately, this world is so nebulous and mysterious that even a Hearthian ship log cannot record data on it.</Page>
       <Page>Until ship logs can be obtained, we can learn nothing new here. Perhaps my Hearthian friend could <![CDATA[<color="orange">]]>modify<![CDATA[</color>]]> their ship in order to remedy this?</Page>
-      <Page>(Bird refuses to add ship logs to their mod; ensure you have the Symbiosis Ship Logs mod by GameWyrm installed to track your progress here!)</Page>
+      <Page>(Install <![CDATA[<color="purple">]]>Symbiosis Ship Logs<![CDATA[</color>]]> to learn more about this world!)</Page>
     </Dialogue>
     <SetPersistentCondition>HasReadNoteInStarship</SetPersistentCondition>
   </DialogueNode>
@@ -20,6 +20,16 @@
       <Page>A dark shadowy world. Were it not for intermittent flashes of lightning, it would be largely invisible against the background of space.</Page>
       <Page>Unfortunately, this world is so nebulous and mysterious that even a Hearthian ship log cannot record data on it.</Page>
       <Page>Thankfully my Hearthian friend was able to install a <![CDATA[<color="orange">]]>modification<![CDATA[</color>]]> to their ship log, enabling us to record data on this world.</Page>
+    </Dialogue>
+    <SetPersistentCondition>HasReadNoteInStarship</SetPersistentCondition>
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>NotInstalled</Name>
+    <EntryCondition>CrypticBird_Jam3_NotInstalled</EntryCondition>
+    <Dialogue>
+      <Page>A dark shadowy world. Were it not for intermittent flashes of lightning, it would be largely invisible against the background of space.</Page>
+      <Page>(Install <![CDATA[<color="purple">]]>Symbiosis<![CDATA[</color>]]> and <![CDATA[<color="purple">]]>Symbiosis Ship Logs<![CDATA[</color>]]> to learn more about this world!)</Page>
     </Dialogue>
     <SetPersistentCondition>HasReadNoteInStarship</SetPersistentCondition>
   </DialogueNode>

@@ -13,6 +13,18 @@
   </DialogueNode>
 
   <DialogueNode>
+    <Name>NotInstalled</Name>
+    <EntryCondition>Hawkbar_SolarRangers_NotInstalled</EntryCondition>
+    <Dialogue>
+      <Page>A giant, ominous looking space ship orbits the sun. It possesses a considerable arsenal.</Page>
+      <Page>Hypothesis: I should stay far away from this place.</Page>
+      <Page>Note: That was not a genuine hypothesis, but an attempt at humour in the face of danger.</Page>
+      <Page>(Install <![CDATA[<color="purple">]]>Solar Rangers<![CDATA[</color>]]> to learn more about this world!)</Page>
+    </Dialogue>
+    <SetPersistentCondition>HasReadNoteInStarship</SetPersistentCondition>
+  </DialogueNode>
+
+  <DialogueNode>
     <Name>COMPLETE</Name>
     <EntryCondition>Hawkbar_SolarRangers_Complete_EntryCondition</EntryCondition>
     <Dialogue>

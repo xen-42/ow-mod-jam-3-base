@@ -12,6 +12,17 @@
   </DialogueNode>
 
   <DialogueNode>
+    <Name>NotInstalled</Name>
+    <EntryCondition>TeamErnesto_OWJam3ModProject_NotInstalled</EntryCondition>
+    <Dialogue>
+      <Page>A distant world, with a single ruin visible on the surface.</Page>
+      <Page>Hypothesis: There is more to this world than meets the eye.</Page>
+      <Page>(Install <![CDATA[<color="purple">]]>Reflections<![CDATA[</color>]]> to learn more about this world!)</Page>
+    </Dialogue>
+    <SetPersistentCondition>HasReadNoteInStarship</SetPersistentCondition>
+  </DialogueNode>
+
+  <DialogueNode>
     <Name>COMPLETE</Name>
     <EntryCondition>TeamErnesto_OWJam3ModProject_Complete_EntryCondition</EntryCondition>
     <Dialogue>
