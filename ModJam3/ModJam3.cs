@@ -366,17 +366,13 @@ public class ModJam3 : ModBehaviour
         if (material.name.Contains("Structure_NOM_Whiteboard_mat") ||
             material.name.Contains("Structure_NOM_SandStone_mat") ||
             material.name.Contains("Structure_NOM_SandStone_Dark_mat") ||
-            material.name.Contains("ObservatoryInterior_HEA_VillagePlanks_mat") ||
-            material.name.Contains("Structure_NOM_WallOutside_mat") ||
-            material.name.Contains("Structure_NOM_WallInside_mat") ||
-            material.name.Contains("Structure_NOM_Ceiling_mat") 
+            material.name.Contains("ObservatoryInterior_HEA_VillagePlanks_mat")
             )
         {
             return porcelain;
         }
         else if (material.name.Contains("Structure_NOM_PropTile_Color_mat") ||
-            material.name.Contains("Structure_NOM_SandStone_Darker_mat") ||
-            material.name.Contains("Structure_NOM_Floor_mat_mat") 
+            material.name.Contains("Structure_NOM_SandStone_Darker_mat")
             )
         {
             return black;
@@ -403,10 +399,6 @@ public class ModJam3 : ModBehaviour
         else if (material.name.Contains("Props_HEA_Lightbulb_mat"))
         {
             material.SetColor("_EmissionColor", new Color(0.6f, 0.7f, 0.8f));
-        }
-        else if (material.name.Contains("Sandstone"))
-        {
-            return black;
         }
 
         return material;

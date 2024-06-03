@@ -7,7 +7,7 @@
     <Dialogue>
       <Page>A dark shadowy world. Were it not for intermittent flashes of lightning, it would be largely invisible against the background of space.</Page>
       <Page>Unfortunately, this world is so nebulous and mysterious that even a Hearthian ship log cannot record data on it.</Page>
-      <Page>Until ship logs can be obtained, we can learn nothing new here. Perhaps my Hearthian friend could <![CDATA[<color="orange">]]>modify<![CDATA[</color>]]> their ship in order to remedy this?</Page>
+      <Page>Until ship logs can be obtained, we can learn nothing new here. Perhaps my Hearthian friend could <![CDATA[<color="purple">]]>modify<![CDATA[</color>]]> their ship in order to remedy this?</Page>
       <Page>(Install <![CDATA[<color="purple">]]>Symbiosis Ship Logs<![CDATA[</color>]]> to learn more about this world!)</Page>
     </Dialogue>
     <SetPersistentCondition>HasReadNoteInStarship</SetPersistentCondition>
@@ -19,7 +19,7 @@
     <Dialogue>
       <Page>A dark shadowy world. Were it not for intermittent flashes of lightning, it would be largely invisible against the background of space.</Page>
       <Page>Unfortunately, this world is so nebulous and mysterious that even a Hearthian ship log cannot record data on it.</Page>
-      <Page>Thankfully my Hearthian friend was able to install a <![CDATA[<color="orange">]]>modification<![CDATA[</color>]]> to their ship log, enabling us to record data on this world.</Page>
+      <Page>Thankfully my Hearthian friend was able to install a <![CDATA[<color="purple">]]>modification<![CDATA[</color>]]> to their ship log, enabling us to record data on this world.</Page>
     </Dialogue>
     <SetPersistentCondition>HasReadNoteInStarship</SetPersistentCondition>
   </DialogueNode>
@@ -29,6 +29,7 @@
     <EntryCondition>CrypticBird_Jam3_NotInstalled</EntryCondition>
     <Dialogue>
       <Page>A dark shadowy world. Were it not for intermittent flashes of lightning, it would be largely invisible against the background of space.</Page>
+      <Page>Unfortunately, this world is so nebulous and mysterious that even a Hearthian ship log cannot record data on it.</Page>
       <Page>(Install <![CDATA[<color="purple">]]>Symbiosis<![CDATA[</color>]]> and <![CDATA[<color="purple">]]>Symbiosis Ship Logs<![CDATA[</color>]]> to learn more about this world!)</Page>
     </Dialogue>
     <SetPersistentCondition>HasReadNoteInStarship</SetPersistentCondition>
@@ -40,9 +41,9 @@
     <Dialogue>
       <Page>A dark shadowy world. Were it not for intermittent flashes of lightning, it would be largely invisible against the background of space.</Page>
       <Page>Unfortunately, this world is so nebulous and mysterious that even a Hearthian ship log cannot record data on it.</Page>
-      <Page>Thankfully my Hearthian friend was able to install a <![CDATA[<color="orange">]]>modification<![CDATA[</color>]]> to their ship log, enabling us to record data on this world.</Page>
+      <Page>Thankfully my Hearthian friend was able to install a <![CDATA[<color="purple">]]>modification<![CDATA[</color>]]> to their ship log, enabling us to record data on this world.</Page>
       <Page>It seems however that their findings have left us with more questions than answers: Where did this "spokesperson" come from, what was their purpose, and why does this "Ernesto" character keep popping up everywhere?</Page>
-      <Page>I took this plant cutting from the planet. Apparently it causes hallucinations within my Hearthian friend, but it has no effect on me.</Page>
+      <Page>I took a plant cutting from the vines growing on the planet. Apparently it causes hallucinations within my Hearthian friend, but it has no effect on me.</Page>
     </Dialogue>
     <SetPersistentCondition>HasReadNoteInStarship</SetPersistentCondition>
   </DialogueNode>
