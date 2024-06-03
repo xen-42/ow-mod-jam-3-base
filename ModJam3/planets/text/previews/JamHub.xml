@@ -12,6 +12,17 @@
   </DialogueNode>
 
   <DialogueNode>
+    <Name>NotInstalled</Name>
+    <EntryCondition>coderCleric_JamHub_NotInstalled</EntryCondition>
+    <Dialogue>
+      <Page>A temperate world, with obvious signs of inhabitation.</Page>
+      <Page>Many beings have gathered here, for what purpose is unknown to me at this time.</Page>
+      <Page>(Install <![CDATA[<color="purple">]]>Jam Hub<![CDATA[</color>]]> to learn more about this world!)</Page>
+    </Dialogue>
+    <SetPersistentCondition>HasReadNoteInStarship</SetPersistentCondition>
+  </DialogueNode>
+
+  <DialogueNode>
     <Name>COMPLETE</Name>
     <EntryCondition>coderCleric_JamHub_Complete_EntryCondition</EntryCondition>
     <Dialogue>

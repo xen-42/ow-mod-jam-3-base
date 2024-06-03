@@ -12,6 +12,17 @@
   </DialogueNode>
 
   <DialogueNode>
+    <Name>NotInstalled</Name>
+    <EntryCondition>orclecle_Finis_NotInstalled</EntryCondition>
+    <Dialogue>
+      <Page>This body is not in hydrostatic equilibrium, and has a prolate shape.</Page>
+      <Page>Gravitational scans indicate the world has a low density - Hypothesis: This planet has deep cave systems.</Page>
+      <Page>(Install <![CDATA[<color="purple">]]>Finis<![CDATA[</color>]]> to learn more about this world!)</Page>
+    </Dialogue>
+    <SetPersistentCondition>HasReadNoteInStarship</SetPersistentCondition>
+  </DialogueNode>
+
+  <DialogueNode>
     <Name>COMPLETE</Name>
     <EntryCondition>orclecle_Finis_Complete_EntryCondition</EntryCondition>
     <Dialogue>
