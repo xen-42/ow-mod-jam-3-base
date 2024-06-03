@@ -337,7 +337,7 @@
       <Page>I agree that you would likely be more susceptable to such a particulate, as your skin is much more porous than mine due to your amphibious origin.</Page>
       <Page>However, I propose a hypothesis: These Nomai were not real, and were in fact a result of your hallucination. Perhaps a poor theory, as proving the null hypothesis would be impossible for you with your altered perception.</Page>
       <Page>These entities that spoke to you through their "spokesperson", I wonder where they came from. I hope some day we may learn more about them.</Page>
-      <Page>Still, I wonder how much of what you saw was real, and how much was due to hallucination.</Page>
+      <Page>Unless of course this entity was also a hallucination.</Page>
     </Dialogue>
     <SetPersistentCondition>CrypticBird_Jam3_Complete</SetPersistentCondition>
     <DialogueTarget>FoundSomethingMenu</DialogueTarget>

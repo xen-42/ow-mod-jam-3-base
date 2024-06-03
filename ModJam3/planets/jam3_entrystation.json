@@ -695,6 +695,13 @@
           "z": 270
         },
         "rename": "AnchorBase"
+      },
+      {
+        "deactivationCondition": "DEFAULT",
+        "activationCondition": "VEIL_LIFTED",
+        "blinkWhenActiveChanged": true,
+        "keepLoaded": false,
+        "rename": "VeilLiftedRoot"
       }
     ],
     "translatorText": [

@@ -12,7 +12,7 @@ internal static class PingConditionHandler
         ("RANGER_EGGSTAR_VICTORY", "SolarRangersComplete"),
         ("AXIOM_ESCAPE_POD_X2", "AxiomComplete"),
         ("TeamErnesto_10", "ReflectionsComplete"),
-        ("BIRD_MAKE_A_SHIP_LOG_PLEASE", "SymbiosisComplete"),
+        ("SYM_END_SPOKESPERSON", "SymbiosisComplete"),
         ("finis_king_text", "FinisComplete"),
         ("BT_KEY_COMPLETE", "BandTogetherComplete")
     };
@@ -41,6 +41,10 @@ internal static class PingConditionHandler
         {
             Locator.GetDeathManager().KillPlayer(DeathType.Meditation);
             PlayerData.SetPersistentCondition("KNOWS_MEDITATION", true);
+        }
+        else if (DialogueConditionManager.SharedInstance.GetConditionState("AnglerfishKill"))
+        {
+            Locator.GetDeathManager().KillPlayer(DeathType.CrushedByElevator);
         }
     }
 }

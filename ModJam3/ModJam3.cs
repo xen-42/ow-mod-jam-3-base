@@ -2,6 +2,7 @@
 using NewHorizons;
 using NewHorizons.Utility;
 using NewHorizons.Utility.Files;
+using NewHorizons.Utility.OWML;
 using OWML.Common;
 using OWML.ModHelper;
 using System;
@@ -109,7 +110,7 @@ public class ModJam3 : ModBehaviour
             catch { }
 
             // Replace materials on the starship community
-            foreach (var renderer in _starship.GetComponentsInChildren<Renderer>())
+            foreach (var renderer in GameObject.FindObjectsOfType<AstroObject>().SelectMany(x => x.GetComponentsInChildren<Renderer>()))
             {
                 renderer.materials = renderer.materials.Select(GetReplacementMaterial).ToArray();
             }
@@ -131,6 +132,11 @@ public class ModJam3 : ModBehaviour
                 
                 campfire._flames.material.color = new Color(0f, 0.2f, 1f);
             }
+
+            // Check for Symbiosis ship logs addon
+            var symbiosisShipLogsEnabled = ModHelper.Interaction.ModExists("GameWyrm.SymbiosisShipLogs");
+            ModHelper.Console.WriteLine($"Has symbiosis ship log addon?: {symbiosisShipLogsEnabled}");
+            ModHelper.Events.Unity.FireOnNextUpdate(() => DialogueConditionManager.SharedInstance.SetConditionState("SymbiosisShipLogsInstalled", symbiosisShipLogsEnabled));
         }
     }
 
@@ -271,8 +277,11 @@ public class ModJam3 : ModBehaviour
         {
             try
             {
+                // Put it on a table
+                var table = SpawnObject(_starship, "BrittleHollow_Body/Sector_BH/Sector_NorthHemisphere/Sector_NorthPole/Sector_HangingCity/Sector_HangingCity_BlackHoleForge/BlackHoleForgePivot/Props_BlackHoleForge/Props_NOM_Table",
+                    new Vector3(-7.3f, 13.6f, 6f), new Vector3(140f, 90f, 90f));
                 var codex = SpawnObject(_starship, "Axiom_Body/Sector/IcePlanet/Interior/Observatory/Interior/Exhibits/AncientCultureExhibit/ExhibitRoot/Rosetta Stone",
-                new Vector3(-7.3f, 13.6f, 6.35f), new Vector3(80f, 90f, 90f));
+                    new Vector3(-7.3f, 13.6f, 7.35f), new Vector3(80f, 90f, 90f));
                 codex.transform.localScale = 100f * Vector3.one;
             }
             catch (Exception e)
@@ -298,7 +307,40 @@ public class ModJam3 : ModBehaviour
 
         // SYMBIOSIS -> a talking dead anglerfish skull
         // CrypticBird.Jam3
-        // Mod doesn't have ship logs yet so this isn't implemented
+        if (IsModComplete("CrypticBird.Jam3"))
+        {
+            try
+            {
+                GameObject SpawnAnglerfish(Vector3 pos, Vector3 euler)
+                {
+                    var anglerfish = SpawnObject(_starship.transform.Find("Sector/VeilLiftedRoot").gameObject,
+                        "CaveTwin_Body/Sector_CaveTwin/Sector_SouthHemisphere/Sector_SouthUnderground/Sector_FossilCave/Interactables_FossilCave/Structure_DB_AnglerfishSkeleton",
+                        pos, euler);
+                    return anglerfish;
+                }
+
+                var table = SpawnObject(_starship, "BrittleHollow_Body/Sector_BH/Sector_NorthHemisphere/Sector_NorthPole/Sector_HangingCity/Sector_HangingCity_BlackHoleForge/BlackHoleForgePivot/Props_BlackHoleForge/Props_NOM_Table",
+                    new Vector3(8.5f, -13.15f, 6f), new Vector3(20f, 270f, 270f));
+
+                // Wait a frame for the shiplog addon to fix it
+                Delay.FireOnNextUpdate(() =>
+                {
+                    var bloom = SpawnObject(_starship, "ALTTH_Body/Sector/Flower", new Vector3(8.5f, -13.15f, 7f), new Vector3(330f, 270f, 270f));
+                });
+
+                var interiorFish = SpawnAnglerfish(new Vector3(2.6f, -15f, 6.5f), new Vector3(290f, 90f, 90f));
+                interiorFish.transform.localScale = Vector3.one * 0.02f;
+                var (dialogue, _) = _newHorizons.SpawnDialogue(this, interiorFish, "planets/text/Anglerfish.xml", radius: 2, range: 2);
+                dialogue.transform.localScale = Vector3.one / 0.02f;
+
+                SpawnAnglerfish(new Vector3(-84f, -15f, 6f), new Vector3(330f, 90f, 90f));
+                SpawnAnglerfish(new Vector3(31f, -101f, 34f), new Vector3(320f, 170f, 6f));
+            }
+            catch (Exception e)
+            {
+                ModHelper.Console.WriteLine(e.ToString(), MessageType.Error);
+            }
+        }
 
         // Band together -> A shrubbery ig
         // pikpik_carrot.BandTogether
@@ -324,13 +366,17 @@ public class ModJam3 : ModBehaviour
         if (material.name.Contains("Structure_NOM_Whiteboard_mat") ||
             material.name.Contains("Structure_NOM_SandStone_mat") ||
             material.name.Contains("Structure_NOM_SandStone_Dark_mat") ||
-            material.name.Contains("ObservatoryInterior_HEA_VillagePlanks_mat")
+            material.name.Contains("ObservatoryInterior_HEA_VillagePlanks_mat") ||
+            material.name.Contains("Structure_NOM_WallOutside_mat") ||
+            material.name.Contains("Structure_NOM_WallInside_mat") ||
+            material.name.Contains("Structure_NOM_Ceiling_mat") 
             )
         {
             return porcelain;
         }
         else if (material.name.Contains("Structure_NOM_PropTile_Color_mat") ||
-            material.name.Contains("Structure_NOM_SandStone_Darker_mat")
+            material.name.Contains("Structure_NOM_SandStone_Darker_mat") ||
+            material.name.Contains("Structure_NOM_Floor_mat_mat") 
             )
         {
             return black;
@@ -357,6 +403,10 @@ public class ModJam3 : ModBehaviour
         else if (material.name.Contains("Props_HEA_Lightbulb_mat"))
         {
             material.SetColor("_EmissionColor", new Color(0.6f, 0.7f, 0.8f));
+        }
+        else if (material.name.Contains("Sandstone"))
+        {
+            return black;
         }
 
         return material;
