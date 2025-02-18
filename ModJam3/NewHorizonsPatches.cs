@@ -16,5 +16,5 @@ internal class NewHorizonsPatches
     /// </summary>
     [HarmonyPrefix]
     [HarmonyPatch(typeof(TitleSceneHandler), "DisplayBodiesOnTitleScreen")]
-    public static bool DebugReload_DisplayBodyOnTitleScreen() => false;
+    public static bool TitleSceneHandler_DisplayBodiesOnTitleScreen() => false;
 }

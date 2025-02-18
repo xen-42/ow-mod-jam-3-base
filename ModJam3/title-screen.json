@@ -1,0 +1,25 @@
+{
+    "$schema": "https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/title_screen_schema.json",
+    "titleScreens": [
+        {
+            "disableNHPlanets": true,
+            "shareTitleScreen": false,
+            "MenuPlanet": {
+                "destroyMenuPlanet": true,
+                "details": [
+                    {
+                        "assetBundle": "planets/assets/jam3bundle",
+                        "path": "Root_StarshipCommunity.prefab",
+                        "rename": "StarshipCommunity",
+                        "position": { "y": 25 },
+                        "scale": 0.5,
+                        "removeChildren": [
+                            "Starship_AirVolume",
+                            "Starship_Gravity"
+                        ]
+                    }
+                ]
+            }
+        }
+    ]
+}
