@@ -11,8 +11,8 @@
                         "assetBundle": "planets/assets/jam3title",
                         "path": "Assets/StarshipCommunity.prefab",
                         "rename": "StarshipCommunity",
-                        "position": { "y": 25 },
-                        "scale": 0.5
+                        "position": { "y": 4 },
+                        "scale": 1
                     }
                 ]
             }
