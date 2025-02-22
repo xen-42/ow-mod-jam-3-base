@@ -4,6 +4,7 @@
         {
             "disableNHPlanets": true,
             "shareTitleScreen": false,
+            "music": "TravelerNomai",
             "MenuPlanet": {
                 "destroyMenuPlanet": true,
                 "details": [
