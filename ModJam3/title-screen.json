@@ -8,15 +8,11 @@
                 "destroyMenuPlanet": true,
                 "details": [
                     {
-                        "assetBundle": "planets/assets/jam3bundle",
-                        "path": "Root_StarshipCommunity.prefab",
+                        "assetBundle": "planets/assets/jam3title",
+                        "path": "Assets/StarshipCommunity.prefab",
                         "rename": "StarshipCommunity",
                         "position": { "y": 25 },
-                        "scale": 0.5,
-                        "removeChildren": [
-                            "Starship_AirVolume",
-                            "Starship_Gravity"
-                        ]
+                        "scale": 0.5
                     }
                 ]
             }
