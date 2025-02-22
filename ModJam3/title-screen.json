@@ -19,6 +19,14 @@
                         "rename": "StarshipCommunity",
                         "position": { "y": 4 },
                         "scale": 1
+                    },
+                    {
+                        "path": "Scene/Background/PlanetPivot/PlanetRoot/Props/Structure_HEA_PlayerShip_v4_NearProxy",
+                        "parentPath": "StarshipCommunity/Jam3_EntryStation",
+                        "rename": "HearthianShip",
+                        "position": { "z": 40 },
+                        "scale": 1,
+                        "isRelativeToParent": true
                     }
                 ]
             }
