@@ -13,6 +13,12 @@
                         "rename": "StarshipCommunity",
                         "position": { "y": 4 },
                         "scale": 1
+                    },
+                    {
+                        "path": "Scene/Background/PlanetPivot/PlanetRoot/AmbientLight_CaveTwin",
+                        "rename": "AmbientLight",
+                        "position": { "y": -32.5 },
+                        "scale": 1
                     }
                 ]
             }
