@@ -5,6 +5,11 @@
             "disableNHPlanets": true,
             "shareTitleScreen": false,
             "music": "TravelerNomai",
+            "menuTextTint": {
+                "r": 120,
+                "g": 150,
+                "b": 250
+            },
             "MenuPlanet": {
                 "destroyMenuPlanet": true,
                 "details": [
