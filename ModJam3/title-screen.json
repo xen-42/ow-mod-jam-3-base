@@ -1,0 +1,35 @@
+{
+    "$schema": "https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/title_screen_schema.json",
+    "titleScreens": [
+        {
+            "disableNHPlanets": true,
+            "shareTitleScreen": false,
+            "music": "TravelerNomai",
+            "menuTextTint": {
+                "r": 120,
+                "g": 150,
+                "b": 250
+            },
+            "MenuPlanet": {
+                "destroyMenuPlanet": true,
+                "details": [
+                    {
+                        "assetBundle": "planets/assets/jam3title",
+                        "path": "Assets/StarshipCommunity.prefab",
+                        "rename": "StarshipCommunity",
+                        "position": { "y": 4 },
+                        "scale": 1
+                    },
+                    {
+                        "path": "Scene/Background/PlanetPivot/PlanetRoot/Props/Structure_HEA_PlayerShip_v4_NearProxy",
+                        "parentPath": "StarshipCommunity/Jam3_EntryStation",
+                        "rename": "HearthianShip",
+                        "position": { "z": 40 },
+                        "scale": 1,
+                        "isRelativeToParent": true
+                    }
+                ]
+            }
+        }
+    ]
+}
