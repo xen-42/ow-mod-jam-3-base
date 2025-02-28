@@ -1,0 +1,226 @@
+{
+    "$schema": "https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/translation_schema.json",
+    "DialogueDictionary": {
+
+        // Ping Dialogue
+        "Who are you?": "당신은 누구죠?",
+        "Where are we?": "여긴 어딘가요?",
+        "Greetings visitor!": "환영합니다, 방문자님!",
+        "Hello again visitor!": "다시 만나서 반갑군요, 방문자님!",
+        "What is on your mind, traveler?": "탐험가님, 어떤 생각을 하고 계신가요?",
+        "The notes written in my language scattered about the ship, did you write those?": "배에 흩어져 있는 화로인 언어로 쓰여진 메모는 당신이 쓴 건가요?",
+        "I found something!": "뭔가를 알아냈어요!",
+        "Hey, do you know how to meditate?": "명상하는 법을 가르쳐주실수 있나요?",
+        "Goodbye.": "이만 가볼게요.",
+
+        "This is the <![CDATA[<color=\"orange\">]]>Starship Community<![CDATA[</color>]]>. It is a small vessel of which I am captain.": "여기는 <![CDATA[<color=\"orange\">]]>우주선 공동체<![CDATA[</color>]]>입니다. 제가 선장을 맡고 있는 작은 배이죠.",
+        "We are stopped in quite a bizarre system, with a myriad of strange worlds.": "우리는 무수히 많은 이상한 세계가 존재하는 기괴한 항성계에 갇혀 있습니다.",
+        "Throughout my ship you can find some observations I have made about this system. Feel free to peruse them at your leisure.": "제 우주선 곳곳에서 이 항성계에 대해 제가 관찰한 몇 가지를 찾아볼 수 있을겁니다. 여유가 있을 때 자유롭게 읽어보세요.",
+        "Those displayed on this floor are places I have deemed higher in terms of potential discovery. You may say I have <![CDATA[<color=\"orange\">]]>ranked<![CDATA[</color>]]> them as if it were some sort of <![CDATA[<color=\"orange\">]]>contest!<![CDATA[</color>]]>": "이 층에 표시된 곳둘은 제가 탐사 가능성이 높다고 판단한 곳입니다. 마치 <![CDATA[<color=\"orange\">]]>대회<![CDATA[</color>]]>처럼 <![CDATA[<color=\"orange\">]]>순위<![CDATA[</color>]]>를 매겼다고도 할 수도 있죠!",
+        "However, those on the top floor are nonetheless worthy of exploration!": "하지만, 위쪽 층에 있는 행성들도 탐험할만한 가치가 있습니다!",
+        "My name is Ping. I am an explorer, much like yourself, I imagine.": "제 이름은 Ping입니다. 저도 당신과 마찬가지로 모험가입니다.",
+        "While I would love to explore this system myself, if I linger too long I will be late for my clan's next <![CDATA[<color=\"orange\">]]>Festival<![CDATA[</color>]]>.": "이 항성계를 직접 탐험하고 싶지만, 이곳에 너무 오래 머물러 있다가는 부족의 다음 <![CDATA[<color=\"orange\">]]>축제<![CDATA[</color>]]>에 제때 도착하지 못할 것 같습니다.",
+        "Still, I have some time to observe this system for myself, at least from a distance.": "그래도, 이 항성계를 멀리서나마 직접 관찰할 시간만큼은 있었습니다.",
+        "If you are to make any discoveries in this system, please share them with me! Perhaps we can create a collection of knowledge I can share with my <![CDATA[<color=\"orange\">]]>community<![CDATA[</color>]]>.": "이 항성계에서 발견한 것이 있다면 저와 공유해 주세요! 제 <![CDATA[<color=\"orange\">]]>공동체<![CDATA[</color>]]>와 공유할 지식 모음집을 만들 수 있을 것 같습니다.",
+      
+        "Why yes! During my travels, I have encounted many systems of reading and writing. I consider myself an accomplished xeno-linguist.": "물론이죠! 모험하는 동안 저는 많은 읽기와 쓰기 체계를 접해왔습니다. 저는 자신을 뛰어난 외계어 언어학자라고 생각합니다.",
+        "After all, I am <![CDATA[<i>]]>speaking<![CDATA[</i>]]> to you in your language currently, am I not?": "그 증거로, 제가 지금 당신의 언어로 당신과 <![CDATA[<i>]]>대화하고 있는 점<![CDATA[</i>]]> 눈치채셨나요?",
+        "In fact, I took Hearthian as an elective in college.": "사실 저는 대학에서 화로인어를 선택 과목으로 수강했습니다.",
+        "Farewell visitor! Safe travels to you.": "안녕히 가세요! 안전한 여행 되시길 바라겠습니다.",
+        "Yes, I do! Here, let me teach you.": "당연하죠! 지금 당장 가르쳐 드릴게요.",
+        "Okay, let's do this.": "좋아요, 한번 해보죠.",
+        "Wait, nevermind.": "음, 아무것도 아니에요.",
+        "Okay traveler, breathe in, and breathe out...": "좋아요 탐험기님, 숨을 깊게 들이쉬고 내쉬세요...",
+
+        "Share your discoveries with me traveler, perhaps I will be able to present them at my clan's <![CDATA[<color=\"orange\">]]>Festival<![CDATA[</color>]]>.": "모험가님이 발견한 무언가를 공유해 주시면 부족의 <![CDATA[<color=\"orange\">]]>축제<![CDATA[</color>]]>에서 발표할 수 있을지도 몰라요!",
+        "I used the Magister's Device to ascend to the Outer Planes.": "마지스터의 장치를 사용해 외부 차원으로 승천했어요.",
+        "I found a projection pool which transported me to an artificial reality.": "인공 현실로 이동할 수 있는 투영 장치를 발견했어요.",
+        "I destroyed the Egg Star battlestation and stopped an invasion!": "에그 스타 전진 기지를 파괴하고 침략을 막았어요!",
+        "I found a Nomai Festival taking place on an egg-shaped planet.": "계란 모양의 행성에서 노마이 축제가 열리고 있는 것을 발견했어요.",
+        "I found a party held by the Outer Wilds modding community.": "Outer Wilds Modding Community에서 주최하는 파티를 발견했어요.",
+        "I reached the center of an icy planet with beautiful rings.": "아름다운 고리가 있는 얼음 행성의 중심에 도달했어요.",
+        "I discovered a village founded by the escapees of a destroyed solar system.": "파괴된 태양계에서 탈출한 사람들이 세운 마을을 발견했어요.",
+        "I found a shadowy simulacrum of my home planet.": "제 고향 행성의 그림자 같은 모조품을 발견했어요.",
+        "I used a strange staff to see the invisible.": "보이지 않는 것을 보기 위해 이상한 지팡이를 사용했어요.",
+        "I reunited the fractured clans of a once harmonious planet.": "조화로웠던 행성의 분열 된 부족을 재결합했어요.",
+        "Nevermind.": "아무것도 아니에요.", 
+        "To think I had not realized there were other Nomai in this system!": "이 항성계에 다른 노마이가 있다는 사실을 몰랐다니!",
+        "I will have to go visit them later, there is much we could learn from each other.": "서로 배울 점이 많으니 나중에 꼭 방문해야겠습니다.",
+        "You are saying a young Nomai named Callis is giving their first thesis presentation? I hope it goes well.": "칼리스라는 젊은 노마이가 첫 논문 발표를 한다고요? 잘 되길 바랄게요.",
+        "I remember when I first presented a thesis during a Festival. A rewarding experience, but one that racks the nervous system indeed.": "축제에서 처음 논문을 발표했을 때가 기억납니다. 보람찬 경험이었지만 신경계를 긴장하게 만드는 경험이었죠.",
+
+        "I beg your pardon? Modders? I have never heard of this species before in my travels, nor am I familiar with this \"Ernesto\" you speak of.": "뭐라고요? \"모더\"라고 했나요? 그런 종족에 대해 들어본 적도 없고, 당신이 말하는 \"에르네스토\"에 대해서도 잘 모르겠어요.",
+        "It sounds to me as if they are having a Festival of their own! A celebration of the works they have created. How interesting!": "마치 그들만의 축제를 여는 것 같네요! 그들이 만든 작품에 대한 축하 행사일까요? 정말 흥미롭네요!",
+
+        "Wow, what a find! Advanced gravitational technology AND the discovery of a new species? The xenobiologist and physicist in me are delighted to hear this.": "와, 대단한 발견이네요! 첨단 중력 기술과 새로운 종의 발견? 제 안의 외계 생물학자이자 물리학자가 이 소식을 듣고 정말 기뻐하고 있어요.",
+        "Were you able to communicate with these phosphors? I would love to ask them more about this Threader technology, and why those beacons were so important to them.": "이 형광 물질들과 의사소통할 수 있었나요? 저는 그들에게 이 \"실을 사용하는 기술\"에 대해 더 묻고 싶습니다, 그리고 왜 그들에겐 그 비컨들이 그렇게 중요한지도 말이죠.",
+       
+        "I am sorry I must have misheard you, you what?": "제 귀가 잘못 들은거 같네요, 뭐라고요?",
+        "Are you abruptly applying force to my fastening constraint?": "절 여기서 움직이고 싶게 만들려는 건가요?",
+        "So this \"Magister\" was searching for their creators, but instead found a new family to ascend from the universe with? That is quite nice for them, if not hard to believe.": "그럼 이 \"마지스터\"는 창조자를 찾다가 우주에서 함께 승천할 새로운 가족을 찾았다는 건가요? 믿기 어렵지만 않았다면 꽤 멋진 일이었을테죠.",
+        "The Magister started talking about \"medleys of planets\" and an \"incursion\" of sorts? Individuals defying entropy to extend a positive experience? Sounds like a bunch of meta-commentary to me.": "마지스터가 \"행성들의 메들리\"와 일종의 \"침략\"에 대해 이야기하기 시작했다고요? 긍정적인 경험을 확장하기 위해 엔트로피를 거스르는 사람들? 제게는 메타-논평처럼 들리네요.",
+        "Uh, not that I would know about any of that, of course.": "물론 제가 그런것들에 대해서 알고 있다는 뜻은 아니에요.",
+
+        "What do you mean you destroyed it, I can still see it now. It is the large red one, right?": "부쉈다니, 그게 무슨 소리죠? 지금도 제 눈에 보이는걸요. 저기있는 큰 빨간 행성 맞나요?",
+        "You say it \"happened last loop\"? I am not quite following you there. Is this some expression my clan is not familiar with?": "\"지난 루프에서 일어났다\"고요? 무슨 말인지 잘 모르겠s네요. 저희 부족에게 익숙하지 않은 표현인가요?",
+        "Regardless, I am quite impressed your ship held up in an interplanetary dogfight, even with the addition of advanced armaments.": "어쨌든, 첨단 무장을 추가한 상태에서도 당신의 배가 행성 간 전투에서 잘 버텼다는 점에 매우 인상깊네요.",
+        "Perhaps these Solar Rangers you mentioned could teach my clan about their laser and pyrotechnic technologies.": "말씀하신 Solar Ranger가 제 부족에게 레이저와 불꽃 기술을 가르쳐줄 수 있을지도 모르겠네요.",
+        "For peaceful purposes, of course.": "당연히, 평화로운 목적으로요.",
+
+        "So the history of these villagers mirrors the history of your own, right down to the same names of the planets in their solar system, diverging with them escaping their exploding star using an escape pod.": "다시 말하자면, 그 마을 사람들의 역사는 당신의 역사와 닮아 있네요, 그들의 태양계에서 행성들의 이름까지 똑같고, 그들이 폭발하는 별을 피하기 위해 탈출 포드를 사용하면서 갈라지게 된 거죠.",
+        "You say a three-eyed species previously inhabited their solar system, and a clan of my own species also previously inhabited your solar system?": "눈이 세 개인 종족이 이전에 그들의 항성계에 살았고, 제 종족의 부족도 이전에 당신의 태양계에 살았다는?",
+        "These similarities are much too specific to be mere coincidence. Hypothesis: These villagers come from an alternate universe which predates our own!": "이러한 유사점이 단순한 우연이라고 하기에는 너무 구체적입니다. 가설: 이 마을 사람들은 우리보다 앞선 다른 우주에서 왔을지도 모릅니다!",
+        "I propose we call their universe, the \"Alpha\" universe.": "그들의 우주를 \"알파\" 우주라고 부르는걸 제안합니다.",
+        "And ours? The \"2019 official release\" universe.": "저희 우주요? \"2019년 정식 출시\" 우주입니다.",
+
+        "So, a group of Nomai devised a way to <![CDATA[<Color=orange>]]>load<![CDATA[</Color>]]> their minds into a constructed reality, to live there even after the heat-death of the universe?": "그러니까, 노마이 종족의 한 부족이 자신의 정신을 만들어진 현실에 <![CDATA[<Color=orange>]]>업로드하는<![CDATA[</Color>]]> 방법을 발명해서, 우주의 열적 멸망 이후에도 그곳에서 살 수 있게 한 거군요?",
+        "I can understand their motiviation to begin such an undertaking. I can also understand the reasoning that ultimately led them to abandon the project.": "그런 사업을 시작하려는 그들의 동기를 이해할 수 있습니다. 또한 궁극적으로 프로젝트를 포기하게 된 이유도 이해할 수 있습니다.",
+        "To live a life without exploration, without discovery, would for a Nomai be a fate worse than death. I hope they eventually found the different solution they were looking for.": "탐험 없이, 발견 없이 살아가는 것은 노마이족에게 죽음보다 더한 운명일 거에요. 저는 그들이 결국 그들이 찾고 있던 다른 해결책을 찾았기를 바랍니다.",
+        "\"Fear of failure is a poor reason not to try\", inspiring words from this Primm you spoke of. I will do well to remember them.": "'실패에 대한 두려움은 시도하지 않는 이유로는 부족하다’, 당신이 말한 프림이라는 노마이의 말이 인상깊네요. 이 말을 잘 기억해야겠습니다.",
+        "Reminds me of something my third cousin twice removed once said. I wonder what Poke is up to these days.": "두 번이나 헤어진 셋째 사촌이 한 말이 생각나네요. 요즘 포케가 무슨 일을 하고 있는지 궁금하군요.",
+
+        "Shrouded beneath the clouds you found an approximation of your home planet, but missing its native inhabitants?": "구름 속에 가려진 그곳에서 고향 행성의 모조품을 찾았지만, 마을의 주민들은 사라졌다고요?",
+        "You say a group of Nomai discovered plant life which released a potent hallucinogen into the atmosphere, which did not affect them.": "노마이족이 강력한 환각제를 대기 중으로 방출하는 식물을 발견했지만, 그들에게는 영향이 없었다는 거군요.",
+        "I agree that you would likely be more susceptable to such a particulate, as your skin is much more porous than mine due to your amphibious origin.": "당신이 그런 입자에 더 취약할 가능성이 크다고 생각합니다. 당신의 피부가 제 피부보다 훨씬 더 구멍이 많기 때문인데, 그건 당신이 양서류 출신이라서 그렇습니다.",
+        "However, I propose a hypothesis: These Nomai were not real, and were in fact a result of your hallucination. Perhaps a poor theory, as proving the null hypothesis would be impossible for you with your altered perception.": "하지만, 한 가지 가설을 제안합니다: 이 노마이는 존재하지 않으며, 실제로는 당신의 환각입니다. 아마도 잘못된 가설을 증명하는 것은 당신의 중독된 인식으로는 불가능할 것이기 때문에, 그건 빈약한 가설일 것입니다.",
+        "These entities that spoke to you through their \"spokesperson\", I wonder where they came from. I hope some day we may learn more about them.": "\"대변자\"을 통해 당신에게 말을 건 그 단체가 어디에서 왔는지 궁금하네요. 언젠가 그들에 대해 더 많이 알 수 있기를 바랍니다.",
+        "Unless of course this entity was also a hallucination.": "물론 이 실체도 환각이 아니라면 말입니다.",
+    
+        // Ping Memory Cube
+        "PING: What an interesting cube. I wonder what it does.": "핀: 흥미로운 큐브네요. 어떤 기능을 하는지 궁금합니다.",
+        "PING: Oh. It reads my mind. Fascinating. I hope I do not think of anything embarassing.": "PING: 오. 내 마음을 읽었군요. 흥미롭네요. 부끄러운 생각을 하지 않았었다면 좋겠네요.",
+        "PING: ...": "PING: ...",
+        "PING: Okay good, I did not.": "PING: 좋아요, 안 했군요.",
+
+        // Note
+        "Thank you Streetlights Behind the Trees for making this space station model for the community jam!": "대회룰 위해 우주 정거장 모형을 만들어 주신 \"Streetlights Behind the Trees\"님에게 감사드립니다!",
+        "Also thanks hearth1an for the texture used for the Nomai downstairs.": "또한 아래층의 노마이에게 사용된 텍스처를 제공해 주신 \"hearth1an\"님에게도 감사드립니다.",
+
+        // Computer
+        "Welcome to the 3rd Outer Wilds mod jam.": "제 3회 Outer Wilds 모드 대회에 오신 것을 환영합니다.",
+        "Participants had 11 days to create a story-mod centered around a single planet.": "참가자들은 11일 동안 단 하나의 행성을 중심으로 스토리 모드를 제작해야 했습니다.",
+        "All previous mod jams have a required theme. This time the theme was community!": "이전의 모든 모드 대회에는 필수 테마가 있었습니다. 이번 주제는 \"공동체\"였습니다!",
+        "In the spirit of the theme, all mod entries were required to take place in the same solar system, which you are now in!": "테마의 주제에 따라 모든 모드 출품작은 현재 여러분이 속한 동일한 태양계에서 만들어져야 했습니다!",
+        "After finishing each mod, speak with Ping - Something new might show up here next loop!": "각 모드를 완료한 후 Ping과 대화하세요 - 다음 루프에 새로운 모드가 나타날 것입니다!",
+
+        // Anglerfish
+        "Hey it\"s me a dead anglerfish.": "안녕, 저에요, 죽은 아귀요.",
+        "Hello figment of my imagination.": "반가워요, 제 상상의 친구 씨.",
+        "How did you die?": "어떻게 죽은거죠?",
+        "Allow me to demonstrate.": "제가 직접 보여 드릴게요.",
+
+        // Organizer Recorder
+        "The 3rd Outer Wilds mod jam was organized by xen, Raicuparta, _nebula, JohnCorby, and Idiot.": "제 3회 Outer Wilds 모드 대회는 xen, Raicuparta, _nebula, JohnCorby, Idiot가 주최했습니다.",
+        "Thank you to GameWyrm, Raicuparta, Hawkbar, Book, Locochoco, JohnCorby, xen, and Idiot for donating to the prize pool!": "상금을 기부해 주신 GameWyrm, Raicuparta, Hawkbar, Book, Locochoco, JohnCorby, xen, Idiot님에게 감사드립니다!",
+        "The judges were: Book, Idiot, JohnCorby, xen, and _nebula.": "심사위원은 다음과 같습니다: Book, Idiot, JohnCorby, xen, _nebula.",
+
+        // First Winner
+        "The first place winner of the mod jam was...": "이번 모드 대회의 우승자는 바로...",
+        "Hearth's Neighbor 2: Magistarium! Congratulations GameWyrm, EndgameZero, FunkyShoeMan, and CelestialsStorm!": "Hearth's Neighbor 2: 마지스타리움! GameWyrm, EndgameZero, FunkyShoeMan, CelestialsStorm님 축하드립니다!",
+
+        // Second Winner
+        "The second place winner of the mod jam was...": "2등상의 주인공은 바로...",
+        "Reflections! Congratulations Walker, GayCoffee, and Greenpixel!": "Reflection! Walker, GayCoffee, Greenpixel님 축하드립니다!",
+
+        // Third Winner
+        "The third place winner of the mod jam was...": "3등상의 주인공은 바로...",
+        "Solar Rangers: The Egg Star Attacks! Congratulations to The Wrong Warp Team!": "Solar Rangers: 에그 스타의 습격! The Wrong Warp 팀에게 축하를 보냅니다!",
+
+        //Axiom
+        "A cold planet and moon in a distant orbit. Signs of intelligent life are present.": "먼 궤도에 있는 차가운 행성과 위성. 지적 생명체의 흔적이 존재합니다.",
+        "Hypothesis: Tidal heating from the planet's moon may allow it to support a subsurface ocean.": "가설: 위성의 조석 가열로 인해 지하에 바다가 존재할 수 있을지도 모릅니다.",
+        "(Install <![CDATA[<color=\"purple\">]]>Axiom's Refuge<![CDATA[</color>]]> to learn more about this world!)": "(<![CDATA[<color=\"purple\">]]>Axiom's Refuge<![CDATA[</color>]]>를 설치하고 이 세계에 대해 자세히 알아보세요!).",
+        "My Hearthian friend has informed me this planet is populated by a similar species, and that they possess Nomai artifacts": "제 화로인 친구가 이 행성에 비슷한 종족이 살고 있으며 노마이 유물을 가지고 있다고 알려주었습니다.",
+        "From them I was able to acquire a new recipe for cactus soup!": "그들로부터 선인장 수프의 새로운 레시피를 얻을 수 있었습니다!",
+
+        //BandTogether
+        "A bizarre world with a clear deliniation between hemispheres.": "반구 모양으로 명확한 구분이 있는 이상한 행성.",
+        "Signs of intelligent life are present.": "지적 생명체의 흔적이 존재합니다.",
+        "(Install <![CDATA[<color=\"purple\">]]>Band Together<![CDATA[</color>]]> to learn more about this world!)": "(<![CDATA[<color=\"purple\">]]>Band Together<![CDATA[</color>]]>를 설치하고 이 세계에 대해 자세히 알아보세요!)",
+        "My Hearthian friend has told me that the civilization of this planet, which had long been fractured into clans, has now been reunited.": "제 화로인 친구가 오랫동안 부족으로 분열되어 있던 이 행성의 문명이 재결합했다고 말해주었습니다.",
+        "During my visit to the planet I met a scheming Nomai in the possession of a unique species of shrub. I took a cutting of the plant for my own studies.": "행성을 방문한 저는 독특한 식물을 가지고 있는 한 노마이를 만났습니다. 제 연구를 위해 그 식물을 잘라서 가져왔어요.",
+
+        //Callis
+        "An egg shaped world, close to the star.": "태양에 가까이 있는 계란 모양의 행성.",
+        "Signs of intelligent life are present on the north pole and the equator.": "북극과 적도에는 지적 생명체의 흔적이 발견되고 있습니다.",
+        "(Install <![CDATA[<color=\"purple\">]]>Callis's Thesis<![CDATA[</color>]]> to learn more about this world!)": "(<![CDATA[<color=\"purple\">]]>Callis's Thesis<![CDATA[</color>]]>를 설치하고 이 세계에 대해 자세히 알아보세요!).",
+        "My Hearthian friend has informed me that there are Nomai on this planet!": "제 화로인 친구가 이 행성에 노마이가 있다고 알려주었습니다!",
+        "I ventured there to observe their Festival and learned of an interesting theory on marshmallow universality. Very informative!": "마시멜로 축제를 구경하러 갔다가 마시멜로의 보편성에 대한 흥미로운 이론을 알게 되었습니다. 매우 유익했습니다!",
+
+        //EchoHike
+        "An icy world with brilliant rings.": "찬란한 고리가 있는 얼음 행성.",
+        "There are artificial structures present, but no signs of life on the surface.": "인공 구조물이 존재하지만, 표면에는 생명체의 흔적이 없습니다.",
+        "(Install <![CDATA[<color=\"purple\">]]>Echo Hike<![CDATA[</color>]]> to learn more about this world!)": "(<![CDATA[<color=\"purple\">]]>Echo Hike<![CDATA[</color>]]>를 설치하고 이 세계에 대해 자세히 알아보세요!)",
+        "My Hearthian friend has told me of a unique gravitational technology developed on this planet.": "제 하스인 친구가 지구에서 개발된 독특한 중력 기술에 대해 알려주었습니다.",
+        "I had a delightful conversation with the native phosphors, and obtained my own copy of this device.": "저는 원주민 생물과 즐거운 대화를 나누고 이 장치의 사본을 직접 얻었습니다.",
+
+        //Finis
+        "This body is not in hydrostatic equilibrium, and has a prolate shape.": "이 행성은 동그란 모습이 아니라 돌출된 모습을 하고 있습니다.",
+        "Gravitational scans indicate the world has a low density - Hypothesis: This planet has deep cave systems.": "중력 스캔 결과 행성의 밀도가 낮았습니다 - 가설: 이 행성에는 깊은 동굴이 있습니다.",
+        "(Install <![CDATA[<color=\"purple\">]]>Finis<![CDATA[</color>]]> to learn more about this world!)": "(<![CDATA[<color=\"purple\">]]>Finis<![CDATA[</color>]]>를 설치하고 이 세계에 대해 자세히 알아보세요!)",
+        "My Hearthian friend has told me that a Nomai escape pod was present on the surface, and that they discovered ancient ruins with fascinating technology.": "제 화로인 친구가 지상에 노마이 탈출 포드가 존재했고, 그들이 놀라운 기술이 적용된 고대 유적을 발견했다고 말해주었습니다.",
+        "I have managed to replicate a staff from this planet that allows the wearer to see the unseen.": "저는 보이지 않는 것을 볼 수 있는 이 행성의 지팡이를 복제하는 데 성공했습니다.",
+
+        //JamHub
+        "A temperate world, with obvious signs of inhabitation.": "누군가 살고 있는 흔적이 있는 행성입니다.",
+        "Many beings have gathered here, for what purpose is unknown to me at this time.": "많은 존재들이 이곳에 모였는데, 어떤 목적으로 모였는지는 현재로서는 알 수 없습니다.",
+        "(Install <![CDATA[<color=\"purple\">]]>Jam Hub<![CDATA[</color>]]> to learn more about this world!)": "(<![CDATA[<color=\"purple\">]]>Jam Hub<![CDATA[</color>]]>를 설치하고 이 세계에 대해 자세히 알아보세요!)",
+        "My Hearthian friend has told me that the being gathered here are known as \"modders\".": "제 하스인 친구가 이곳에 모인 존재들을 '모더'라고 부른다고 들었습니다.",
+        "I have invited one to visit my ship, as I am entirely unable to grasp what exactly a \"mod\" is.": "'모드'가 정확히 무엇인지 전혀 이해하지 못해서 제 배를 방문하도록 초대했습니다.",
+        "Unfortunately, I have not yet gleaned any useful info. This particular individual claims to have created the \"mod\" displayed here, whatever that means.": "안타깝게도 아직 유용한 정보를 수집하지 못했습니다. 이 특정 개인이 여기에 표시된 \"모드\"를 만들었다고 주장합니다.",
+
+        //Magistarium
+        "A spherical body levitates above the sun, opposite my station.": "태양 위, 정거장 맞은편에 떠 있는 동그란 행성.",
+        "An entrance hatch is left open, but my scans are unable to penetrate the interior.": "입구가 열려 있지만 스캔이 내부를 통과할 수 없었습니다.",
+        "(Install <![CDATA[<color=\"purple\">]]>Hearth's Neighbor 2: Magistarium<![CDATA[</color>]]> to learn more about this world!)": "(<![CDATA[<color=\"purple\">]]>Hearth's Neighbor 2: Magistarium<![CDATA[</color>]]>를 설치하고 이 세계에 대해 자세히 알아보세요!)",
+        "My Hearthian friend tells me this space station contains a device capable of ascending the user to a higher plane!": "제 화로인 친구가 이 우주 정거장에는 사용자를 더 높은 차원으로 승천시킬 수 있는 장치가 있다고 말해주었습니다!",
+        "While I was unable to ascend, I did however find some interesting artifacts which I have appropriated for my own collection.": "승천할 수는 없었지만, 흥미로운 유물 몇 가지를 발견하여 제 수집품 목록에 추가했습니다.",
+        "The disco ball in particular will be quite the show-stopper at my clan's Festival, I believe.": "특히 디스코 볼은 우리 클랜의 축제에서 최고의 볼거리가 될 것 같습니다.",
+
+        //Reflections
+        "A distant world, with a single ruin visible on the surface.": "표면에는 하나의 폐허만 보이는 멀리 있는 행성.",
+        "Hypothesis: There is more to this world than meets the eye.": "가설: 이 행성에는 눈에 보이는 것보다 더 많은 것이 있습니다.",
+        "(Install <![CDATA[<color=\"purple\">]]>Reflections<![CDATA[</color>]]> to learn more about this world!)": "(<![CDATA[<color=\"purple\">]]>Reflections<![CDATA[</color>]]>을 설치하고 이 세계에 대해 자세히 알아보세요!)",
+        "My Hearthian friend has informed me that this world houses a Nomai-created simulated reality which offers immortality.": "제 화로인 친구가 이 행성에는 노마이가 만든, 죽음을 피할 수 있는 시뮬레이션이 있다고 알려주었습니다.",
+        "While the Nomai who created it abandoned it, wishing never to be trapped in a world without the thrill of exploration, I have appropriated some of their schematics.": "시뮬레이션을 만든 노마이는 탐험의 재미가 없는 세상에 갇히지 않기를 바라며 시뮬레이션을 버렸지만, 저는 그들의 설계도 일부를 차용했습니다.",
+        "Even though they wished not to pursue the technology further, this advanced projection technology may still have its merits.": "더 이상 이 기술을 추구하지 않기로 했음에도 불구하고, 이 첨단 투영 기술은 여전히 장점이 있을 수 있습니다.",
+
+        //SolarRangers
+        "A giant, ominous looking space ship orbits the sun. It possesses a considerable arsenal.": "이 태양 궤도를 돌고 있는 거대하고 불길해 보이는 우주선. 이 우주선에는 상당한 무기가 탑재되어 있습니다.",
+        "Hypothesis: I should stay far away from this place.": "가설: 이곳에서 멀리 떨어져 있어야 합니다.",
+        "Note: That was not a genuine hypothesis, but an attempt at humour in the face of danger.": "참고: 이는 진짜 가설이 아니라 농담을 시도한 것입니다.",
+        "(Install <![CDATA[<color=\"purple\">]]>Solar Rangers<![CDATA[</color>]]> to learn more about this world!)": "(<![CDATA[<color=\"purple\">]]>Solar Rangers<![CDATA[</color>]]>를 설치하고 이 세계에 대해 자세히 알아보세요!)",
+        "My Hearthian friend assures me that with the help of the Solar Rangers, this ship can ultimately be destroyed.": "제 화로인 친구는 Solar Rangers의 도움으로 이 함선을  파괴할 수 있다고 말했습니다.",
+        "In fact, I have obtained copies of its schematics and determined it has an obvious vulnerability!": "실제 회로도의 사본을 입수한 결과 약점이 있다는 것을 확인했습니다!",
+        "It is vulnerable to lasers and bombs.": "레이저와 폭탄에 취약합니다.",
+
+        //Symbiosis
+        "A dark shadowy world. Were it not for intermittent flashes of lightning, it would be largely invisible against the background of space.": "어두운 그림자가 드리운 행성. 간헐적으로 번쩍이는 번개가 아니었다면 우주라는 배경에 가려 거의 보이지 않았을 것입니다.",
+        "Unfortunately, this world is so nebulous and mysterious that even a Hearthian ship log cannot record data on it.": "안타깝게도 이 세계는 너무 모호하고 신비해서 화로인의 선박 일지에도 데이터를 기록할 수 없습니다.",
+        "Until ship logs can be obtained, we can learn nothing new here. Perhaps my Hearthian friend could <![CDATA[<color=\"purple\">]]>modify<![CDATA[</color>]]> their ship in order to remedy this?": "함선 일지를 얻을 수 있을 때까지는 여기서 새로운 것을 알 수 없습니다. 화로인 친구가 이 문제를 해결하기 위해 함선을 <![CDATA[<color=\"purple\">]]>고칠<![CDATA[</color>]]> 수 있을까요?",
+        "(Install <![CDATA[<color=\"purple\">]]>Symbiosis Ship Logs<![CDATA[</color>]]> to learn more about this world!)": "(<![CDATA[<color=\"purple\">]]>Symbiosis Ship Logs<![CDATA[</color>]]>를 설치하고 이 세계에 대해 자세히 알아보세요!).",
+        "Thankfully my Hearthian friend was able to install a <![CDATA[<color=\"purple\">]]>modification<![CDATA[</color>]]> to their ship log, enabling us to record data on this world.": "다행히 제 화로인 친구가 함선 일지에 <![CDATA[<color=\"purple\">]]>특별한<![CDATA[</color>]]> 기능을 설치해서 이 세계에 대한 데이터를 기록할 수 있었습니다.",
+        "(Install <![CDATA[<color=\"purple\">]]>Symbiosis<![CDATA[</color>]]> and <![CDATA[<color=\"purple\">]]>Symbiosis Ship Logs<![CDATA[</color>]]> to learn more about this world!)": "(<![CDATA[<color=\"purple\">]]>Symbiosis<![CDATA[</color>]]>와 <![CDATA[<color=\"purple\">]]>Symbiosis Ship Logs<![CDATA[</color>]]>를 설치하고 이 세계에 대해 자세히 알아보세요!).",
+        "It seems however that their findings have left us with more questions than answers: Where did this \"spokesperson\" come from, what was their purpose, and why does this \"Ernesto\" character keep popping up everywhere?": "그러나 그들의 발견은 우리에게 답보다 더 많은 의문을 남긴 것 같습니다: 이 '대변인'은 어디에서 왔으며, 그들의 목적은 무엇이고, 왜 이 \"에르네스토\"라는 캐릭터가 사방에서 계속 등장하는 것일까요?",
+        "I took a plant cutting from the vines growing on the planet. Apparently it causes hallucinations within my Hearthian friend, but it has no effect on me.": "지구에서 자라는 덩굴에서 식물을 잘라 가져왔습니다. 분명히 그것은 제 화로인 친구에게 환각을 일으키지만 저에게는 아무런 영향을 미치지 않습니다.",
+    
+    },
+
+    "ShipLogDictionary": {
+        "Outer Wilds Mod Jam 3": "Outer Wilds Mod Jam 3",
+        "Welcome to the 3rd Outer Wilds mod jam! All entries will exist here, in this one solar system.": "Outer Wilds 제 3회 모드 대회에 오신 걸 환영합니다! 모든 참가작들이 이곳, 단 하나의 우주에 존재합니다.",
+        "This time, the theme was COMMUNITY.": "이번 주제는 \"공동체\"였습니다.",
+
+        // Starship Community
+        "Starship Community": "Starship Community",
+        "I awoke in a space station high above a blue star.": "푸른 별에 위에 있는 우주 정거장에서 깨어났다.",
+        "Streetlights Behind the Trees provided us with this lovely spawn point for the community mod jam.": "나무 뒤의 가로등은 모드 대회를 위한 멋진 스폰 장소를 제공한다.",
+        "A Nomai named Ping is collecting data to share at their clan's next Festival. When exploring the worlds in this system, I should report my findings to them.": "Ping이라는 이름의 노마이가 그들 부족의 다음 축제에서 공유하기 위한 정보를 수집해 줄 것을 요청했다. 이 우주를 탐험할 때는, 알아낸 것을 공유해야 한다."
+    },
+
+    "UIDictionary": {   
+         "Ping": "Ping"
+    },
+
+
+}
