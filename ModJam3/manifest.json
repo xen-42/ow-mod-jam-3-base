@@ -4,7 +4,7 @@
   "author": "xen-42",
   "name": "Mod Jam 3",
   "uniqueName": "xen.ModJam3",
-  "version": "1.2.3",
+  "version": "1.2.4",
   "owmlVersion": "2.9.0",
   "dependencies": ["xen.NewHorizons"]
 }
