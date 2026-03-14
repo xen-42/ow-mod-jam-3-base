@@ -1,0 +1,226 @@
+{
+    "$schema": "https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/translation_schema.json",
+    "DialogueDictionary": {
+
+        // Ping Dialogue
+        "Who are you?": "Кто ты?",
+        "Where are we?": "Где мы?",
+        "Greetings visitor!": "Приветствую, посетитель!",
+        "Hello again visitor!": "Снова здравствуйте, посетитель!",
+        "What is on your mind, traveler?": "О чём ты думаешь, путешественник?",
+        "The notes written in my language scattered about the ship, did you write those?": "Заметки на моём языке, разбросанные по кораблю — это ты их написал?",
+        "I found something!": "Я кое-что нашёл!",
+        "Hey, do you know how to meditate?": "Эй, ты не знаешь, как медитировать?",
+        "Goodbye.": "До свидания.",
+
+        "This is the <![CDATA[<color=\"orange\">]]>Starship Community<![CDATA[</color>]]>. It is a small vessel of which I am captain.": "Это <![CDATA[<color=\"orange\">]]>Звёздное Сообщество<![CDATA[</color>]]>. Это небольшое судно, капитаном которого являюсь я.",
+        "We are stopped in quite a bizarre system, with a myriad of strange worlds.": "Мы застряли в весьма причудливой системе с мириадами странных миров.",
+        "Throughout my ship you can find some observations I have made about this system. Feel free to peruse them at your leisure.": "По всему моему кораблю вы можете найти мои наблюдения об этой системе. Не стесняйтесь просматривать их в свободное время.",
+        "Those displayed on this floor are places I have deemed higher in terms of potential discovery. You may say I have <![CDATA[<color=\"orange\">]]>ranked<![CDATA[</color>]]> them as if it were some sort of <![CDATA[<color=\"orange\">]]>contest!<![CDATA[</color>]]>": "Те, что показаны на этом этаже — это места, которые я счёл более перспективными для открытий. Можно сказать, я присвоил им <![CDATA[<color=\"orange\">]]>ранги<![CDATA[</color>]]>, будто это какой-то <![CDATA[<color=\"orange\">]]>конкурс<![CDATA[</color>]]>!",
+        "However, those on the top floor are nonetheless worthy of exploration!": "Однако те, что на верхнем этаже, всё же достойны исследования!",
+        "My name is Ping. I am an explorer, much like yourself, I imagine.": "Меня зовут Пинг. Я исследователь, полагаю, такой же, как и вы.",
+        "While I would love to explore this system myself, if I linger too long I will be late for my clan's next <![CDATA[<color=\"orange\">]]>Festival<![CDATA[</color>]]>.": "Хотя я и хотел бы исследовать эту систему сам, если я задержусь слишком надолго, то опоздаю на следующий <![CDATA[<color=\"orange\">]]>Фестиваль<![CDATA[</color>]]> моего клана.",
+        "Still, I have some time to observe this system for myself, at least from a distance.": "Но у меня ещё есть время понаблюдать за этой системой самому, хотя бы издалека.",
+        "If you are to make any discoveries in this system, please share them with me! Perhaps we can create a collection of knowledge I can share with my <![CDATA[<color=\"orange\">]]>community<![CDATA[</color>]]>.": "Если вы сделаете какие-либо открытия в этой системе, пожалуйста, поделитесь ими со мной! Возможно, мы сможем собрать коллекцию знаний, которыми я смогу поделиться с моим <![CDATA[<color=\"orange\">]]>сообществом<![CDATA[</color>]]>.",
+
+        "Why yes! During my travels, I have encounted many systems of reading and writing. I consider myself an accomplished xeno-linguist.": "А почему бы и нет! За время своих путешествий я столкнулся со множеством систем письма и чтения. Я считаю себя опытным ксенолингвистом.",
+        "After all, I am <![CDATA[<i>]]>speaking<![CDATA[</i>]]> to you in your language currently, am I not?": "В конце концов, я же <![CDATA[<i>]]>разговариваю<![CDATA[</i>]]> с вами на вашем языке, не так ли?",
+        "In fact, I took Hearthian as an elective in college.": "Вообще-то, я изучал язык очаганов как факультатив в колледже.",
+        "Farewell visitor! Safe travels to you.": "Прощайте, посетитель! Счастливого пути.",
+        "Yes, I do! Here, let me teach you.": "Да, знаю! Давайте, я научу вас.",
+        "Okay, let's do this.": "Хорошо, давайте сделаем это.",
+        "Wait, nevermind.": "Подождите, неважно.",
+        "Okay traveler, breathe in, and breathe out...": "Хорошо, путешественник, вдохните и выдохните...",
+
+        "Share your discoveries with me traveler, perhaps I will be able to present them at my clan's <![CDATA[<color=\"orange\">]]>Festival<![CDATA[</color>]]>.": "Поделитесь со мной своими открытиями, путешественник, возможно, я смогу представить их на <![CDATA[<color=\"orange\">]]>Фестивале<![CDATA[</color>]]> моего клана!",
+        "I used the Magister's Device to ascend to the Outer Planes.": "Я использовал Устройство Магистра, чтобы вознестись во Внешние Сферы.",
+        "I found a projection pool which transported me to an artificial reality.": "Я нашёл бассейн-проектор, который перенёс меня в искусственную реальность.",
+        "I destroyed the Egg Star battlestation and stopped an invasion!": "Я уничтожил боевую станцию «Яичная Звезда» и остановил вторжение!",
+        "I found a Nomai Festival taking place on an egg-shaped planet.": "Я нашёл Фестиваль Номаев, проходящий на яйцевидной планете.",
+        "I found a party held by the Outer Wilds modding community.": "Я нашёл вечеринку, устроенную моддинг-сообществом Outer Wilds.",
+        "I reached the center of an icy planet with beautiful rings.": "Я добрался до центра ледяной планеты с прекрасными кольцами.",
+        "I discovered a village founded by the escapees of a destroyed solar system.": "Я обнаружил деревню, основанную беженцами из разрушенной солнечной системы.",
+        "I found a shadowy simulacrum of my home planet.": "Я нашёл теневую симуляцию моей родной планеты.",
+        "I used a strange staff to see the invisible.": "Я использовал странный посох, чтобы увидеть невидимое.",
+        "I reunited the fractured clans of a once harmonious planet.": "Я воссоединил расколотые кланы некогда гармоничной планеты.",
+        "Nevermind.": "Неважно.",
+        "To think I had not realized there were other Nomai in this system!": "И подумать, что я не догадывался, что в этой системе есть другие Номаи!",
+        "I will have to go visit them later, there is much we could learn from each other.": "Мне нужно будет навестить их позже, нам есть чему поучиться друг у друга.",
+        "You are saying a young Nomai named Callis is giving their first thesis presentation? I hope it goes well.": "Ты говоришь, что молодой Номай по имени Каллис представляет свою первую диссертацию? Надеюсь, всё пройдёт хорошо.",
+        "I remember when I first presented a thesis during a Festival. A rewarding experience, but one that racks the nervous system indeed.": "Я помню, как впервые представлял диссертацию на Фестивале. Вознаграждающий опыт, но действительно напрягающий нервную систему.",
+
+        "I beg your pardon? Modders? I have never heard of this species before in my travels, nor am I familiar with this \"Ernesto\" you speak of.": "Прошу прощения? Моддеры? Я никогда не слышал о таком виде в своих путешествиях и не знаком с этим «Эрнесто», о котором вы говорите.",
+        "It sounds to me as if they are having a Festival of their own! A celebration of the works they have created. How interesting!": "Мне кажется, будто они устраивают свой собственный Фестиваль! Праздник созданных ими работ. Как интересно!",
+
+        "Wow, what a find! Advanced gravitational technology AND the discovery of a new species? The xenobiologist and physicist in me are delighted to hear this.": "Вау, какая находка! Передовая гравитационная технология И открытие нового вида? Ксенобиолог и физик во мне в восторге от этой новости.",
+        "Were you able to communicate with these phosphors? I would love to ask them more about this Threader technology, and why those beacons were so important to them.": "Тебе удалось пообщаться с этими фосфорами? Я бы хотел спросить их подробнее об этой технологии «Threader» и о том, почему те маяки были для них так важны.",
+
+        "I am sorry I must have misheard you, you what?": "Прошу прощения, наверное, я ослышался, вы что?",
+        "Are you abruptly applying force to my fastening constraint?": "Вы что, внезапно применяете силу к моим сковывающим узам?",
+        "So this \"Magister\" was searching for their creators, but instead found a new family to ascend from the universe with? That is quite nice for them, if not hard to believe.": "Так этот «Магистр» искал своих создателей, но вместо этого нашёл новую семью, с которой можно вознестись из вселенной? Для них это весьма мило, если не трудно поверить.",
+        "The Magister started talking about \"medleys of planets\" and an \"incursion\" of sorts? Individuals defying entropy to extend a positive experience? Sounds like a bunch of meta-commentary to me.": "Магистр начал говорить о «планетных попурри» и некоем «вторжении»? Индивидуумы, бросающие вызов энтропии, чтобы продлить позитивный опыт? Звучит для меня как набор мета-комментариев.",
+        "Uh, not that I would know about any of that, of course.": "Э-э, не то чтобы я знал что-либо об этом, конечно.",
+
+        "What do you mean you destroyed it, I can still see it now. It is the large red one, right?": "Что вы имеете в виду, уничтожили? Я до сих пор его вижу. Это тот большой красный, верно?",
+        "You say it \"happened last loop\"? I am not quite following you there. Is this some expression my clan is not familiar with?": "Вы говорите, это «произошло в прошлой петле»? Я не совсем вас понимаю. Это какое-то выражение, незнакомое моему клану?",
+        "Regardless, I am quite impressed your ship held up in an interplanetary dogfight, even with the addition of advanced armaments.": "Тем не менее, я весьма впечатлён, что ваш корабль выдержал межпланетную «собачью свалку», даже с добавлением передового вооружения.",
+        "Perhaps these Solar Rangers you mentioned could teach my clan about their laser and pyrotechnic technologies.": "Возможно, эти Солнечные Рейнджеры, о которых вы говорили, смогут научить мой клан своим лазерным и пиротехническим технологиям.",
+        "For peaceful purposes, of course.": "Разумеется, в мирных целях.",
+
+        "So the history of these villagers mirrors the history of your own, right down to the same names of the planets in their solar system, diverging with them escaping their exploding star using an escape pod.": "Так история этих деревенских жителей зеркалит вашу собственную историю, вплоть до одинаковых названий планет в их солнечной системе, расходясь в тот момент, когда они сбежали от своей взрывающейся звезды на спасательной капсуле.",
+        "You say a three-eyed species previously inhabited their solar system, and a clan of my own species also previously inhabited your solar system?": "Вы говорите, что трёхглазая раса ранее населяла их солнечную систему, а клан моего вида также ранее населял вашу солнечную систему?",
+        "These similarities are much too specific to be mere coincidence. Hypothesis: These villagers come from an alternate universe which predates our own!": "Эти сходства слишком специфичны, чтобы быть простым совпадением. Гипотеза: эти деревенские жители прибыли из альтернативной вселенной, предшествующей нашей!",
+        "I propose we call their universe, the \"Alpha\" universe.": "Я предлагаю назвать их вселенную «Альфа»-вселенной.",
+        "And ours? The \"2019 official release\" universe.": "А нашу? «Официальный релиз 2019 года»-вселенная.",
+
+        "So, a group of Nomai devised a way to <![CDATA[<Color=orange>]]>load<![CDATA[</Color>]]> their minds into a constructed reality, to live there even after the heat-death of the universe?": "Значит, группа Номаев разработала способ <![CDATA[<Color=orange>]]>загружать<![CDATA[</Color>]]> свои сознания в созданную реальность, чтобы жить там даже после тепловой смерти вселенной?",
+        "I can understand their motiviation to begin such an undertaking. I can also understand the reasoning that ultimately led them to abandon the project.": "Я могу понять их мотивацию начать такое дело. Я также могу понять рассуждения, которые в итоге привели их к отказу от проекта.",
+        "To live a life without exploration, without discovery, would for a Nomai be a fate worse than death. I hope they eventually found the different solution they were looking for.": "Жизнь без исследований, без открытий была бы для Номая судьбой хуже смерти. Надеюсь, они в конечном итоге нашли иное решение, которое искали.",
+        "\"Fear of failure is a poor reason not to try\", inspiring words from this Primm you spoke of. I will do well to remember them.": "«Страх неудачи — плохая причина не пытаться» — вдохновляющие слова от той Примм, о которой вы говорили. Я постараюсь их запомнить.",
+        "Reminds me of something my third cousin twice removed once said. I wonder what Poke is up to these days.": "Напоминает мне то, что однажды сказал мой троюродный брат, дважды отстранённый. Интересно, чем сейчас занимается Пок.",
+
+        "Shrouded beneath the clouds you found an approximation of your home planet, but missing its native inhabitants?": "Скрытая под облаками, вы нашли приблизительную копию вашей родной планеты, но лишённую её коренных обитателей?",
+        "You say a group of Nomai discovered plant life which released a potent hallucinogen into the atmosphere, which did not affect them.": "Вы говорите, группа Номаев обнаружила растительную жизнь, которая выделяла в атмосферу мощный галлюциноген, не воздействовавший на них.",
+        "I agree that you would likely be more susceptable to such a particulate, as your skin is much more porous than mine due to your amphibious origin.": "Согласен, вы, вероятно, более восприимчивы к таким частицам, так как ваша кожа гораздо более пористая, чем моя, из-за вашего земноводного происхождения.",
+        "However, I propose a hypothesis: These Nomai were not real, and were in fact a result of your hallucination. Perhaps a poor theory, as proving the null hypothesis would be impossible for you with your altered perception.": "Однако, я выдвигаю гипотезу: эти Номаи не были реальны и, по сути, являлись результатом вашей галлюцинации. Возможно, слабая теория, так как доказать нулевую гипотезу вам с вашим изменённым восприятием было бы невозможно.",
+        "These entities that spoke to you through their \"spokesperson\", I wonder where they came from. I hope some day we may learn more about them.": "Эти сущности, говорившие с вами через своего «представителя»... Интересно, откуда они взялись. Надеюсь, однажды мы узнаем о них больше.",
+        "Unless of course this entity was also a hallucination.": "Если, конечно, эта сущность тоже не была галлюцинацией.",
+
+        // Ping Memory Cube
+        "PING: What an interesting cube. I wonder what it does.": "ПИНГ: Какой интересный куб. Интересно, что он делает.",
+        "PING: Oh. It reads my mind. Fascinating. I hope I do not think of anything embarassing.": "ПИНГ: О. Он читает мои мысли. Завораживающе. Надеюсь, я не подумал ни о чём смущающем.",
+        "PING: ...": "ПИНГ: ...",
+        "PING: Okay good, I did not.": "ПИНГ: Ладно, хорошо, не подумал.",
+
+        // Note
+        "Thank you Streetlights Behind the Trees for making this space station model for the community jam!": "Спасибо Streetlights Behind the Trees за создание этой модели космической станции для сообщественного джема!",
+        "Also thanks hearth1an for the texture used for the Nomai downstairs.": "Также спасибо hearth1an за текстуру, использованную для Номаев внизу.",
+
+        // Computer
+        "Welcome to the 3rd Outer Wilds mod jam.": "Добро пожаловать на 3-й мод-джем Outer Wilds.",
+        "Participants had 11 days to create a story-mod centered around a single planet.": "У участников было 11 дней, чтобы создать сюжетный мод, сосредоточенный вокруг одной планеты.",
+        "All previous mod jams have a required theme. This time the theme was community!": "У всех предыдущих мод-джемов была обязательная тема. На этот раз темой было сообщество!",
+        "In the spirit of the theme, all mod entries were required to take place in the same solar system, which you are now in!": "В духе темы все работы модов должны были происходить в одной солнечной системе, в которой вы сейчас находитесь!",
+        "After finishing each mod, speak with Ping - Something new might show up here next loop!": "После завершения каждого мода поговорите с Пингом — в следующей петле здесь может появиться что-то новое!",
+
+        // Anglerfish
+        "Hey it\"s me a dead anglerfish.": "Привет, это я, мёртвая рыба-удильщик.",
+        "Hello figment of my imagination.": "Здравствуй, плод моего воображения.",
+        "How did you die?": "Как ты умер?",
+        "Allow me to demonstrate.": "Позвольте мне продемонстрировать.",
+
+        // Organizer Recorder
+        "The 3rd Outer Wilds mod jam was organized by xen, Raicuparta, _nebula, JohnCorby, and Idiot.": "3-й мод-джем Outer Wilds был организован xen, Raicuparta, _nebula, JohnCorby и Idiot.",
+        "Thank you to GameWyrm, Raicuparta, Hawkbar, Book, Locochoco, JohnCorby, xen, and Idiot for donating to the prize pool!": "Спасибо GameWyrm, Raicuparta, Hawkbar, Book, Locochoco, JohnCorby, xen и Idiot за пожертвования в призовой фонд!",
+        "The judges were: Book, Idiot, JohnCorby, xen, and _nebula.": "Судьями были: Book, Idiot, JohnCorby, xen и _nebula.",
+
+        // First Winner
+        "The first place winner of the mod jam was...": "Победителем мод-джема, занявшим первое место, стал...",
+        "Hearth's Neighbor 2: Magistarium! Congratulations GameWyrm, EndgameZero, FunkyShoeMan, and CelestialsStorm!": "Hearth's Neighbor 2: Magistarium! Поздравляем GameWyrm, EndgameZero, FunkyShoeMan и CelestialsStorm!",
+
+        // Second Winner
+        "The second place winner of the mod jam was...": "Второе место мод-джема занял...",
+        "Reflections! Congratulations Walker, GayCoffee, and Greenpixel!": "Reflections! Поздравляем Walker, GayCoffee и Greenpixel!",
+
+        // Third Winner
+        "The third place winner of the mod jam was...": "Третье место мод-джема занял...",
+        "Solar Rangers: The Egg Star Attacks! Congratulations to The Wrong Warp Team!": "Solar Rangers: The Egg Star Attacks! Поздравляем команду The Wrong Warp!",
+
+        //Axiom
+        "A cold planet and moon in a distant orbit. Signs of intelligent life are present.": "Холодная планета и луна на далёкой орбите. Присутствуют признаки разумной жизни.",
+        "Hypothesis: Tidal heating from the planet's moon may allow it to support a subsurface ocean.": "Гипотеза: приливной нагрев от луны планеты может позволить ей содержать подповерхностный океан.",
+        "(Install <![CDATA[<color=\"purple\">]]>Axiom's Refuge<![CDATA[</color>]]> to learn more about this world!)": "(Установите <![CDATA[<color=\"purple\">]]>Axiom's Refuge<![CDATA[</color>]]>, чтобы узнать больше об этом мире!)",
+        "My Hearthian friend has informed me this planet is populated by a similar species, and that they possess Nomai artifacts": "Мой друг-очаган сообщил мне, что эта планета населена похожим видом и что у них есть артефакты Номаев.",
+        "From them I was able to acquire a new recipe for cactus soup!": "У них мне удалось получить новый рецепт кактусового супа!",
+
+        //BandTogether
+        "A bizarre world with a clear deliniation between hemispheres.": "Причудливый мир с чётким разделением между полушариями.",
+        "Signs of intelligent life are present.": "Присутствуют признаки разумной жизни.",
+        "(Install <![CDATA[<color=\"purple\">]]>Band Together<![CDATA[</color>]]> to learn more about this world!)": "(Установите <![CDATA[<color=\"purple\">]]>Band Together<![CDATA[</color>]]>, чтобы узнать больше об этом мире!)",
+        "My Hearthian friend has told me that the civilization of this planet, which had long been fractured into clans, has now been reunited.": "Мой друг-очаган рассказал мне, что цивилизация этой планеты, долгое время расколотая на кланы, теперь воссоединилась.",
+        "During my visit to the planet I met a scheming Nomai in the possession of a unique species of shrub. I took a cutting of the plant for my own studies.": "Во время визита на планету я встретил одного хитрого Номая, владеющего уникальным видом кустарника. Я взял черенок растения для собственных исследований.",
+
+        //Callis
+        "An egg shaped world, close to the star.": "Яйцевидный мир, близкий к звезде.",
+        "Signs of intelligent life are present on the north pole and the equator.": "Признаки разумной жизни присутствуют на северном полюсе и экваторе.",
+        "(Install <![CDATA[<color=\"purple\">]]>Callis's Thesis<![CDATA[</color>]]> to learn more about this world!)": "(Установите <![CDATA[<color=\"purple\">]]>Callis's Thesis<![CDATA[</color>]]>, чтобы узнать больше об этом мире!)",
+        "My Hearthian friend has informed me that there are Nomai on this planet!": "Мой друг-очаган сообщил мне, что на этой планете есть Номаи!",
+        "I ventured there to observe their Festival and learned of an interesting theory on marshmallow universality. Very informative!": "Я отважился туда, чтобы понаблюдать за их Фестивалем, и узнал интересную теорию о всеобщности зефира. Очень познавательно!",
+
+        //EchoHike
+        "An icy world with brilliant rings.": "Ледяной мир с ослепительными кольцами.",
+        "There are artificial structures present, but no signs of life on the surface.": "Присутствуют искусственные сооружения, но нет признаков жизни на поверхности.",
+        "(Install <![CDATA[<color=\"purple\">]]>Echo Hike<![CDATA[</color>]]> to learn more about this world!)": "(Установите <![CDATA[<color=\"purple\">]]>Echo Hike<![CDATA[</color>]]>, чтобы узнать больше об этом мире!)",
+        "My Hearthian friend has told me of a unique gravitational technology developed on this planet.": "Мой друг-очаган рассказал мне об уникальной гравитационной технологии, разработанной на этой планете.",
+        "I had a delightful conversation with the native phosphors, and obtained my own copy of this device.": "У меня был восхитительный разговор с местными фосфорами, и я получил собственную копию этого устройства.",
+
+        //Finis
+        "This body is not in hydrostatic equilibrium, and has a prolate shape.": "Это тело не находится в гидростатическом равновесии и имеет вытянутую форму.",
+        "Gravitational scans indicate the world has a low density - Hypothesis: This planet has deep cave systems.": "Гравитационное сканирование указывает на низкую плотность мира — Гипотеза: у этой планеты есть глубокие пещерные системы.",
+        "(Install <![CDATA[<color=\"purple\">]]>Finis<![CDATA[</color>]]> to learn more about this world!)": "(Установите <![CDATA[<color=\"purple\">]]>Finis<![CDATA[</color>]]>, чтобы узнать больше об этом мире!)",
+        "My Hearthian friend has told me that a Nomai escape pod was present on the surface, and that they discovered ancient ruins with fascinating technology.": "Мой друг-очаган рассказал мне, что на поверхности находилась спасательная капсула Номаев и что они обнаружили древние руины с захватывающей технологией.",
+        "I have managed to replicate a staff from this planet that allows the wearer to see the unseen.": "Мне удалось воссоздать посох с этой планеты, который позволяет владельцу видеть невидимое.",
+
+        //JamHub
+        "A temperate world, with obvious signs of inhabitation.": "Умеренный мир с очевидными признаками обитаемости.",
+        "Many beings have gathered here, for what purpose is unknown to me at this time.": "Многие существа собрались здесь, с какой целью — мне пока неизвестно.",
+        "(Install <![CDATA[<color=\"purple\">]]>Jam Hub<![CDATA[</color>]]> to learn more about this world!)": "(Установите <![CDATA[<color=\"purple\">]]>Jam Hub<![CDATA[</color>]]>, чтобы узнать больше об этом мире!)",
+        "My Hearthian friend has told me that the being gathered here are known as \"modders\".": "Мой друг-очаган рассказал мне, что существа, собравшиеся здесь, известны как «моддеры».",
+        "I have invited one to visit my ship, as I am entirely unable to grasp what exactly a \"mod\" is.": "Я пригласил одного посетить мой корабль, так как я совершенно не могу понять, что именно такое «мод».",
+        "Unfortunately, I have not yet gleaned any useful info. This particular individual claims to have created the \"mod\" displayed here, whatever that means.": "К сожалению, я ещё не получил никакой полезной информации. Этот конкретный индивидуум утверждает, что создал «мод», представленный здесь, что бы это ни значило.",
+
+        //Magistarium
+        "A spherical body levitates above the sun, opposite my station.": "Сферическое тело парит над солнцем, напротив моей станции.",
+        "An entrance hatch is left open, but my scans are unable to penetrate the interior.": "Входной люк оставлен открытым, но мои сканы не могут проникнуть внутрь.",
+        "(Install <![CDATA[<color=\"purple\">]]>Hearth's Neighbor 2: Magistarium<![CDATA[</color>]]> to learn more about this world!)": "(Установите <![CDATA[<color=\"purple\">]]>Hearth's Neighbor 2: Magistarium<![CDATA[</color>]]>, чтобы узнать больше об этом мире!)",
+        "My Hearthian friend tells me this space station contains a device capable of ascending the user to a higher plane!": "Мой друг-очаган говорит, что на этой космической станции есть устройство, способное вознести пользователя на более высокий план!",
+        "While I was unable to ascend, I did however find some interesting artifacts which I have appropriated for my own collection.": "Хотя мне и не удалось вознестись, я всё же нашёл несколько интересных артефактов, которые собрал для своей коллекции.",
+        "The disco ball in particular will be quite the show-stopper at my clan's Festival, I believe.": "Особенно диско-шар, я уверен, станет настоящей сенсацией на Фестивале моего клана.",
+
+        //Reflections
+        "A distant world, with a single ruin visible on the surface.": "Далёкий мир с единственными видимыми на поверхности руинами.",
+        "Hypothesis: There is more to this world than meets the eye.": "Гипотеза: в этом мире есть нечто большее, чем кажется на первый взгляд.",
+        "(Install <![CDATA[<color=\"purple\">]]>Reflections<![CDATA[</color>]]> to learn more about this world!)": "(Установите <![CDATA[<color=\"purple\">]]>Reflections<![CDATA[</color>]]>, чтобы узнать больше об этом мире!)",
+        "My Hearthian friend has informed me that this world houses a Nomai-created simulated reality which offers immortality.": "Мой друг-очаган сообщил мне, что в этом мире находится созданная Номаями симулированная реальность, предлагающая бессмертие.",
+        "While the Nomai who created it abandoned it, wishing never to be trapped in a world without the thrill of exploration, I have appropriated some of their schematics.": "Хотя создавшие её Номаи отказались от неё, не желая быть запертыми в мире без трепета исследований, я присвоил некоторые из их чертежей.",
+        "Even though they wished not to pursue the technology further, this advanced projection technology may still have its merits.": "Даже если они не желали развивать эту технологию дальше, эта продвинутая проекционная технология всё ещё может иметь свои достоинства.",
+
+        //SolarRangers
+        "A giant, ominous looking space ship orbits the sun. It possesses a considerable arsenal.": "Гигантский, зловещего вида космический корабль вращается вокруг солнца. Он обладает внушительным арсеналом.",
+        "Hypothesis: I should stay far away from this place.": "Гипотеза: мне следует держаться подальше от этого места.",
+        "Note: That was not a genuine hypothesis, but an attempt at humour in the face of danger.": "Примечание: это была не настоящая гипотеза, а попытка пошутить перед лицом опасности.",
+        "(Install <![CDATA[<color=\"purple\">]]>Solar Rangers<![CDATA[</color>]]> to learn more about this world!)": "(Установите <![CDATA[<color=\"purple\">]]>Solar Rangers<![CDATA[</color>]]>, чтобы узнать больше об этом мире!)",
+        "My Hearthian friend assures me that with the help of the Solar Rangers, this ship can ultimately be destroyed.": "Мой друг-очаган уверяет меня, что с помощью Солнечных Рейнджеров этот корабль в конечном счёте может быть уничтожен.",
+        "In fact, I have obtained copies of its schematics and determined it has an obvious vulnerability!": "Фактически, я получил копии его чертежей и определил, что у него есть очевидная уязвимость!",
+        "It is vulnerable to lasers and bombs.": "Он уязвим для лазеров и бомб.",
+
+        //Symbiosis
+        "A dark shadowy world. Were it not for intermittent flashes of lightning, it would be largely invisible against the background of space.": "Тёмный, покрытый тенями мир. Если бы не периодические вспышки молний, он был бы в основном невидим на фоне космоса.",
+        "Unfortunately, this world is so nebulous and mysterious that even a Hearthian ship log cannot record data on it.": "К сожалению, этот мир настолько туманен и загадочен, что даже журнал корабля очаганов не может записать данные о нём.",
+        "Until ship logs can be obtained, we can learn nothing new here. Perhaps my Hearthian friend could <![CDATA[<color=\"purple\">]]>modify<![CDATA[</color>]]> their ship in order to remedy this?": "Пока нельзя получить журналы корабля, мы не можем узнать здесь ничего нового. Возможно, мой друг-очаган мог бы <![CDATA[<color=\"purple\">]]>модифицировать<![CDATA[</color>]]> свой корабль, чтобы исправить это?",
+        "(Install <![CDATA[<color=\"purple\">]]>Symbiosis Ship Logs<![CDATA[</color>]]> to learn more about this world!)": "(Установите <![CDATA[<color=\"purple\">]]>Symbiosis Ship Logs<![CDATA[</color>]]>, чтобы узнать больше об этом мире!)",
+        "Thankfully my Hearthian friend was able to install a <![CDATA[<color=\"purple\">]]>modification<![CDATA[</color>]]> to their ship log, enabling us to record data on this world.": "К счастью, моему другу-очагану удалось установить <![CDATA[<color=\"purple\">]]>модификацию<![CDATA[</color>]]> для журнала своего корабля, позволив нам записывать данные об этом мире.",
+        "(Install <![CDATA[<color=\"purple\">]]>Symbiosis<![CDATA[</color>]]> and <![CDATA[<color=\"purple\">]]>Symbiosis Ship Logs<![CDATA[</color>]]> to learn more about this world!)": "(Установите <![CDATA[<color=\"purple\">]]>Symbiosis<![CDATA[</color>]]> и <![CDATA[<color=\"purple\">]]>Symbiosis Ship Logs<![CDATA[</color>]]>, чтобы узнать больше об этом мире!)",
+        "It seems however that their findings have left us with more questions than answers: Where did this \"spokesperson\" come from, what was their purpose, and why does this \"Ernesto\" character keep popping up everywhere?": "Однако кажется, что их находки оставили нам больше вопросов, чем ответов: откуда взялся этот «представитель», какова была его цель и почему этот персонаж «Эрнесто» продолжает появляться повсюду?",
+        "I took a plant cutting from the vines growing on the planet. Apparently it causes hallucinations within my Hearthian friend, but it has no effect on me.": "Я взял черенок растения с лиан, растущих на планете. По-видимому, оно вызывает галлюцинации у моего друга-очагана, но на меня не действует."
+
+    },
+
+    "ShipLogDictionary": {
+        "Outer Wilds Mod Jam 3": "Outer Wilds Mod Jam 3",
+        "Welcome to the 3rd Outer Wilds mod jam! All entries will exist here, in this one solar system.": "Добро пожаловать на 3-й мод-джем Outer Wilds! Все работы будут существовать здесь, в этой единственной солнечной системе.",
+        "This time, the theme was COMMUNITY.": "На этот раз темой было СООБЩЕСТВО.",
+
+        // Starship Community
+        "Starship Community": "Звёздное Сообщество",
+        "I awoke in a space station high above a blue star.": "Я проснулся на космической станции высоко над голубой звездой.",
+        "Streetlights Behind the Trees provided us with this lovely spawn point for the community mod jam.": "Streetlights Behind the Trees предоставил нам эту прекрасную точку появления для сообщественного мод-джема.",
+        "A Nomai named Ping is collecting data to share at their clan's next Festival. When exploring the worlds in this system, I should report my findings to them.": "Номай по имени Пинг собирает данные, чтобы поделиться ими на следующем Фестивале своего клана. Исследуя миры этой системы, я должен сообщать ему о своих находках."
+    },
+
+    "UIDictionary": {
+         "Ping": "Пинг"
+    },
+
+
+}
