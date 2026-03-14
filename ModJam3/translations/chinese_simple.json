@@ -1,0 +1,237 @@
+{
+  //该翻译补丁经检查没有任何问题。
+  "$schema": "https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/translation_schema.json",
+  "DialogueDictionary": {
+
+    // Ping Dialogue
+    "Ping": "平",
+    "Who are you?": "你是谁？",
+    "Where are we?": "我们在哪里？",
+    "Greetings visitor!": "欢迎你，访客！",
+    "Hello again visitor!": "再次见到你很高兴，访客！",
+    "What is on your mind, traveler?": "旅行者，你在想什么？",
+    "The notes written in my language scattered about the ship, did you write those?": "船上散落着用我的语言写的笔记，是你写的吗？",
+    "I found something!": "我发现了一些东西！",
+    "Hey, do you know how to meditate?": "嘿，你知道怎么冥想吗？",
+    "Goodbye.": "再见。",
+
+    "This is the <![CDATA[<color=\"orange\">]]>Starship Community<![CDATA[</color>]]>. It is a small vessel of which I am captain.": "这里是<![CDATA[<color=\"orange\">]]>星舰社群<![CDATA[</color>]]>。我是这艘小飞船的船长。",
+    "We are stopped in quite a bizarre system, with a myriad of strange worlds.": "我们停在一个非常奇特的星系中，这里有无数奇怪的世界。",
+    "Throughout my ship you can find some observations I have made about this system. Feel free to peruse them at your leisure.": "在我的飞船各处，你可以找到我对这个星系的一些观察笔记。请随意翻阅。",
+    "Those displayed on this floor are places I have deemed higher in terms of potential discovery. You may say I have <![CDATA[<color=\"orange\">]]>ranked<![CDATA[</color>]]> them as if it were some sort of <![CDATA[<color=\"orange\">]]>contest!<![CDATA[</color>]]>": "这一层展示的地方是我认为具有较高探索价值的地方。或者说我给它们<![CDATA[<color=\"orange\">]]>排名<![CDATA[</color>]]>了，就像是<![CDATA[<color=\"orange\">]]>比赛<![CDATA[</color>]]>一样！",
+    "However, those on the top floor are nonetheless worthy of exploration!": "不过，顶层展示的星球仍值得一探究竟！",
+    "My name is Ping. I am an explorer, much like yourself, I imagine.": "我的名字是平。我想我和你一样，也是一名探险家。",
+    "While I would love to explore this system myself, if I linger too long I will be late for my clan's next <![CDATA[<color=\"orange\">]]>Festival<![CDATA[</color>]]>.": "虽然我很想亲自探索这个星系，但如果逗留太久，我会赶不上家族的下一个<![CDATA[<color=\"orange\">]]>发现节<![CDATA[</color>]]>。",
+    "Still, I have some time to observe this system for myself, at least from a distance.": "不过，我还有一些时间可以观察这个星系，至少从远处看看。",
+    "If you are to make any discoveries in this system, please share them with me! Perhaps we can create a collection of knowledge I can share with my <![CDATA[<color=\"orange\">]]>community<![CDATA[</color>]]>.": "如果你在这个星系中有任何发现，请与我分享！也许我们可以创建一个知识库，我可以与我的<![CDATA[<color=\"orange\">]]>社群<![CDATA[</color>]]>分享。",
+
+    "Why yes! During my travels, I have encounted many systems of reading and writing. I consider myself an accomplished xeno-linguist.": "当然！在我的旅行中，我遇到了许多语言体系。我认为自己是一位有成就的外星语言学家。",
+    "After all, I am <![CDATA[<i>]]>speaking<![CDATA[</i>]]> to you in your language currently, am I not?": "毕竟，我现在正在用你的语言和你<![CDATA[<i>]]>交谈<![CDATA[</i>]]>，不是吗？",
+    "In fact, I took Hearthian as an elective in college.": "事实上，我在大学选修了哈斯语。",
+    "Farewell visitor! Safe travels to you.": "再见，访客！祝你旅途平安。",
+    "Yes, I do! Here, let me teach you.": "好的，我知道了！来，让我教你。",
+    "Okay, let's do this.": "好的，我们开始吧。",
+    "Wait, nevermind.": "等等，算了。",
+    "Okay traveler, breathe in, and breathe out...": "好的，旅行者，吸气，呼气……",
+
+    "Share your discoveries with me traveler, perhaps I will be able to present them at my clan's <![CDATA[<color=\"orange\">]]>Festival<![CDATA[</color>]]>.": "旅行者，与我分享你的发现吧，也许我可以在我们家族的<![CDATA[<color=\"orange\">]]>发现节<![CDATA[</color>]]>上展示它们。",
+    "I used the Magister's Device to ascend to the Outer Planes.": "我用大导师的装置飞升到了界外空间。",
+    "I found a projection pool which transported me to an artificial reality.": "我发现了一个投影池，它把我传送到了一个人工现实中。",
+    "I destroyed the Egg Star battlestation and stopped an invasion!": "我摧毁了艾格星的武装空间站并阻止了一次入侵！",
+    "I found a Nomai Festival taking place on an egg-shaped planet.": "我在一个蛋形行星上发现了一个举办中的挪麦发现节。",
+    "I found a party held by the Outer Wilds modding community.": "我发现了由《星际拓荒》模组社群举办的派对。",
+    "I reached the center of an icy planet with beautiful rings.": "我到达了一个有美丽光环的冰行星的中心。",
+    "I discovered a village founded by the escapees of a destroyed solar system.": "我发现了一个由被摧毁星系的逃亡者建立的村庄。",
+    "I found a shadowy simulacrum of my home planet.": "我发现了我家乡行星的一个影子般的复制品。",
+    "I used a strange staff to see the invisible.": "我用一根奇怪的手杖看到了看不见的东西。",
+    "I reunited the fractured clans of a once harmonious planet.": "我重新团结了一个曾经和谐的星球上分裂的家族。",
+    "Nevermind.": "算了。",
+    "To think I had not realized there were other Nomai in this system!": "我竟然没有意识到这个星系中还有其他挪麦人！",
+    "I will have to go visit them later, there is much we could learn from each other.": "我稍后必须去拜访他们，我们可以从彼此那里学到很多东西。",
+    "You are saying a young Nomai named Callis is giving their first thesis presentation? I hope it goes well.": "你是说一个叫卡莉丝的年轻挪麦人正在做她的第一次论文演讲？我希望一切顺利。",
+    "I remember when I first presented a thesis during a Festival. A rewarding experience, but one that racks the nervous system indeed.": "我记得我第一次在发现节上演讲论文时的情景。这是一次有意义的经历，但也确实让人紧张。",
+
+    "I beg your pardon? Modders? I have never heard of this species before in my travels, nor am I familiar with this \"Ernesto\" you speak of.": "你说什么？模组制作者？我在旅行中从未听说过这个物种，也不熟悉你提到的这个“厄内斯托”。",
+    "It sounds to me as if they are having a Festival of their own! A celebration of the works they have created. How interesting!": "听起来他们好像在举办自己的发现节！庆祝他们创造的作品，真有趣！",
+
+    "Wow, what a find! Advanced gravitational technology AND the discovery of a new species? The xenobiologist and physicist in me are delighted to hear this.": "哇，真是个了不起的发现！先进的重力技术和新物种的发现？我内心的外星生物学家和物理学家听到这个消息都很高兴。",
+    "Were you able to communicate with these phosphors? I would love to ask them more about this Threader technology, and why those beacons were so important to them.": "你能和这些荧光生物们交流吗？我很想问问他们关于这种钩索技术的更多信息，以及为什么那些信标对他们如此重要。",
+
+    "I am sorry I must have misheard you, you what?": "抱歉，我一定是听错了，你说什么？",
+    "Are you abruptly applying force to my fastening constraint?": "你是在突然对我的固定紧束施加力量吗？",
+    "So this \"Magister\" was searching for their creators, but instead found a new family to ascend from the universe with? That is quite nice for them, if not hard to believe.": "所以，这位“大导师”一直在寻找他们的创造者，但却组建了一个新的社群，并与他们一起飞升出宇宙？对他们来说结果相当不错，就是有点难以置信。",
+    "The Magister started talking about \"medleys of planets\" and an \"incursion\" of sorts? Individuals defying entropy to extend a positive experience? Sounds like a bunch of meta-commentary to me.": "大导师开始谈论“行星混合”和“入侵”？还有个体违抗熵增来延续积极体验？我听着像是打破第四面墙了。",
+    "Uh, not that I would know about any of that, of course.": "呃，当然，我并不是说我知道任何关于这些的事情。",
+
+    "What do you mean you destroyed it, I can still see it now. It is the large red one, right?": "你说你摧毁了它是什么意思，我现在还能看到它。是那个大的红色的，对吧？",
+    "You say it \"happened last loop\"? I am not quite following you there. Is this some expression my clan is not familiar with?": "你说它“发生在上一个循环”？我不太明白。这是我们家族不熟悉的某种表达方式吗？",
+    "Regardless, I am quite impressed your ship held up in an interplanetary dogfight, even with the addition of advanced armaments.": "无论如何，我对你的飞船在星际空战中坚持下来印象深刻，即使加装了先进武器。",
+    "Perhaps these Solar Rangers you mentioned could teach my clan about their laser and pyrotechnic technologies.": "也许你提到的这些星际游骑兵们可以教我们家族他们的激光和烟火技术。",
+    "For peaceful purposes, of course.": "当然，是为了和平目的。",
+
+    "So the history of these villagers mirrors the history of your own, right down to the same names of the planets in their solar system, diverging with them escaping their exploding star using an escape pod.": "所以这些村民的历史反映了你们的历史，甚至他们太阳系中行星的名字也相同，直到他们使用逃生舱逃离爆炸的恒星。",
+    "You say a three-eyed species previously inhabited their solar system, and a clan of my own species also previously inhabited your solar system?": "你说一个三眼物种曾经居住在他们的太阳系中，而我的一个家族也曾经居住在你们的太阳系中？",
+    "These similarities are much too specific to be mere coincidence. Hypothesis: These villagers come from an alternate universe which predates our own!": "这些相似之处太具体了，不可能是巧合。假设：这些村民来自一个比我们更早的平行宇宙！",
+    "I propose we call their universe, the \"Alpha\" universe.": "我建议我们称他们的宇宙为“阿尔法”宇宙。",
+    "And ours? The \"2019 official release\" universe.": "至于我们的？称为“2019正式版”宇宙。",
+
+    "So, a group of Nomai devised a way to <![CDATA[<Color=orange>]]>load<![CDATA[</Color>]]> their minds into a constructed reality, to live there even after the heat-death of the universe?": "所以，一群挪麦人设计了一种方法，将他们的思想<![CDATA[<Color=orange>]]>加载<![CDATA[</Color>]]>到一个构建的现实中，即使在宇宙热寂之后也能在那里生活？",
+    "I can understand their motiviation to begin such an undertaking. I can also understand the reasoning that ultimately led them to abandon the project.": "我可以理解他们开始这项事业的动机。我也可以理解最终导致他们放弃这个项目的理由。",
+    "To live a life without exploration, without discovery, would for a Nomai be a fate worse than death. I hope they eventually found the different solution they were looking for.": "对于挪麦人来说，没有探索和发现的生活比死亡更糟糕。我希望他们最终找到了他们正在寻找的不同解决方案。",
+    "\"Fear of failure is a poor reason not to try\", inspiring words from this Primm you spoke of. I will do well to remember them.": "“害怕失败是拒绝尝试的糟糕理由”，你提到的这个普瑞姆说的鼓舞人心的话。我会好好记住它们。",
+    "Reminds me of something my third cousin twice removed once said. I wonder what Poke is up to these days.": "让我想起了我远房表亲曾经说过的话。我想知道波克最近在做什么。",
+
+    "Shrouded beneath the clouds you found an approximation of your home planet, but missing its native inhabitants?": "在云层之下，你发现了你家乡行星的近似物，但缺少了它的原住民？",
+    "You say a group of Nomai discovered plant life which released a potent hallucinogen into the atmosphere, which did not affect them.": "你说一群挪麦人发现了一种植物，它向大气中释放了一种强效的致幻剂，但对他们没有影响。",
+    "I agree that you would likely be more susceptable to such a particulate, as your skin is much more porous than mine due to your amphibious origin.": "我同意你可能会更容易受到这种颗粒的影响，因为你的皮肤由于你的两栖起源比我的皮肤多孔得多。",
+    "However, I propose a hypothesis: These Nomai were not real, and were in fact a result of your hallucination. Perhaps a poor theory, as proving the null hypothesis would be impossible for you with your altered perception.": "然而，我提出一个假设：这些挪麦人并不真实，实际上是你幻觉的结果。也许这是一个糟糕的理论，因为对于你来说，证明零假设是不可能的，因为你的感知已经改变了。",
+    "These entities that spoke to you through their \"spokesperson\", I wonder where they came from. I hope some day we may learn more about them.": "这些通过他们的“代言人”与你交谈的实体，我想知道它们来自哪里。我希望有一天我们能了解更多关于它们的信息。",
+    "Unless of course this entity was also a hallucination.": "当然，除非这个实体也是幻觉。",
+
+    "So you found a planet inhabited by clans of Nomai and a species called \"Ghirds\"?": "所以你发现了一颗居住着挪麦氏族和一个叫“吉尔德人”的物种的星球？",
+    "They once lived in a single civilization, but infighting led them to split apart as they argued over a supposed treasure hidden behind a Great Door.": "他们曾同为一个文明，但为了一扇大门后所谓的宝藏争执不休，从而走向内斗并最后分裂。",
+    "You were able to forge cooperation between the clans in order to finally open the door, and while there was no treasure inside, the clans became united once more regardless.": "你成功促成了氏族间的合作，最终打开了那扇门。尽管里面并没有宝藏，但氏族们却因此重新团结在了一起",
+    "It is as the old saying goes: The true tredsure is the communal bonds we form along our trajectory.": "正如那句老话所说：真正的宝藏，是我们在这段旅程中结下的羁绊。",
+
+    "So a group of Nomai crash landed on one of the planets in this system, and discovered the ruins of an ancient civilization?": "所以一组挪麦人坠毁在这个星系的这颗行星上，然后发现了一个古代文明的遗迹？",
+    "The king wielded a similar staff capable of making crystaline structures visible, and when interacting with a certain crystal made additional structures materialize.": "国王手持一根类似的手杖，能够让晶体结构显形，当它与特定晶体相互作用时，还能让额外的结构实体化。",
+    "You mentioned a cycle of death and rebirth, and depictions of a eye-like symbol. I wonder what it could all mean?": "你提到了死亡与重生的循环，还有类似眼睛的符号描绘。我想知道这一切可能都意味着什么？",
+    "Perhaps some day we will find more answers!": "也许有一天我们会找到更多答案！",
+
+    // Ping Memory Cube
+    "PING: What an interesting cube. I wonder what it does.": "平：多么有趣的立方体。我想知道它是做什么的。",
+    "PING: Oh. It reads my mind. Fascinating. I hope I do not think of anything embarassing.": "平：哦。它在读我的思想。真有趣。我希望我没有想到任何尴尬的事情。",
+    "PING: ...": "平：……",
+    "PING: Okay good, I did not.": "平：好的，我没有。",
+
+    // Note
+    "Thank you Streetlights Behind the Trees for making this space station model for the community jam!": "感谢Streetlights Behind the Trees为社群创作赛制作了这个空间站模型！",
+    "Also thanks hearth1an for the texture used for the Nomai downstairs.": "还要感谢hearth1an制作给楼下的挪麦人使用的纹理。",
+
+    // Computer
+    "Welcome to the 3rd Outer Wilds mod jam.": "欢迎来到第三届《星际拓荒》模组创作赛。",
+    "Participants had 11 days to create a story-mod centered around a single planet.": "参赛者有11天的时间来创建一个以单一星球为中心的故事模组。",
+    "All previous mod jams have a required theme. This time the theme was community!": "所有之前的模组创作赛都有一个主题。这次的主题是社群！",
+    "In the spirit of the theme, all mod entries were required to take place in the same solar system, which you are now in!": "本着主题的精神，所有模组参赛作品都必须在同一个太阳系中进行，也就是你现在所在的太阳系！",
+    "After finishing each mod, speak with Ping - Something new might show up here next loop!": "完成每个模组后，与平交谈——下一个循环可能会有新的东西出现！",
+
+    // Anglerfish
+    "Hey it\"s me a dead anglerfish.": "嘿，是我，一条死去的鮟鱇鱼。",
+    "Hello figment of my imagination.": "你好，我幻想中的朋友。",
+    "How did you die?": "你是怎么死的？",
+    "Allow me to demonstrate.": "让我来演示一下。",
+
+    // Organizer Recorder
+    "The 3rd Outer Wilds mod jam was organized by xen, Raicuparta, _nebula, JohnCorby, and Idiot.": "第三届Outer Wilds模组创作赛由xen、Raicuparta、_nebula、JohnCorby和Idiot组织。",
+    "Thank you to GameWyrm, Raicuparta, Hawkbar, Book, Locochoco, JohnCorby, xen, and Idiot for donating to the prize pool!": "感谢GameWyrm、Raicuparta、Hawkbar、Book、Locochoco、JohnCorby、xen和Idiot为奖池捐款！",
+    "The judges were: Book, Idiot, JohnCorby, xen, and _nebula.": "评委是：Book、Idiot、JohnCorby、xen和_nebula。",
+
+    // First Winner
+    "The first place winner of the mod jam was...": "模组创作赛的第一名是……",
+    "Hearth's Neighbor 2: Magistarium! Congratulations GameWyrm, EndgameZero, FunkyShoeMan, and CelestialsStorm!": "Hearth's Neighbor 2: Magistarium！祝贺GameWyrm、EndgameZero、FunkyShoeMan和CelestialsStorm！",
+
+    // Second Winner
+    "The second place winner of the mod jam was...": "模组创作赛的第二名是……",
+    "Reflections! Congratulations Walker, GayCoffee, and Greenpixel!": "Reflections！祝贺Walker、GayCoffee和Greenpixel！",
+
+    // Third Winner
+    "The third place winner of the mod jam was...": "模组创作赛的第三名是……",
+    "Solar Rangers: The Egg Star Attacks! Congratulations to The Wrong Warp Team!": "Solar Rangers: The Egg Star Attacks！祝贺The Wrong Warp团队！",
+
+    //Axiom
+    "A cold planet and moon in a distant orbit. Signs of intelligent life are present.": "一个在遥远轨道上的寒冷行星和卫星。有智慧生命的迹象。",
+    "Hypothesis: Tidal heating from the planet's moon may allow it to support a subsurface ocean.": "假设：来自行星卫星的潮汐加热可能使其支持地下海洋。",
+    "(Install <![CDATA[<color=\"purple\">]]>Axiom's Refuge<![CDATA[</color>]]> to learn more about this world!)": "（安装<![CDATA[<color=\"purple\">]]>Axiom's Refuge<![CDATA[</color>]]>以了解更多关于这个世界的信息！）",
+    "My Hearthian friend has informed me this planet is populated by a similar species, and that they possess Nomai artifacts": "我的哈斯朋友告诉我，这个星球上居住着类似的物种，并且他们拥有挪麦人的文物。",
+    "From them I was able to acquire a new recipe for cactus soup!": "从他们那里，我获得了一个新的仙人掌汤食谱！",
+
+    //BandTogether
+    "A bizarre world with a clear deliniation between hemispheres.": "一个在两半球之间有明确划分的奇异世界。",
+    "Signs of intelligent life are present.": "有智慧生命的迹象。",
+    "(Install <![CDATA[<color=\"purple\">]]>Band Together<![CDATA[</color>]]> to learn more about this world!)": "（安装<![CDATA[<color=\"purple\">]]>Band Together<![CDATA[</color>]]>以了解更多关于这个世界的信息！）",
+    "My Hearthian friend has told me that the civilization of this planet, which had long been fractured into clans, has now been reunited.": "我的哈斯朋友告诉我，这个星球上长期分裂为家族的文明现在已经重新团结起来。",
+    "During my visit to the planet I met a scheming Nomai in the possession of a unique species of shrub. I took a cutting of the plant for my own studies.": "在我访问这个星球期间，我遇到了一个拥有独特灌木物种的阴谋家挪麦人。我剪下了一株植物用于我的研究。",
+
+    //Callis
+    "An egg shaped world, close to the star.": "一个靠近恒星的蛋形世界。",
+    "Signs of intelligent life are present on the north pole and the equator.": "北极和赤道上有智慧生命的迹象。",
+    "(Install <![CDATA[<color=\"purple\">]]>Callis's Thesis<![CDATA[</color>]]> to learn more about this world!)": "（安装<![CDATA[<color=\"purple\">]]>Callis's Thesis<![CDATA[</color>]]>以了解更多关于这个世界的信息！）",
+    "My Hearthian friend has informed me that there are Nomai on this planet!": "我的哈斯朋友告诉我，这个星球上有挪麦人！",
+    "I ventured there to observe their Festival and learned of an interesting theory on marshmallow universality. Very informative!": "我冒险去那里观察他们的发现节，并学到了一个关于棉花糖普遍性的有趣理论。非常有启发性！",
+
+    //EchoHike
+    "An icy world with brilliant rings.": "一个有明亮光环的冰冷世界。",
+    "There are artificial structures present, but no signs of life on the surface.": "有人工结构存在，但表面没有生命的迹象。",
+    "(Install <![CDATA[<color=\"purple\">]]>Echo Hike<![CDATA[</color>]]> to learn more about this world!)": "（安装<![CDATA[<color=\"purple\">]]>Echo Hike<![CDATA[</color>]]>以了解更多关于这个世界的信息！）",
+    "My Hearthian friend has told me of a unique gravitational technology developed on this planet.": "我的哈斯朋友告诉我，这个星球上开发了一种独特的重力技术。",
+    "I had a delightful conversation with the native phosphors, and obtained my own copy of this device.": "我与当地的荧光生物们进行了愉快的交谈，并获得了这个设备的复制体。",
+
+    //Finis
+    "This body is not in hydrostatic equilibrium, and has a prolate shape.": "这个天体不在流体静力平衡中，并且具有长椭球形状。",
+    "Gravitational scans indicate the world has a low density - Hypothesis: This planet has deep cave systems.": "重力扫描显示这个世界的密度很低——假设：这个星球有深层洞穴系统。",
+    "(Install <![CDATA[<color=\"purple\">]]>Finis<![CDATA[</color>]]> to learn more about this world!)": "（安装<![CDATA[<color=\"purple\">]]>Finis<![CDATA[</color>]]>以了解更多关于这个世界的信息！）",
+    "My Hearthian friend has told me that a Nomai escape pod was present on the surface, and that they discovered ancient ruins with fascinating technology.": "我的哈斯朋友告诉我，星球表面上有挪麦人的逃生舱，并且他们发现了拥有迷人技术的古代遗迹。",
+    "I have managed to replicate a staff from this planet that allows the wearer to see the unseen.": "我成功地复制了这个星球上的一根手杖，它可以让携带者看到看不见的东西。",
+
+    //JamHub
+    "A temperate world, with obvious signs of inhabitation.": "一个温带世界，有明显的居住迹象。",
+    "Many beings have gathered here, for what purpose is unknown to me at this time.": "许多生物聚集在这里，目前我不知道他们的目的。",
+    "(Install <![CDATA[<color=\"purple\">]]>Jam Hub<![CDATA[</color>]]> to learn more about this world!)": "（安装<![CDATA[<color=\"purple\">]]>Jam Hub<![CDATA[</color>]]>以了解更多关于这个世界的信息！）",
+    "My Hearthian friend has told me that the being gathered here are known as \"modders\".": "我的哈斯朋友告诉我，聚集在这里的生物被称为“模组制作者”。",
+    "I have invited one to visit my ship, as I am entirely unable to grasp what exactly a \"mod\" is.": "我邀请了一个人来参观我的飞船，因为我完全无法理解“模组”到底是什么。",
+    "Unfortunately, I have not yet gleaned any useful info. This particular individual claims to have created the \"mod\" displayed here, whatever that means.": "不幸的是，我还没有收集到任何有用的信息。这个特定的人声称创造了这里展示的“模组”，不管那是什么意思。",
+
+    //Magistarium
+    "A spherical body levitates above the sun, opposite my station.": "一个球形天体在我的空间站对面的太阳上方漂浮。",
+    "An entrance hatch is left open, but my scans are unable to penetrate the interior.": "一个入口舱口是开着的，但我的扫描无法穿透内部。",
+    "(Install <![CDATA[<color=\"purple\">]]>Hearth's Neighbor 2: Magistarium<![CDATA[</color>]]> to learn more about this world!)": "（安装<![CDATA[<color=\"purple\">]]>Hearth's Neighbor 2: Magistarium<![CDATA[</color>]]>以了解更多关于这个世界的信息！）",
+    "My Hearthian friend tells me this space station contains a device capable of ascending the user to a higher plane!": "我的哈斯朋友告诉我，这个空间站包含一个可以将用户飞升到更高层次的设备！",
+    "While I was unable to ascend, I did however find some interesting artifacts which I have appropriated for my own collection.": "虽然我无法飞升，但我确实发现了一些有趣的文物，并将它们纳入了我的收藏。",
+    "The disco ball in particular will be quite the show-stopper at my clan's Festival, I believe.": "我相信，迪斯科球将特别地在我家族的节日上成为一大亮点。",
+
+    //Reflections
+    "A distant world, with a single ruin visible on the surface.": "一个遥远的世界，其表面上仅有单一的废墟可见。",
+    "Hypothesis: There is more to this world than meets the eye.": "假设：这个世界比表面看起来的要多得多。",
+    "(Install <![CDATA[<color=\"purple\">]]>Reflections<![CDATA[</color>]]> to learn more about this world!)": "（安装<![CDATA[<color=\"purple\">]]>Reflections<![CDATA[</color>]]>以了解更多关于这个世界的信息！）",
+    "My Hearthian friend has informed me that this world houses a Nomai-created simulated reality which offers immortality.": "我的哈斯朋友告诉我，这个世界包含一个由挪麦人创造的模拟现实，它提供了永生。",
+    "While the Nomai who created it abandoned it, wishing never to be trapped in a world without the thrill of exploration, I have appropriated some of their schematics.": "虽然创造它的挪麦人放弃了它，因为他们希望不会永远被困在一个没有探索刺激的世界中，但我还是采用了一些他们的设计图。",
+    "Even though they wished not to pursue the technology further, this advanced projection technology may still have its merits.": "尽管他们不希望进一步追求这项技术，但这种先进的投影技术可能仍然有其优点。",
+
+    //SolarRangers
+    "A giant, ominous looking space ship orbits the sun. It possesses a considerable arsenal.": "一艘巨大、看起来不祥的宇宙飞船绕太阳运行。它拥有相当多的武器。",
+    "Hypothesis: I should stay far away from this place.": "假设：我应该远离这个地方。",
+    "Note: That was not a genuine hypothesis, but an attempt at humour in the face of danger.": "注意：这不是一个真正的假设，而是在危险面前尝试幽默。",
+    "(Install <![CDATA[<color=\"purple\">]]>Solar Rangers<![CDATA[</color>]]> to learn more about this world!)": "（安装<![CDATA[<color=\"purple\">]]>Solar Rangers<![CDATA[</color>]]>以了解更多关于这个世界的信息！）",
+    "My Hearthian friend assures me that with the help of the Solar Rangers, this ship can ultimately be destroyed.": "我的哈斯朋友向我保证，在星际游骑兵的帮助下，这艘船最终可以被摧毁。",
+    "In fact, I have obtained copies of its schematics and determined it has an obvious vulnerability!": "事实上，我已经获得了它的设计图副本，并确定它有一个明显的弱点！",
+    "It is vulnerable to lasers and bombs.": "它对激光和炸弹很脆弱。",
+
+    //Symbiosis
+    "A dark shadowy world. Were it not for intermittent flashes of lightning, it would be largely invisible against the background of space.": "一个黑暗的阴影世界。如果不是间歇性的闪电，它在太空背景下几乎看不见。",
+    "Unfortunately, this world is so nebulous and mysterious that even a Hearthian ship log cannot record data on it.": "不幸的是，这个世界如此模糊和神秘，以至于哈斯人的飞船日志也无法记录它的数据。",
+    "Until ship logs can be obtained, we can learn nothing new here. Perhaps my Hearthian friend could <![CDATA[<color=\"purple\">]]>modify<![CDATA[</color>]]> their ship in order to remedy this?": "在获得飞船日志之前，我们无法在这里学到任何新东西。也许我的哈斯朋友可以<![CDATA[<color=\"purple\">]]>修改<![CDATA[</color>]]>他们的飞船来解决这个问题？",
+    "(Install <![CDATA[<color=\"purple\">]]>Symbiosis Ship Logs<![CDATA[</color>]]> to learn more about this world!)": "（安装<![CDATA[<color=\"purple\">]]>Symbiosis Ship Logs<![CDATA[</color>]]>以了解更多关于这个世界的信息！）",
+    "Thankfully my Hearthian friend was able to install a <![CDATA[<color=\"purple\">]]>modification<![CDATA[</color>]]> to their ship log, enabling us to record data on this world.": "幸运的是，我的哈斯朋友能够为他们的飞船日志安装一个<![CDATA[<color=\"purple\">]]>修改<![CDATA[</color>]]>，使我们能够记录这个世界的数据。",
+    "(Install <![CDATA[<color=\"purple\">]]>Symbiosis<![CDATA[</color>]]> and <![CDATA[<color=\"purple\">]]>Symbiosis Ship Logs<![CDATA[</color>]]> to learn more about this world!)": "（安装<![CDATA[<color=\"purple\">]]>Symbiosis<![CDATA[</color>]]>和<![CDATA[<color=\"purple\">]]>Symbiosis Ship Logs<![CDATA[</color>]]>以了解更多关于这个世界的信息！）",
+    "It seems however that their findings have left us with more questions than answers: Where did this \"spokesperson\" come from, what was their purpose, and why does this \"Ernesto\" character keep popping up everywhere?": "然而，他们的发现似乎给我们留下了更多的问题而不是答案：这个“代言人”来自哪里，他们的目的是什么，为什么这个“厄内斯托”到处出现？",
+    "I took a plant cutting from the vines growing on the planet. Apparently it causes hallucinations within my Hearthian friend, but it has no effect on me.": "我从这个星球上生长的藤蔓上剪下了一株植物。显然，它会在我的哈斯朋友中引起幻觉，但对我没有影响。"
+
+  },
+
+  "ShipLogDictionary": {
+    "Outer Wilds Mod Jam 3": "《星际拓荒》第三届模组创作赛",
+    "Welcome to the 3rd Outer Wilds mod jam! All entries will exist here, in this one solar system.": "欢迎来到第三届《星际拓荒》模组创作赛！所有参赛作品都将存在于这个太阳系中。",
+    "This time, the theme was COMMUNITY.": "这次的主题是“社群”。",
+
+    // Starship Community
+    "Starship Community": "星舰社群",
+    "I awoke in a space station high above a blue star.": "我在一颗蓝色太阳上方的空间站中醒来。",
+    "Streetlights Behind the Trees provided us with this lovely spawn point for the community mod jam.": "Streetlights Behind the Trees为我们提供了这个可爱的出生点，用于社群模组创作赛。",
+    "A Nomai named Ping is collecting data to share at their clan's next Festival. When exploring the worlds in this system, I should report my findings to them.": "一个叫平的挪麦人正在收集数据，准备在他们家族的下一个发现节上分享。在探索这个系统中的世界时，我应该向其报告我的发现。"
+  },
+
+  "UIDictionary": {
+    "Starship Community": "星舰社群",
+    "Ping": "平"
+  }
+}
